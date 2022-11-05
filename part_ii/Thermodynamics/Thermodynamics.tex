@@ -1,0 +1,129 @@
+\documentclass[12pt,a4paper]{article}
+\author{Xinyu Zhong\\Wolfson College}
+\usepackage{physics, amsmath}
+\usepackage{xcolor}
+\usepackage[margin=0.5in]{geometry}
+
+\title{Notes}
+%\date{2nd Nov 2021}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+\section{Basic of thermodynamics}
+
+\section{Thermodynamics equilibrium}
+    \subsection{Open systems}
+    Open system is a system that is linked to a reservoir.\\
+    Equilibrium condition is to maximize the total entropy of the system and the reservoir.\\
+    Hence, introducing the ideal of Availability, which is minimized when the entropy of the universe is maximized with respect to the state of the system.
+    \subsubsection{Availability}
+    Availability A is defined as:
+    \begin{equation*}
+        dA=-T_RdS_{tot}
+    \end{equation*}
+    Note: $dA\leq 0$ and equilibrium is achieved at $dA=0$\\
+    Given that:
+    \begin{align*}
+        dS_{tot} &= dS+dS_R >= 0\\
+        &= dS + ...\\
+        &= \dfrac{T_RdS-dU-p_RdV+\mu_RdN}{T_R}
+    \end{align*}
+    Some function variables sum up to U:
+    \begin{equation*}
+        A = U- T_RS+p_RV-\mu_R N
+    \end{equation*}
+    \subsubsection*{Boltzmann expression for entropy}
+    \subsubsection{Availability is equivalent to useful work}
+
+    \subsection{Close systems}
+    The method we used to study closed system is to play \textbf{imaginary partition}
+    to partition it into two or more systems.\\
+    Equilibrium condition is to find the maximized S given a fixed value of U, or alternatively
+    minimized U for a given S.
+    \subsubsection{Constant temperature at equilibrium}
+    \subsubsection{Constant chemical potential at equilibrium}
+    \subsection{Overview of thermodynamics potentials}
+    Here are some thermodynamics potential examples:\\
+    Internal energy: $dU = TdS - pdV+\mu dN$\\
+    Enthalpy: $dH = TdS + Vdp +\mu dN$\\
+    Helmholtz Free energy: $dF = -TdS -pdV + \mu dN$\\ ...see discussion in mechanical equilibrium \\
+    Gibbs Free energy: $dG = -SdT + Vdp +\mu dN$\\ ...see discussion in phase equilibrium \\
+    \textbf{Grand potential : $d\phi = -SdT -pdV - Nd\mu$}\\ ...see discussion in Fermion and Boson Gas \\
+    \\
+    For given external conditions, the appropriate thermodynamic potential is a minimum in equilibrium:\\
+    the minimization of these thermodynamic potential of the system is a direct consequence of the maximization of global energy.
+    \subsubsection{Detailed discussion about each thermodynamic potential}
+    ... Handout page 33 - 35
+    \subsection {Phase Equilibrium}
+    Consider a one component system at constant temperature, pressure and particle number, the equilibrium is that the Gibbs free energy is conserved.
+    i.e. the total Gibbs free energy is minimized, $dS =0$ in a mixture of gas and liquid.
+    \subsubsection {Phase Equilibrium in van de waal gas}
+    \subsubsection {Clausius-Clapeyron Equation}
+    \subsection {Mixture of ideal gas}
+        In ideal gas, particles do not interact with each other, the thermodynamics properties are the sum of individual contribution of each species of "component".
+        \dots
+        \subsubsection{Chemical Equilibrium}
+        \subsubsection{Equilibrium Constant}
+\section{Statistical Mechanics}
+    \textcolor{green}{
+        Sterling Approximation: $\ln(n!)= n\ln{n} - n $\\
+        $\dfrac{d\ln(n!)}{dn} = ln(n)$.
+    }
+\section{Classical Ideal Gas}
+    In classical ideal gas, we have the probability density function and the associated partition function:
+    \begin{align*}
+        \rho &= \frac{e^{-\beta E({p_i,q_i})}}{Z}\\
+        Z_{classical} &= \int e^{-\beta E({p_i,q_i})} \dfrac{d^3x d^3p}{(2\pi\hbar)^3}
+    \end{align*}
+    Note that this is 3-dimensional case.\\
+    Trick to compute the integral, in example of a free particle:
+    \begin{align*}
+        Z_1 &= \int e^{-\beta E({p_i,r_i})} \dfrac{d^3p d^3r}{(2\pi\hbar)^3}\\
+            &= \int d^3r \int e^{-\beta E({p_i,r_i})} \frac{d^p_x}{2\pi\hbar}\\
+            &= V(\sqrt{\dfrac{k_BTm}{2\pi\hbar}})^3\\
+            &= V/\lambda^3
+    \end{align*}
+    where $\lambda$ is also known as the thermal de Broglie wavelength 
+    
+%Lecture 6:
+\section{Fermi gas}
+%Lecture 10:
+\section{Bose gas}
+    Bose gas : quantum limit, Boson particles can take up any energy state instead of two\\
+    Grand partition function:
+    \begin{align*}
+    \Xi_k   &= \sum_{n=0}^{\inf} e^{-\beta(\epsilon_k-\mu)^n}\\
+            &=\frac{1}{1-e^{-\beta(\epsilon_k-\mu)}}
+    \end{align*}
+    Here $k$ specifies the energy level.\\
+    The grand partition function for the whole system
+    The grand potential is then
+%Lecture 12
+\section{Non-ideal Gas and Liquids}
+\subsection{2 particle probability}
+\subsection{Radial distribution function}
+
+\subsection{Mean Energy}
+\subsection{Viral}
+Virial is defined as 
+\begin{align*}
+    \nu = -\dfrac{1}{2} \sum_i {\vb{r_i}\cdot \vb{f_i}}
+\end{align*}
+\subsubsection{$\braket{\nu_{ext}}$}
+\subsubsection{$\braket{\nu_{int}}$}
+
+
+
+\end{document}
