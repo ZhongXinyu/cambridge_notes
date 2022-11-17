@@ -1,11 +1,30 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \author{Xinyu Zhong\\Wolfson College}
 \usepackage{physics, amsmath}
 \usepackage{xcolor}
 \usepackage[margin=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
 
-\title{Notes}
+
 %\date{2nd Nov 2021}
+\lhead{\fancyplain{}{Zachary Zhong, xz447@cam.ac.uk}}
+\rhead{\fancyplain{}{Thermodynamics}}
+\cfoot{\fancyplain{}{\thepage{}}}
+\setlength {\headheight}{15pt}
+
+\newcommand{\definition}[3]
+    {
+    \textit{Definition #1: }
+    \begin{center}
+        {#2}
+    \end{center}
+    {#3}\\
+    }
+\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}{#2}\\}
+\newcommand{\example}[2]{\textbf{Example: #1}\\\textcolor{blue}{#2}\\}
+\title{Notes}
 
 \begin{document}
 
@@ -69,7 +88,7 @@ Abstract of this course
     \subsection {Phase Equilibrium}
     Consider a one component system at constant temperature, pressure and particle number, the equilibrium is that the Gibbs free energy is conserved.
     i.e. the total Gibbs free energy is minimized, $dS =0$ in a mixture of gas and liquid.
-    \subsubsection {Phase Equilibrium in van de waal gas}
+    \subsubsection {Phase Equilibrium in Van de Waal gas}
     \subsubsection {Clausius-Clapeyron Equation}
     \subsection {Mixture of ideal gas}
         In ideal gas, particles do not interact with each other, the thermodynamics properties are the sum of individual contribution of each species of "component".
@@ -77,10 +96,16 @@ Abstract of this course
         \subsubsection{Chemical Equilibrium}
         \subsubsection{Equilibrium Constant}
 \section{Statistical Mechanics}
-    \textcolor{green}{
-        Sterling Approximation: $\ln(n!)= n\ln{n} - n $\\
-        $\dfrac{d\ln(n!)}{dn} = ln(n)$.
-    }
+    \begin{theorem}
+        {Sterling Approximation:}
+        {
+            \begin{align*}
+                \ln(n!)= n\ln{n} - n \\
+                \dfrac{d\ln(n!)}{dn} = ln(n).
+            \end{align*}
+            }
+    \end{theorem}
+        
 \section{Classical Ideal Gas}
     In classical ideal gas, we have the probability density function and the associated partition function:
     \begin{align*}
@@ -98,7 +123,18 @@ Abstract of this course
     where $\lambda$ is also known as the thermal de Broglie wavelength 
     
 %Lecture 6:
+
+%lecture 7:
+\subsection{Chemical equilibrium}
+\subsection{High-T limit}
+\subsection{Chemical potential}
+
+\subsection{Cross-over to quantum limit}
+%lecture 8:
+Continues on quantum ideal gas
 \section{Fermi gas}
+%lecture 9:
+\subsection{Fermi gas in low/medium/high Temperature}
 %Lecture 10:
 \section{Bose gas}
     Bose gas : quantum limit, Boson particles can take up any energy state instead of two\\
@@ -110,20 +146,103 @@ Abstract of this course
     Here $k$ specifies the energy level.\\
     The grand partition function for the whole system
     The grand potential is then
+%lecture 11
+\subsection{Quasi-particle excitation}
+\subsection{Photons}
+\subsection{Spin Waves}
+\subsection{Phonon and Debye model}
 %Lecture 12
 \section{Non-ideal Gas and Liquids}
 \subsection{2 particle probability}
 \subsection{Radial distribution function}
 
 \subsection{Mean Energy}
-\subsection{Viral}
-Virial is defined as 
+\subsection{Virial}
+Virial is defined as: 
 \begin{align*}
     \nu = -\dfrac{1}{2} \sum_i {\vb{r_i}\cdot \vb{f_i}}
 \end{align*}
-\subsubsection{$\braket{\nu_{ext}}$}
-\subsubsection{$\braket{\nu_{int}}$}
+\theorem{Virial Theorem}{Virial Theorem states that the mean virial is equal to the mean kinetic energy.}
+\subsubsection{${\nu_{ext}}$}
+\subsubsection{${\nu_{int}}$}
+\subsection{Virial Expansion}
+Virial Expansion
 
+\section{Phase Equilibrium and Transition}
+%lecture 13
+\subsection{Ising model}
 
-
+%lecture 14
+\subsection{Landau Theory}
+\subsubsection{Critical behavior}
+\subsubsection{External field}
+\subsection{2nd order transition}
+%lecture 15
+\subsection{1st order transition}
+\subsubsection{Calculation of $T*$,$T_1$ and latent heat}
+%lecture 16
+\section{Fluctuation}
+\begin{align*}
+    \langle \Delta x^2\rangle = \langle x^2\rangle -\langle x\rangle ^2 
+    =\dfrac{1}{Z}\sum_i x_i^2 e^{-E_i/k_BT} - (\frac{1}{Z}\sum_i x_i e^{-E_i/k_BT})^2
+\end{align*}
+If there is a simple dependence of energy on the variable, 
+e.g. if such dependence is linear, $E_i=-fx_i$, then a general trick applies:
+\begin{align*}
+    \langle x\rangle &= \dfrac{1}{Z}\sum_i x_i e^{fx_i/k_BT} = \frac{1}{\beta Z}(\frac{\partial Z}{\partial f})\\
+    \langle x\rangle &= \dfrac{1}{Z}\sum_i x_i^2 e^{fx_i/k_BT} = \frac{1}{\beta^2 Z}(\frac{\partial^2 Z}{\partial f^2})
+\end{align*}
+We realize that:
+$\langle \Delta x^2\rangle = \langle x^2\rangle -\langle x\rangle ^2 = ... = k_BT(\frac{\partial <x>}{\partial f})$\\
+\definition{response function}{
+    $\dfrac{\partial \langle \Delta x^2\rangle}{\partial y}$
+}{as the response function.}
+\begin{example}
+    {Spring with a force f and displacment x}
+    {... see notes.}
+\end{example}
+\begin{example}
+    {The fluctuation in the magnetisation of a subsystem consisting of a paramagnet in an external filed B, in and contact with a reservoir at time T.}
+    {... see handout}
+\end{example}
+\subsection{Thermodynamics}
+In a large system, the curvature of the availability function is related to the size of the fluctuations.\\
+Probability density function can be written as an exponential function of A.\\
+We can then 
+The probability distribution is actually a Gaussian approximation w.r.t
+\section{Stochastic physics}
+    \begin{theorem}
+        {White noise properties}{
+        $\expval{\xi(t)}=0$ but $\expval{\xi(t)^2}=0$ and  $\expval{\xi(t_1)\xi(t_1)}=0$ if $t_1\neq t_2$.
+        \begin{equation*}
+            \expval{\xi(t)\xi(t')}=\Gamma\delta(t-t')
+        \end{equation*}
+        }
+    \end{theorem}
+    \\
+    \begin{theorem}
+        {Fluctuation dissipation theorem}{
+        ???
+        }
+    \end{theorem}
+    \subsection{Damped Oscillator}
+        \subsubsection{Langevin equation}
+            \begin{theorem}{Langevin equation}
+                {
+                Fluctuating system obeys the damped single harmonic oscillator equation with random force $\epsilon(t)$
+                \begin{align*}
+                    m\ddot{x}+\lambda\dot{x}+kx=\epsilon(t)
+                \end{align*}
+                }
+            \end{theorem}
+    \subsection{Diffusion}
+    \subsection{Diffusion in external potentials}
+    \begin{example}
+        {Derivation of kinetic equation of $P(x,t)$, with external potential $V(x)$}
+        {
+        {Random walk from bias}\\
+        {From analogy with sediment problem in gravity, $V=mgh$} 
+        }
+    \end{example}
+    \subsection{Kramers problem: escape over a potential barrier}
 \end{document}

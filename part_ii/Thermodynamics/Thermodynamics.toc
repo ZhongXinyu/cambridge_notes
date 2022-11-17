@@ -7,21 +7,47 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Constant temperature at equilibrium}{2}{}%
 \contentsline {subsubsection}{\numberline {2.2.2}Constant chemical potential at equilibrium}{2}{}%
 \contentsline {subsection}{\numberline {2.3}Overview of thermodynamics potentials}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Detailed discussion about each thermodynamic potential}{3}{}%
-\contentsline {subsection}{\numberline {2.4}Phase Equilibrium}{3}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Phase Equilibrium in van de waal gas}{3}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Detailed discussion about each thermodynamic potential}{2}{}%
+\contentsline {subsection}{\numberline {2.4}Phase Equilibrium}{2}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Phase Equilibrium in Van de Waal gas}{3}{}%
 \contentsline {subsubsection}{\numberline {2.4.2}Clausius-Clapeyron Equation}{3}{}%
 \contentsline {subsection}{\numberline {2.5}Mixture of ideal gas}{3}{}%
 \contentsline {subsubsection}{\numberline {2.5.1}Chemical Equilibrium}{3}{}%
 \contentsline {subsubsection}{\numberline {2.5.2}Equilibrium Constant}{3}{}%
 \contentsline {section}{\numberline {3}Statistical Mechanics}{3}{}%
 \contentsline {section}{\numberline {4}Classical Ideal Gas}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Chemical equilibrium}{3}{}%
+\contentsline {subsection}{\numberline {4.2}High-T limit}{3}{}%
+\contentsline {subsection}{\numberline {4.3}Chemical potential}{3}{}%
+\contentsline {subsection}{\numberline {4.4}Cross-over to quantum limit}{3}{}%
 \contentsline {section}{\numberline {5}Fermi gas}{4}{}%
+\contentsline {subsection}{\numberline {5.1}Fermi gas in low/medium/high Temperature}{4}{}%
 \contentsline {section}{\numberline {6}Bose gas}{4}{}%
+\contentsline {subsection}{\numberline {6.1}Quasi-particle excitation}{4}{}%
+\contentsline {subsection}{\numberline {6.2}Photons}{4}{}%
+\contentsline {subsection}{\numberline {6.3}Spin Waves}{4}{}%
+\contentsline {subsection}{\numberline {6.4}Phonon and Debye model}{4}{}%
 \contentsline {section}{\numberline {7}Non-ideal Gas and Liquids}{4}{}%
 \contentsline {subsection}{\numberline {7.1}2 particle probability}{4}{}%
 \contentsline {subsection}{\numberline {7.2}Radial distribution function}{4}{}%
 \contentsline {subsection}{\numberline {7.3}Mean Energy}{4}{}%
-\contentsline {subsection}{\numberline {7.4}Viral}{4}{}%
-\contentsline {subsubsection}{\numberline {7.4.1}$\braket {\nu _{ext}}$}{4}{}%
-\contentsline {subsubsection}{\numberline {7.4.2}$\braket {\nu _{int}}$}{4}{}%
+\contentsline {subsection}{\numberline {7.4}Virial}{4}{}%
+\contentsline {subsubsection}{\numberline {7.4.1}${\nu _{ext}}$}{4}{}%
+\contentsline {subsubsection}{\numberline {7.4.2}${\nu _{int}}$}{4}{}%
+\contentsline {subsection}{\numberline {7.5}Virial Expansion}{4}{}%
+\contentsline {section}{\numberline {8}Phase Equilibrium and Transition}{5}{}%
+\contentsline {subsection}{\numberline {8.1}Ising model}{5}{}%
+\contentsline {subsection}{\numberline {8.2}Landau Theory}{5}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Critical behavior}{5}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}External field}{5}{}%
+\contentsline {subsection}{\numberline {8.3}2nd order transition}{5}{}%
+\contentsline {subsection}{\numberline {8.4}1st order transition}{5}{}%
+\contentsline {subsubsection}{\numberline {8.4.1}Calculation of $T*$,$T_1$ and latent heat}{5}{}%
+\contentsline {section}{\numberline {9}Fluctuation}{5}{}%
+\contentsline {subsection}{\numberline {9.1}Thermodynamics}{5}{}%
+\contentsline {section}{\numberline {10}Stochastic physics}{5}{}%
+\contentsline {subsection}{\numberline {10.1}Damped Oscillator}{5}{}%
+\contentsline {subsubsection}{\numberline {10.1.1}Langevin equation}{5}{}%
+\contentsline {subsection}{\numberline {10.2}Diffusion}{6}{}%
+\contentsline {subsection}{\numberline {10.3}Diffusion in external potentials}{6}{}%
+\contentsline {subsection}{\numberline {10.4}Kramers problem: escape over a potential barrier}{6}{}%

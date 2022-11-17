@@ -1,0 +1,82 @@
+\documentclass[12pt,a4paper]{article}
+\author{Xinyu Zhong\\Wolfson College}
+\usepackage{physics, amsmath}
+\usepackage{xcolor}
+\usepackage[margin=0.5in]{geometry}
+
+\title{Notes}
+%\date{2nd Nov 2021}
+
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{\fancyplain{}{Zachary Zhong, xz447@cam.ac.uk}}
+\rhead{\fancyplain{}{Thermodynamics}}
+\cfoot{\fancyplain{}{\thepage{}}}
+\setlength {\headheight}{15pt}
+
+\newcommand{\definition}[3]
+    {
+    \textit{Definition #1: }
+    \begin{center}
+        {#2}
+    \end{center}
+    {#3}
+    }
+\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}\textcolor{red}{#2}}
+\newcommand{\example}[1]{\par\textbf{Example: }\textcolor{blue}{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+
+
+\section{Spacetime Curvature}
+\definition{Riemann Curvature Tensor}
+    {$R_{abc}^d=\nabla_a\nabla_b v_c-\nabla_b\nabla_a v_c$}
+    {The reason for doing so is that covariant derivative of dual vector field is not commutative}
+    \subsection{Subsection 1}
+\section{Gravitation filed equations}
+    \subsection{Energy Momentum Tensor}
+    \definition{Energy Momentum Tensor}
+        {$T^{\mu\nu}(x)=\rho_0(x) u^\mu(x) u^\nu(x)$}
+        {
+        $T^{00}$: energy density\\
+        $T^{i0}$: i-th component of 3-momentum density (times c)\\
+        $T^{ij}$: flux of i-component of 3-momentum in j-direction
+        }
+    \subsubsection{Properties of Energy-momentum tensor}
+    \begin{itemize}
+        \item Always symmetric
+    \end{itemize}
+    \subsection{Energy-momentum Tensor in Ideal Fluid}
+        Consider Ideal Fluid:\\
+        We can find a local inertial frame so that $T^{i0}=0$; and the spatial components are isotropic: $T^{ij}\propto\delta^{ij}$.\\
+        Hence, in \textbf{instantaneous rest frame}:
+        \begin{align*}
+            T^{\mu\nu}= \text{diag}(\rho c^2,p,p,p)
+        \end{align*}
+        where $\rho c^2$ is the rest frame energy density and $p$ is isotropic pressure.
+        While in general:
+        \begin{equation}\label{Energy-momentum Tensor}
+            T^{\mu\nu}= (\rho+\dfrac{p}{c^2})u^\mu u^\nu - pg^{\mu\nu}
+        \end{equation}
+        Equation \ref{Energy-momentum Tensor} is the energy momentum tensor, valid in any coordinate system.\\
+        \subsubsection{Continuity Equation}
+        The energy-momentum tensor satisfies continuity equation:
+        \begin{equation*}
+            \nabla_\mu T^{\mu\nu} = 0
+        \end{equation*}
+
+\end{document}

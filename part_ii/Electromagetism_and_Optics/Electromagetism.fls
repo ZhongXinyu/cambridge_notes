@@ -189,6 +189,17 @@ INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/l
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometry/geometry.cfg
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
 INPUT ./Electromagetism.aux
 INPUT Electromagetism.aux
 INPUT Electromagetism.aux
@@ -231,11 +242,21 @@ INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti12.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmib10.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib8.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT Electromagetism.aux
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb
@@ -252,6 +273,8 @@ INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb

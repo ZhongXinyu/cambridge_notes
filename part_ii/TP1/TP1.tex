@@ -1,0 +1,66 @@
+\documentclass[12pt,a4paper]{article}
+\author{Xinyu Zhong\\Wolfson College}
+\usepackage{physics, amsmath}
+\usepackage{xcolor}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
+
+%\date{2nd Nov 2021}
+
+
+%\date{2nd Nov 2021}
+\lhead{\fancyplain{}{Zachary Zhong, xz447@cam.ac.uk}}
+\rhead{\fancyplain{}{Classical Field Theory}}
+\cfoot{\fancyplain{}{\thepage{}} }
+\setlength{\headheight}{40pt}
+
+\newcommand{\definition}[1]{\textcolor{red}{#1}{}}
+\newcommand{\theorem}[1]{\textcolor{red}{#1}{}}
+\newcommand{\example}[1]{\textcolor{red}{#1}{}}
+
+\title{Notes}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+
+
+\section{Symmetries and conservation laws}
+    \subsection{Noether's theorem}
+    \theorem{Noether's theorem: there is a \textbf{conserved current} associated with every continuous symmetry of the Lagrangian}
+    \subsection{Symmetries and conserved currents}
+    \subsection{Global phase symmetry}
+    Consider the Klein-Gordon Lagrangian density for a complex field:
+    \begin{align*}
+        L=\partial_\mu\psi^*\partial^\mu\psi-m^2\psi^*\psi
+    \end{align*}
+    \definition{Global phase change of $\epsilon$.}\\
+    We can then find the conserved Noether current, as well as the conserved charge 
+
+    \subsection{Local phase (gauge) symmetry}
+    We now allow the phase change $\epsilon$ to be dependdent on the space-time coordinates $x^\mu$. 
+    We realise that electromagnetic fields/ covarinant derivative is an essential requirement for a complex filed to remain invariant under local phase transformation.
+    \subsection{Electromagnetic interaction}
+    Expanding the Klein-Gordon equation:
+    \begin{align*}
+        L_{KG}&=(D_\mu\psi)^*(D^\mu\psi) - m^2\psi^*\psi\\
+        &= \partial_\mu\psi^*\partial^\mu\psi-m^2\psi^*\psi+ieA_\mu[(\partial_\mu\psi)^*\psi-\psi(\partial^\mu\psi)]+e^2A_{\mu}A^\mu\psi^*\psi
+    \end{align*}
+    We see that the third term being the interaction term $eA\_muJ^\mu$, where $J^\mu$ is the free-field current.\\
+    The
+    \subsection{Stress-energy tensor, angular momentum tensor}
+    \subsection{Quantum fields}
+\end{document}

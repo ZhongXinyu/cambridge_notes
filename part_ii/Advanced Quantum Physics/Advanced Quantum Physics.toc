@@ -1,0 +1,44 @@
+\contentsline {section}{\numberline {1}Revision}{2}{}%
+\contentsline {section}{\numberline {2}Perturbation Theory}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Time-Independent Perturbation Theory}{2}{}%
+\contentsline {subsection}{\numberline {2.2}First-order Perturbation Theory}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Second-order Perturbation Theory}{2}{}%
+\contentsline {subsection}{\numberline {2.4}Degenerate Perturbation Theory}{2}{}%
+\contentsline {subsection}{\numberline {2.5}Variation Method}{2}{}%
+\contentsline {subsubsection}{\numberline {2.5.1}Rayleigh-Ritz Method}{2}{}%
+\contentsline {section}{\numberline {3}Electromagnetism}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Aharanov-Bohm Effect}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Gauge Invariance}{2}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Couloumb Gauge}{2}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Symmetric Gauge}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Orbital Magnetic moment}{2}{}%
+\contentsline {subsection}{\numberline {3.4}Magnetic Moments}{3}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Electron}{3}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Muon}{3}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}p, n, nuclei}{3}{}%
+\contentsline {subsection}{\numberline {3.5}Spin}{3}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Particle magnetic moment: spin-half}{3}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Spin Precession}{3}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}Spin-half}{3}{}%
+\contentsline {subsubsection}{\numberline {3.5.4}Energy Eigenstates}{3}{}%
+\contentsline {subsubsection}{\numberline {3.5.5}Wave-function Evolution}{3}{}%
+\contentsline {subsection}{\numberline {3.6}Stern-Gerlach}{3}{}%
+\contentsline {subsection}{\numberline {3.7}Landau Levels}{3}{}%
+\contentsline {subsubsection}{\numberline {3.7.1}Landau Gauge}{3}{}%
+\contentsline {section}{\numberline {4}Real Hydrogen Atom}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Relativistic Corrections}{4}{}%
+\contentsline {subsection}{\numberline {4.2}Fine Structure}{4}{}%
+\contentsline {subsection}{\numberline {4.3}Hyperfine Structure}{4}{}%
+\contentsline {section}{\numberline {5}Symmetries}{4}{}%
+\contentsline {subsection}{\numberline {5.1}Symmetry Transformation}{4}{}%
+\contentsline {subsection}{\numberline {5.2}The Wigner-Eckart Theorem(selection rule)}{4}{}%
+\contentsline {subsection}{\numberline {5.3}Combining magnetic moment}{4}{}%
+\contentsline {section}{\numberline {6}Identical Particles}{4}{}%
+\contentsline {subsection}{\numberline {6.1}Spin and statistics(fermions and bosons)}{4}{}%
+\contentsline {subsection}{\numberline {6.2}Exchange forces}{4}{}%
+\contentsline {subsection}{\numberline {6.3}The Helium atom}{4}{}%
+\contentsline {section}{\numberline {7}Multi-electron atoms}{4}{}%
+\contentsline {subsection}{\numberline {7.1}Periodic table}{4}{}%
+\contentsline {subsection}{\numberline {7.2}LS coupling(Hund's rule)}{4}{}%
+\contentsline {subsection}{\numberline {7.3}jj coupling}{4}{}%
+\contentsline {section}{\numberline {8}Zeeman effect/Stark effect/Molecules: $H^+_2$ and $H_2$}{4}{}%

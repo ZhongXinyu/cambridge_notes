@@ -6,8 +6,18 @@
 \title{Electrodynamics and Optics Notes}
 %\date{2nd Nov 2021}
 
-\begin{document}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{\fancyplain{}{Zachary Zhong, xz447@cam.ac.uk}}
+\rhead{\fancyplain{}{Thermodynamics}}
+\cfoot{\fancyplain{}{\thepage{}}}
+\setlength {\headheight}{15pt}
 
+\newcommand{\definition}[1]{\textcolor{red}{#1}{}}
+\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}\textcolor{red}{#2}}
+\newcommand{\example}[1]{\par\textbf{Example: }\textcolor{blue}{#1}}
+\begin{document}
 \begin{titlepage}
     \maketitle
 \end{titlepage}
@@ -23,27 +33,36 @@ Abstract of this course
 
 \section{Revision}
 \section{Optics}
-    \subsection{Jones's Notation}
-    \subsection{Birefringent Material}
-        For isotropic medium :
-        $\vb{P}=\epsilon_0\chi\vb{E}$
-        $\vb{D} =\epsilon\epsilon_0\vb{E}$
-        
-        \subsubsection{Discussion 1}
-            \textit{Q: How a uniaxial birefringent material can be used to make a quarter wave plate.?}\\
-            \begin{quote}
-            \textcolor{blue}{
-            Uniaxial birefringent material have principle refractive indices $n_o$, $n_o$ and $n_e$. 
-            We can consider a plane-polarised EM wave $e^{i(kz-wt)}$ travels along $O_z$
-            at a different speeds $c/n_f$ or $c/n_s$ depending on whether $\vb{E}$ is parallel to $O_x$ or $O_y$
-            As the wave trasverse the plate, the phase will shift: $e^{ik(z=0)}\rightarrow e^{ik_f(z=d)}$,
-            where $k_f=\dfrac{\omega n_f}{c}$.\\}
-            So the phase shift will depend on the optical thickness,$d$ and also the refractive index:\\
-            Along fast axis, the change is $e^{i\omega n_f d/c}$.\\
-            Along slow axis, the change is $e^{i\omega n_s d/cs}$.\\
-            The Jones matrix for the plate can be written as\\
-            A quarter-wave plate is on with difference in phase shift corresponding to $\lambda /4 $\\
-            \end {quote}
+\subsection{Jones's Notation}
+\subsection{Birefringent Material}
+For isotropic medium :
+$\vb{P}=\epsilon_0\chi\vb{E}$
+$\vb{D} =\epsilon\epsilon_0\vb{E}$
+
+\subsubsection{Discussion 1}
+    \textit{Q: How an uniaxial birefringent material can be used to make a quarter wave plate.?}\\
+    \begin{quote}
+    \textcolor{blue}{
+    Uniaxial birefringent material have principle refractive indices $n_o$, $n_o$ and $n_e$. 
+    We can consider a plane-polarised EM wave $e^{i(kz-wt)}$ travels along $O_z$
+    at a different speeds $c/n_f$ or $c/n_s$ depending on whether $\vb{E}$ is parallel to $O_x$ or $O_y$
+    As the wave trasverse the plate, the phase will shift: $e^{ik(z=0)}\rightarrow e^{ik_f(z=d)}$,
+    where $k_f=\dfrac{\omega n_f}{c}$.\\}
+    So the phase shift will depend on the optical thickness,$d$ and also the refractive index:\\
+    Along fast axis, the change is $e^{i\omega n_f d/c}$.\\
+    Along slow axis, the change is $e^{i\omega n_s d/cs}$.\\
+    The Jones matrix for the plate can be written as\\
+    A quarter-wave plate is on with difference in phase shift corresponding to $\lambda /4 $\\
+    \end {quote}
+
+\section{Coherence}
+\subsection{Coherence and Interference}
+Interference ideas provide a useful quantified description for the degree of correlation, or degree of coherence.
+\subsection{Temporal Coherence}
+\subsubsection{Power Specturm of Temporal Coherence}
+\theorem{Wiener Khinchine Theroem}
+    {The FT of the auto correlation function of a funciton is the quare modulus of the FT of the function itself}
+\subsection{Spatial Coherence}
 \section{Electrodynamics}
 \subsection{Gauge in EM}
 \subsection{$\vb{A}$ in simple cases}
@@ -52,8 +71,17 @@ Abstract of this course
 \subsubsection{Hamiltonian}
 \subsubsection{Aharanov-Bohm Effect}
 \subsection {Maxwell Equation in terms of A and $\phi$}
+$\dfrac{\epsilon\mu}{c^2}\ddot{\phi}-\nabla^2\phi = \dfrac{\rho}{\epsilon\epsilon_0}$\\
+$\dfrac{\epsilon\mu}{c^2}\ddot{\vb{A}}-\nabla^2\vb{A} = \mu\mu_0\vb{J}$
+\subsubsection {Lorenz condition}
+A suitable gauge that simplifies maxwell equation, by choosing the gauge:
+$\div \vb{A}+ \epsilon\mu \dfrac{\dot{\phi}}{c^2} = 0$\\
+Note: for static filed the Lorenz condition is chosen to be Coulomb gauge.
 \subsection {Solution for A and $\phi$}
-
+Square bracket mean "evaluated at the \textit{retarded time}" $t-\frac{|\vb{r}=\vb{r'}|}{c}$
+\section{Dipole Radiation}
+Accelerating charges are of the interest of radiating.
+\subsection{The Hertzian Dipole}
 %Lecture 12:
 
     

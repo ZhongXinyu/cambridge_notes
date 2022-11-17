@@ -1,7 +1,7 @@
-PWD /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Thermodynamics
+PWD /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/TP1
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Thermodynamics/Thermodynamics.tex
-OUTPUT Thermodynamics.log
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/TP1/TP1.tex
+OUTPUT TP1.log
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
@@ -13,10 +13,11 @@ INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/l
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size12.clo
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size12.clo
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size12.clo
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size12.clo
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/physics/physics.sty
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/physics/physics.sty
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/physics/physics.sty
@@ -199,16 +200,28 @@ INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/l
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
-INPUT ./Thermodynamics.aux
-INPUT Thermodynamics.aux
-INPUT Thermodynamics.aux
-OUTPUT Thermodynamics.aux
+INPUT ./TP1.aux
+INPUT TP1.aux
+INPUT TP1.aux
+OUTPUT TP1.aux
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+OUTPUT TP1.pdf
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./TP1.toc
+INPUT TP1.toc
+INPUT TP1.toc
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi12.tfm
@@ -220,53 +233,28 @@ INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT Thermodynamics.pdf
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Thermodynamics.toc
-INPUT Thermodynamics.toc
-INPUT Thermodynamics.toc
+OUTPUT TP1.toc
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT Thermodynamics.toc
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr9.tfm
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx7.tfm
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx5.tfm
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
-INPUT Thermodynamics.aux
+INPUT TP1.aux
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb

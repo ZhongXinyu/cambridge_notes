@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.10.7)  17 NOV 2022 00:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.10.7)  10 NOV 2022 18:40
 entering extended mode
-**/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Thermodynamics/Thermodynamics.tex
-(/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Thermodynamics/Thermodynamics.tex
+**/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/TP1/TP1.tex
+(/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/TP1/TP1.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27> (/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
-(/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
-File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+(/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size12.clo
+File: size12.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count182
 \c@section=\count183
@@ -134,23 +134,23 @@ Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footer
 \f@nch@O@erf=\skip58
 \f@nch@O@olf=\skip59
 \f@nch@O@orf=\skip60
-) (Thermodynamics.aux)
-\openout1 = `Thermodynamics.aux'.
+) (TP1.aux)
+\openout1 = `TP1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
  (/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count272
@@ -182,14 +182,14 @@ LaTeX Font Info:    ... okay on input line 29.
 * \oddsidemargin=-36.135pt
 * \evensidemargin=-36.135pt
 * \topmargin=-73.135pt
-* \headheight=15.0pt
+* \headheight=40.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -201,63 +201,23 @@ LaTeX Font Info:    ... okay on input line 29.
 
 [1
 
-{/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map}] (Thermodynamics.toc)
+{/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map}] (TP1.toc)
 \tf@toc=\write3
-\openout3 = `Thermodynamics.toc'.
+\openout3 = `TP1.toc'.
 
- [1]
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 199--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--228
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--228
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
-
- []
-
-[5] [6] (Thermodynamics.aux) ) 
+ [1] [2] (TP1.aux) ) 
 Here is how much of TeX's memory you used:
- 3386 strings out of 480862
- 46339 string characters out of 2901653
- 371421 words of memory out of 3000000
- 21000 multiletter control sequences out of 15000+600000
- 410385 words of font info for 51 fonts, out of 8000000 for 9000
+ 3378 strings out of 480862
+ 46071 string characters out of 2901653
+ 358367 words of memory out of 3000000
+ 20997 multiletter control sequences out of 15000+600000
+ 410331 words of font info for 51 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 71i,12n,81p,408b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
-</Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Thermodynamics.pdf (7 pages, 228011 bytes).
+ 71i,11n,81p,386b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
+</Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on TP1.pdf (3 pages, 120625 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

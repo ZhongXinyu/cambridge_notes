@@ -3,11 +3,19 @@
 \contentsline {subsection}{\numberline {2.1}Jones's Notation}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Birefringent Material}{2}{}%
 \contentsline {subsubsection}{\numberline {2.2.1}Discussion 1}{2}{}%
-\contentsline {section}{\numberline {3}Electrodynamics}{2}{}%
-\contentsline {subsection}{\numberline {3.1}Gauge in EM}{2}{}%
-\contentsline {subsection}{\numberline {3.2}$\vb {A}$ in simple cases}{2}{}%
-\contentsline {subsection}{\numberline {3.3}$\vb {A}$ in quantum mechanics}{2}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Hamiltonian}{2}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Aharanov-Bohm Effect}{2}{}%
-\contentsline {subsection}{\numberline {3.4}Maxwell Equation in terms of A and $\phi $}{2}{}%
-\contentsline {subsection}{\numberline {3.5}Solution for A and $\phi $}{2}{}%
+\contentsline {section}{\numberline {3}Coherence}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Coherence and Interference}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Temporal Coherence}{2}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Power Specturm of Temporal Coherence}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Spatial Coherence}{3}{}%
+\contentsline {section}{\numberline {4}Electrodynamics}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Gauge in EM}{3}{}%
+\contentsline {subsection}{\numberline {4.2}$\vb {A}$ in simple cases}{3}{}%
+\contentsline {subsection}{\numberline {4.3}$\vb {A}$ in quantum mechanics}{3}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Hamiltonian}{3}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Aharanov-Bohm Effect}{3}{}%
+\contentsline {subsection}{\numberline {4.4}Maxwell Equation in terms of A and $\phi $}{3}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Lorenz condition}{3}{}%
+\contentsline {subsection}{\numberline {4.5}Solution for A and $\phi $}{3}{}%
+\contentsline {section}{\numberline {5}Dipole Radiation}{3}{}%
+\contentsline {subsection}{\numberline {5.1}The Hertzian Dipole}{3}{}%
