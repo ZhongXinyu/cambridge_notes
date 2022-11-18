@@ -1,7 +1,9 @@
 \contentsline {section}{\numberline {1}Spacetime Curvature}{2}{}%
 \contentsline {subsection}{\numberline {1.1}Subsection 1}{2}{}%
-\contentsline {section}{\numberline {2}Gravitation filed equations}{2}{}%
+\contentsline {section}{\numberline {2}Gravitation field equations}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Energy Momentum Tensor}{2}{}%
 \contentsline {subsubsection}{\numberline {2.1.1}Properties of Energy-momentum tensor}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Energy-momentum Tensor in Ideal Fluid}{2}{}%
 \contentsline {subsubsection}{\numberline {2.2.1}Continuity Equation}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Einstein Field Equation}{2}{}%
+\contentsline {section}{\numberline {3}The Schwarzchild Solution}{3}{}%
