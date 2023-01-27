@@ -16,9 +16,16 @@
 \cfoot{\fancyplain{}{\thepage{}} }
 \setlength{\headheight}{40pt}
 
-\newcommand{\definition}[1]{\textcolor{red}{#1}{}}
-\newcommand{\theorem}[1]{\textcolor{red}{#1}{}}
-\newcommand{\example}[1]{\textcolor{red}{#1}{}}
+\newcommand{\definition}[3]
+    {
+    \textit{Definition #1: }
+    \begin{center}
+        {#2}
+    \end{center}
+    {#3}\\
+    }
+\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}{#2}\\}
+\newcommand{\example}[2]{\textbf{Example: #1}\\\textcolor{blue}{#2}\\}
 
 \title{Notes}
 
@@ -37,22 +44,23 @@
 Abstract of this course
 \end{abstract}
 
+\section{Classical Fields}
+
 
 \section{Symmetries and conservation laws}
     \subsection{Noether's theorem}
-    \theorem{Noether's theorem: there is a \textbf{conserved current} associated with every continuous symmetry of the Lagrangian}
+    \theorem{Noether's theorem}{there is a \textbf{conserved current} associated with every continuous symmetry of the Lagrangian}
     \subsection{Symmetries and conserved currents}
     \subsection{Global phase symmetry}
     Consider the Klein-Gordon Lagrangian density for a complex field:
     \begin{align*}
-        L=\partial_\mu\psi^*\partial^\mu\psi-m^2\psi^*\psi
-    \end{align*}
-    \definition{Global phase change of $\epsilon$.}\\
+        L_{KG}=\partial_\mu\psi^*\partial^\mu\psi-m^2\psi^*\psi
+    \end{align*}\\
     We can then find the conserved Noether current, as well as the conserved charge 
 
     \subsection{Local phase (gauge) symmetry}
-    We now allow the phase change $\epsilon$ to be dependdent on the space-time coordinates $x^\mu$. 
-    We realise that electromagnetic fields/ covarinant derivative is an essential requirement for a complex filed to remain invariant under local phase transformation.
+    We now allow the phase change $\epsilon$ to be dependent on the space-time coordinates $x^\mu$. 
+    We realise that electromagnetic fields/ covariant derivative is an essential requirement for a complex filed to remain invariant under local phase transformation.
     \subsection{Electromagnetic interaction}
     Expanding the Klein-Gordon equation:
     \begin{align*}
@@ -60,7 +68,7 @@ Abstract of this course
         &= \partial_\mu\psi^*\partial^\mu\psi-m^2\psi^*\psi+ieA_\mu[(\partial_\mu\psi)^*\psi-\psi(\partial^\mu\psi)]+e^2A_{\mu}A^\mu\psi^*\psi
     \end{align*}
     We see that the third term being the interaction term $eA\_muJ^\mu$, where $J^\mu$ is the free-field current.\\
-    The
+    The 
     \subsection{Stress-energy tensor, angular momentum tensor}
     \subsection{Quantum fields}
 \end{document}

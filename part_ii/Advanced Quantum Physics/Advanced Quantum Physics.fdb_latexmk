@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1668642344 "/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Advanced Quantum Physics/Advanced Quantum Physics.tex" "Advanced Quantum Physics.pdf" "Advanced Quantum Physics" 1668642364
-  "/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Advanced Quantum Physics/Advanced Quantum Physics.tex" 1668642339 3206 2f647b04a52b66e88dda77303d2d4d56 ""
+["pdflatex"] 1669060777 "/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Advanced Quantum Physics/Advanced Quantum Physics.tex" "Advanced Quantum Physics.pdf" "Advanced Quantum Physics" 1669060792
+  "/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Advanced Quantum Physics/Advanced Quantum Physics.tex" 1669060772 4054 7115be96b2984fcca2c3e57a50228ebc ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1633614436 6500727 dc6debe711e616f24c5ae7695ce178bf ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1650380898 29004 acf646c5ef3591b269607c4eb31b7abd ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1633618884 1004 54797486969f23fa377b128694d548df ""
@@ -29,6 +29,7 @@
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1633618884 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1633618884 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1633618885 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1633618885 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1633618885 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii" 1634221315 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty" 1633620091 6501 4011d89d9621e0b0901138815ba5ff29 ""
@@ -50,11 +51,11 @@
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse/xparse.sty" 1633620000 6566 7cee8bf5f629baa63c111395011c9378 ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/physics/physics.sty" 1638578325 29610 a9597219b282d9c78b02393dcd7d4322 ""
   "/Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1638811434 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "Advanced Quantum Physics.aux" 1668642346 5009 558ed360a88b146bd2ca63e5baccfe91 "pdflatex"
-  "Advanced Quantum Physics.tex" 1668642339 3206 2f647b04a52b66e88dda77303d2d4d56 ""
-  "Advanced Quantum Physics.toc" 1668642346 3173 6c3aaa957e338b3729202c47c533a495 "pdflatex"
+  "Advanced Quantum Physics.aux" 1669060782 5123 df33309b84de85116e39e84009ec45ab "pdflatex"
+  "Advanced Quantum Physics.tex" 1669060772 4054 7115be96b2984fcca2c3e57a50228ebc ""
+  "Advanced Quantum Physics.toc" 1669060782 3246 3438972a3a7e5804a6f2e98415cc0614 "pdflatex"
   (generated)
   "Advanced Quantum Physics.log"
-  "Advanced Quantum Physics.aux"
   "Advanced Quantum Physics.toc"
+  "Advanced Quantum Physics.aux"
   "Advanced Quantum Physics.pdf"

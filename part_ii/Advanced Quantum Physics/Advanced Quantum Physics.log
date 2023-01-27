@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.10.7)  16 NOV 2022 23:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.10.7)  21 NOV 2022 19:59
 entering extended mode
 **"/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Advanced Quantum Physics/Advanced Quantum Physics.tex"
 (/Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Advanced Quantum Physics/Advanced Quantum Physics.tex
@@ -214,24 +214,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
 [3] [4] (Advanced Quantum Physics.aux) ) 
 Here is how much of TeX's memory you used:
- 3219 strings out of 480862
- 44429 string characters out of 2901653
- 363745 words of memory out of 3000000
- 20841 multiletter control sequences out of 15000+600000
+ 3220 strings out of 480862
+ 44439 string characters out of 2901653
+ 364745 words of memory out of 3000000
+ 20842 multiletter control sequences out of 15000+600000
  411517 words of font info for 55 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  71i,6n,81p,430b,209s stack positions out of 5000i,500n,10000p,200000b,80000s
-</Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Advanced Quantum Physics.pdf" (5 pages, 133815 bytes).
+</Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/zhongjunbao/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Advanced Quantum Physics.pdf" (5 pages, 146875 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,3 +8,4 @@ paramagnet
 Langevin
 Gyromagnetic
 Virial
+magnetisation
