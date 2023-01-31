@@ -1,30 +1,9 @@
-\documentclass[10pt,a4paper]{article}
-\author{Xinyu Zhong\\Wolfson College}
-\usepackage{physics, amsmath}
-\usepackage{xcolor}
-\usepackage[margin=0.5in]{geometry}
-\usepackage{fancyhdr}
-\pagestyle{fancyplain}
-\fancyhf{}
+\documentclass[12pt,a4paper]{article}
 
+\usepackage{import}
+\import{../Template/}{format.tex}
 
-%\date{2nd Nov 2021}
-\lhead{\fancyplain{}{Zachary Zhong, xz447@cam.ac.uk}}
-\rhead{\fancyplain{}{Thermodynamics}}
-\cfoot{\fancyplain{}{\thepage{}}}
-\setlength{\headheight}{15pt}
-
-\newcommand{\definition}[3]
-    {
-    \textit{Definition #1: }
-    \begin{center}
-        {#2}
-    \end{center}
-    {#3}\\
-    }
-\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}{#2}\\ \\}
-\newcommand{\example}[2]{\textbf{Example: #1}\\\textcolor{blue}{#2}\\ \\}
-\title{Notes}
+\newcommand{\topic}{Astrofluid Dynamics}
 
 \begin{document}
 
@@ -69,5 +48,46 @@ i.e. We \textbf{can't} say that $\Psi = -GM/r$
 \theorem{Virial Theorem}{ states that for a system in steady state, $I\equiv mr^2 =constant $, $2T+\Omega =0 $}
 Kinetic energy T has contribution from local flows and random/thermal motions.\\
 A result of virial theorem is that the gravitational potential sets the temperature or velocity dispersion of the system.
+\section{Equation of state and the energy equation}
+So far we have 4 variables, density $\rho$, pressure,$p$, gravitational potential $\Psi$ and velocity which is $\vb*{v}$.
+In terms of equations to solve them, we have the scalar equation of mass conservation and the the vector equation for conservation of momentum. We also have Poisson equation for the potential term.
+Now what we need is another equation: `Equation of state' to determinate pressure (which is a thermodynamic property). While doing so we might Introduce another equation, the energy equation when the system is not barotropic,i.e. $p$ is a function of $T$.
+\subsection{Equation of state}
+    \begin{enumerate}
+        \item Astrophysical fluid are treated as ideal gas, and corresponding EoS is:
+        \begin{equation}
+            p=nk_B T =\frac{k_B}{\mu m_p}\rho T
+        \end{equation}
+        where $\rho$ is the mean particle mass.
+        \item This EoS introduces another scalar field, temperature, $T$
+    \end{enumerate}
+    \subsubsection{Barotropic}
+        Barotropic means that $p$ independent of $T$. i.e. only a fucntion of $\rho$. This comes in two cases: Isothermal and Adiabatic.
+        \begin{enumerate}
+            \item Isothermal: Constant T
+            \item Adiabatic: Ideal has undergoes reversible thermodynamic changes
+            \begin{equation}
+                p= K \rho^{\gamma}
+            \end{equation} 
+            \item Derivation of $C_p$ and $C_v$ for both cases.
+        \end{enumerate}
+    \subsubsection{Energy equation for non-Barotropic case}
+        \begin{enumerate}
+            \item It starts from first law
+            \begin{equation}
+                \bar{d}Q = d \mathcal{E} + pdV
+            \end{equation}
+            \item total energy per unit volume is:
+            \begin{equation}
+                E=\rho(\frac{1}{2}u^2 +\Psi + \mathcal{E})
+            \end{equation}
+            \item take material derivative, note that $\dfrac{DE}{Dt}=\pdv{E}{t}+\vb{u}\dotproduct\grad{E}$, gives Energy Equation
+            \begin{equation}
+                \pdv{E}{t}+\div{[(E+p)\vb{u}]= \rho\pdv{\Psi}{t}-\rho \dot{Q}_{cool}}
+            \end{equation}
+            In many settings $\partial{\Psi}/\partial{\Psi}=0$, If there is no cooling, the equation expresses the conservation for energy in which
+            the total energy density $E$ is driven by the divergence of the enthalpy flux $(E+p)\vb{u}$
+        \end{enumerate}
+        
 
 \end{document}

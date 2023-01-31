@@ -1,0 +1,120 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{import}
+\import{../Template/}{format.tex}
+
+\newcommand{\topic}{Soft Condensed Matter}
+
+\begin{document}
+
+\title{\topic}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+
+\section{Element of fluid dynamics}
+This section devotes itself to the basics of fluid dynamics,
+    \subsection{Fluid Dynamics equations}
+        \subsubsection{Mass flux and continuity equation}
+            \begin{enumerate}
+                \item  Rate of change in mass in volume integral of change in density.
+                \item  Conservation of mass states that the rate of change is equal to the net flux of mass flowing, 
+                followed by a divergence theorem to change surface integral to volume integral.
+                \item Combining the rate of change in mass and conservation of mass, as both are volume integral:            
+                \begin{equation}
+                    \pdv{\rho}{t} = -\div(\rho \vb{v})
+                \end{equation}
+                \item For incompressible fluid, $\rho$ is constant, and the continuity equation simplify to $\div\vb{v} = 0$.
+            \end{enumerate}
+        \subsubsection{Momentum Flux and the equation of motion}
+            \begin{enumerate}
+                \item Rate of change in total momentum $P_i(V,t)$
+                \begin{equation}
+                    \pdv{P_i(V,t)}{t}=\pdv{t} \int_{V}d^3r\rho v_i=\int_{V}(\pdv{t}\rho) v_i+\rho\pdv{t}v_i
+                \end{equation}
+                \item The change in momentum is the sum of the forces, which take into account 4 contributions,\textbf{Convention of momentum, Pressure Forces, Viscous Forces, Body Forces}.
+                \item Overall stress tensor 
+                \begin{equation}
+                    \sigma_{ij}=\sigma' {ij} - p\delta{ij}
+                \end{equation}
+                where the two items are contribution for viscous pressure and pressure forces
+                \item 
+            \end{enumerate}
+        \subsection{Navier-Stokes equation}
+            \begin{enumerate}
+                \item The complete Navier-Stokes equation
+                \begin{equation}
+                    \rho [\partial_t\vb*{v} + (\vb*{v}\dotproduct \nabla)\vb*{v}]= - \grad{p} +\eta\laplacian{v}+\rho\vb*{g}
+                \end{equation}
+                \item Left-hand side relate to inertial force densities
+                \item Right-hand side encompass intrinsic viscosity and applied force densities (pressure gradient and gravity)
+                \item Conservative external forces, including gravity, the eternal force term is absorbed into pressure term.
+            \end{enumerate}
+        \subsection{Material Derivative}
+            \begin{enumerate}
+                \item Concept of streamline
+                \item Lagrangian rate of 
+                \begin{equation}
+                    \frac{Df}{Dt} = \pdv{f}{t} = (\vb*{v} \dotproduct \vb{\nabla})f
+                \end{equation}
+                \item In particular, the acceleration of fluid element is:
+                \begin{equation}
+                    \frac{D\vb{v}}{Dt} = \pdv{\vb{v}}{t} = (\vb*{v} \dotproduct \vb{\nabla})\vb{v}
+                \end{equation}
+                \item 
+            \end{enumerate}
+        \subsection{Reynold Number and Stokes Flow}
+            \begin{enumerate}
+                \item Limit of low flow velocities, or small sizes, 
+                \item Reynold number 
+                \begin{equation}
+                    Re =\frac{\rho v_0 L_0}{\eta}
+                \end{equation}
+                \item Low Reynolds number $Re << 1$, the viscous term dominates over inertia, non-linear Navier-Stokes equation is reduced to linear Stokes equation:
+                \begin{equation}
+                    0 = -\grad p +\eta\laplacian {v}
+                \end{equation}
+            \end{enumerate}
+        \subsection{Properties of Stokes flow and locomotion of microorganism and nanomachines}
+            \begin{enumerate}
+                \item Since time doesn't enter explicitly the Stokes equation, and it is linear, the flow pattern is unchanged when the pressure is increased, only the flow velocity is changed.
+                \item If reverse spacial direction, the pressure gradient changes sign while the Laplacian keeps its sign, the flow velocity changes sign, therefore Stoke equation is unchanged under reversal of spatial coordinates.
+                \item Kinetic reversibility properties of Stokes flow implies that a microorganism attempts
+                \item This observation has interesting consequences for locomotion on small scales as is applicable to micro-organisms or artificial nanomachines. 
+                Indeed, the kinematic reversibility property of Stokes flows implies that a micoorganism which attempts to swim through a reversible sequence of changes of shape, returning to its original shape by going through the sequence in reverse, will not translate, since any motion that it undergoes in the first half of the cycle will be reversed in the second part of the swimming cycle. 
+                This is known as the Scallop theorem (originally by Edward Purcell). 
+                A scallop swims to a good approximation by opening and closing a single hinge. 
+                At low Reynolds numbers, the forward movement upon opening would be exactly cancelled by the motion during the reverse stroke and thus the scallop would remain stationary. 
+                A real scallop is able to avoid this problem by closing the hinge very rapidly, escaping the low Reynolds number regime. 
+                This is made possible by its size such an escape becomes increasingly difficult for smaller scale objects such as microorganisms and artificial nanorobots.
+                \item Different strategy to break time-reversal symmetry to operator with circular motion using rotary molecular motors. Example like E.coli
+            \end{enumerate}
+        \subsection{Vorticity}
+        \subsection{Fluid in mechanical equilibrium}
+            \begin{enumerate}
+                \item Viscous Fluid in mechanical equilibrium has to be at rest, $\vb*{v}=0$ relative to contain.
+                \item Stoke equation reduce to:
+                \begin{equation}
+                    0 = -\grad{p} -\rho g \vb*{e}_z
+                \end{equation}
+                \item Incompressible fluid, integrate this equation to yield:
+                \begin{equation}
+                    p(z) = p^{*} - \rho g z
+                \end{equation}
+                where $p^{*}$ is constant of integration.
+                \item 
+            \end{enumerate}
+
+\section{Viscoelasticity}
+\section{Polymers}
+\section{Molecular self-assembly}
+
+\end{document}

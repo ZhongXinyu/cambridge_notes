@@ -9,3 +9,7 @@ Langevin
 Gyromagnetic
 Virial
 magnetisation
+tex
+Drude
+equipartition
+EoS

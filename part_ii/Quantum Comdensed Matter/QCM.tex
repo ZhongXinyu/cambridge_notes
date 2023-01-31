@@ -1,0 +1,121 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{import}
+\import{../Template/}{format.tex}
+
+\newcommand{\topic}{Quantum Condensed Matter}
+\title{\topic}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+
+\section{Optical Properties}
+\subsection{Insulators}
+    The model we used here is Lorentz or dipole oscillator model.\\
+    \indent Oscillation of charges around their average position.\\
+    \indent Model atoms as nucleus and electron cloud and an applied E-field will lead to displacement of electron cloud.\\
+    \subsubsection{Lorentz Model}
+        Electrons now behave as amped harmonic oscillator.\\
+        \begin{equation}
+            m \ddot{u} + m\gamma\dot{u} + m\omega_T^2 u = qE
+        \end{equation}
+        Natural frequency $\omega_T$ is determined by force constant and mass.\\
+        $\gamma$ is damping rate.\\
+        Flow: for a certain frequency $\omega_T$, we can obtain
+        \begin{itemize}
+            \item {dipole moment per atom, $p_\omega$}
+            \item {Polarisation (dipole moment per unit volume), $P_\omega$}
+            \item {Susceptibility, $\chi_\omega$}
+            \item {Permittivity, $\epsilon_\omega$}
+            \item {Reflectivity between media of different permittivities, power reflection coefficient .etc.}
+        \end{itemize}
+        At low frequencies, we study the permittivity of material
+        \begin{align}
+            \epsilon (\omega\approx 0) = 1+ n_v \frac{q^2}{m\epsilon_0\omega_T^2}
+        \end{align}
+        This explains the different static permittivities of different materials.\\
+        \begin{example}
+            {Atomic absorption}{?? Something about linewidth}
+        \end{example}
+    \subsubsection{Link to quantum mechanics
+    }
+        
+
+\subsection{Metals}
+    Inner electrons closely bounded, contribute to permittivity according to Lorentz oscillator metals.
+    Outer electrons have cut loss from ions, now free to roam around entire metal.
+    Natural frequency $\omega_T \approx 0$
+\subsection{Drude Model}
+    We used Drude Model to study the connectivity of metals
+    \subsubsection{Frequency-dependent Connectivity}
+        \begin{itemize}
+            \item Both current density $\vb{j}= nq\vb{\dot{u}}$, and polarisation $\va{P}=nq\va{u}$.
+            \item For conduction electrons $\dot{\vb{P}}_c = \vb{j}$.
+            \item The polarisation is comprised of core electrons and conduction:
+            \item $\dot{\vb{P}} = \vb{j} + \epsilon_0 \chi_\infty \dot{\vb{E}}$
+            \item From this differential equation we have $\vb{j}_\omega = -i\omega \epsilon_0 \vb{E}_\omega (\chi_\omega-\chi_\infty)$
+            \item Imaginary part of the permittivity can be derived from here 
+        \end{itemize}
+    \subsubsection{Relaxtion-time approximation}
+        We denote relaxtion time as $\tau$, the probability of collision during $\delta t$ is $\delta t/\tau$.
+        Now consider the change in \textbf{momentum} change after $\delta t$, by considering electrons collided and not collided during that $\delta t$:\\
+        The current $J$ due to electrons of number density $n$, mass $m$ of average (drift velocity) $\vb{v}$ and momentum $\vb{p}$ is given as:
+        \begin{equation}
+            \vb{j}=-new\vb{v}=-\frac{ne}{m}\vb{p}
+        \end{equation}
+        Note that $\vb{J}$ is proportional to $\vb{v}$ and $\vb{p}$.\\
+        The evolution of $\vb{p}$ in time $\delta t$ under the action of external force $\vb{f}$, e.g. $\vb{f}=q(\vb{E}+\vb{v}\crossproduct\vb{B})$
+
+        \indent \textbf{Collided electrons} has a fraction $\delta t/\tau$ and momentum is acquired is $\approx \vb{f(t)}\delta t$, as a result, the contribution to the average momentum is of order $(\delta t)^2$ :\textbf{negligible}\\
+        \indent \textbf{Non-collided electrons}: 
+        \begin{equation}
+            \vb{p}(t+\delta t) = (1- \delta t/\tau)(\vb{p}(t)+\vb{f}(t)\delta t+ O(\delta t)^2)
+        \end{equation}
+    \subsubsection{Validity of Drude Model}
+    \subsection{Sommerfeld Model}
+        Both Lorentz and Drude theories fails dramatically describing thermodynamic properties. 
+        Now we apply equipartition theorem to the dipole model, expect contribution of $k_B$ to heat capacity of each oscillator, and $3/2k_B$ per atom.
+        Also we consider quatum static effects.
+        \subsubsection{density of states}
+            \begin{enumerate}
+                \item Fermi sphere
+                \item Note spin degeneracy 
+                \item $g(E)\equiv$ number of states per unit energy per unit volume.
+                \item Note that $C_v$ due to electrons is usually much smaller than lattice specific heat capacity.
+                \item {This is seen in the liquild helium mixture of ${}^{3}He$ and ${}^{4}H$
+                \begin{example}
+                    {Specific heat of mixture of ${}^{3}He$ and ${}^{4}He$}
+                    {We see that at low temp limit, $C_v$ is linear to $T$}
+                \end{example}
+                }
+            \end{enumerate}
+        \subsubsection{Screening and the Tomas-Fermi approximation}
+            \begin{enumerate}
+                \item Screening: placing positive charges in metal will result in electrons moving around to screen its potential resulting in zero electric field. (Compare to dielectric material with electrons are not free to move and have potential reduced by $\epsilon$)
+                \item A balance is reached between minimising potentail and kinetic energy, screening over a short but finite range.
+                \item Free electron gas as a perturbing potential:
+                \begin{equation}
+                    \laplacian {V_0}(r) = - \frac{\rho_0(r)}{\epsilon}
+                \end{equation}
+                \item ??? if positive background charge to be homogeneous with electrons moving, in this case $\rho_0 =0$
+                \item In the presence of perturbing potential $V_{ext}$, we have:
+            \end{enumerate}
+
+
+            
+        
+    
+
+\end{document}

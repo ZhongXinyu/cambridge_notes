@@ -6,3 +6,7 @@
 \contentsline {subsection}{\numberline {3.1}Potential of a Spherical Mass Distribution}{2}{}%
 \contentsline {subsection}{\numberline {3.2}Gravitational Potential Energy}{2}{}%
 \contentsline {subsection}{\numberline {3.3}Virial Theorem}{2}{}%
+\contentsline {section}{\numberline {4}Equation of state and the energy equation}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Equation of state}{3}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Barotropic}{3}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Energy equation for non-Barotropic case}{3}{}%

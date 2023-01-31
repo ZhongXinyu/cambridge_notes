@@ -1,9 +1,9 @@
-PWD /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD
+PWD /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/AFD.tex
-OUTPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/AFD.log
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.tex
+OUTPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -32,10 +32,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/../Template/format.tex
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/../Template/../Template/format.tex
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/../Template/format.tex
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/../Template/../Template/format.tex
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/../Template/format.tex
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/../Template/../Template/format.tex
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/../Template/format.tex
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/../Template/../Template/format.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/physics/physics.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/physics/physics.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/physics/physics.sty
@@ -238,10 +238,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/AFD.aux
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/AFD.aux
-INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/AFD.aux
-OUTPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/AFD.aux
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.aux
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.aux
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.aux
+OUTPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -252,5 +252,49 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/AFD/AFD.pdf
+OUTPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.toc
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.toc
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.toc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+OUTPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.toc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT /Users/zhongjunbao/Documents/Cambridge_Notes/part_ii/Quantum Comdensed Matter/QCM.aux
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
