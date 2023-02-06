@@ -6,3 +6,12 @@ Virial
 virial
 Noether
 Drude
+Padé
+approximant
+tex
+Collisional
+Eulerian
+EoS
+non-relativisitc
+Polytropes
+Couette

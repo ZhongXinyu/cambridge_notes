@@ -80,7 +80,11 @@ This section devotes itself to the basics of fluid dynamics,
                 \end{equation}
                 \item Low Reynolds number $Re << 1$, the viscous term dominates over inertia, non-linear Navier-Stokes equation is reduced to linear Stokes equation:
                 \begin{equation}
-                    0 = -\grad p +\eta\laplacian {v}
+                    0 = -\grad p +\eta\laplacian \vb{v}
+                \end{equation}
+                \item If an external force is applied, for instance an oscillating boundary, time derivative is given by the external force and is not negligible, which gives time-dependent Navier Stokes Equation
+                \begin{equation}
+                    \rho \partial_{v}\vb*{v} = -\grad p +\eta\laplacian \vb*{v}
                 \end{equation}
             \end{enumerate}
         \subsection{Properties of Stokes flow and locomotion of microorganism and nanomachines}
@@ -101,7 +105,7 @@ This section devotes itself to the basics of fluid dynamics,
         \subsection{Fluid in mechanical equilibrium}
             \begin{enumerate}
                 \item Viscous Fluid in mechanical equilibrium has to be at rest, $\vb*{v}=0$ relative to contain.
-                \item Stoke equation reduce to:
+                \item Navier-Stokes equation reduce to:
                 \begin{equation}
                     0 = -\grad{p} -\rho g \vb*{e}_z
                 \end{equation}
@@ -109,10 +113,116 @@ This section devotes itself to the basics of fluid dynamics,
                 \begin{equation}
                     p(z) = p^{*} - \rho g z
                 \end{equation}
-                where $p^{*}$ is constant of integration.
+                where $p^{*}$ is constant of integration, which represents the pressure at z = 0 and the z dependent constribution to the pressure is given as the hydrostatic pressure:
+                \begin{equation}
+                    p_{hs} = - rho gz
+                \end{equation}
+                We can therefore regroup the effects of gravity into the pressure term and write the total pressure as:
+                \begin{equation}
+                    p_{tot} = p + p{hs}
+                \end{equation}
                 \item 
             \end{enumerate}
+        \subsection{Couette Flow}
+            Couette flow is  a flow induced in a liquid through the movement of one or more walls. No pressure gradiant.  
+            \begin{example}
+                {Planar geometry}{
+                    Bottom plate at $z=0$ and top plate $z=h$, liquid is moving with speed $v_0$ while stationary at bottom.
+                    Use stokes equations, together with boundary condition
+                    \begin{equation}
+                        \eta \partial^2_z v_x(z) = 0
+                    \end{equation}
+                    Use viscous stress tensor $\sigma '$ to determine the horizontal force where $F_z=\sigma '_{xz}A = \eta \frac{v_0 A}{h}$
+                }
+            \end{example}
+        \subsection{Oscillatory flow}
+            \begin{enumerate}
+                \item The equation for motion for the flow field is given by time-dependent Stokes equation
+                
+                \item Wave solution:
+                \begin{equation}
+                    v_x = v_0 e^{i\omega t}e^{(-1+i)z/\sigma}
+                \end{equation}
+                where the parameter $\sigma$ gives the decay length of the wave in the fluid.
+                \item Force per area is given by:
+                \begin{equation}
+                    FA = \eta \partial_z v_x (z=0) = (-1+i) \frac {\eta v}{\sigma}
+                \end{equation}
+            \end{enumerate}
+        \subsection{Diffusion of momentum}
+            \begin{enumerate}
+                \item Equation of flow field is a diffusion equation for the transverse flow with a diffusion coefficient equal to $\eta/\rho=\nu$, the kinetic viscosity.
+                \item Transverse momentum diffuse in the z-direction away from its source at the moving plate.
+            \end{enumerate}    
+        \subsection{Stokes drag force}
+            Consider A spherical body of radius $a$ moving with a velocity $\vb{v}$ through a fluid with is overall stationary. It creates a temporary disturbance in the flow field which disappears after body passes a fixed observation point. The drag force that teh shpere experieences due to the motion of the underlying fluid is $\vb{F} = 6\pi \eta a \vb*{v}$
+            \subsubsection{Scaling argument}
+            In the low Reynolds number regime, assuming stationary flow and neglecting the pressure gradient term, we have Navier Strokes equation:
+            \begin{equation}
+                \laplacian{v_T}=0 
+            \end{equation}
+            \subsubsection{Full analysis}
+            **No examinable
+        \subsection{Hydrodynamic interaction between colloidal particles}
+            As a consequence of the moving colloid. The flow velocity at a distance r decays as 1/r. Through this velocity field, one colloid can exert drag force on another. Such hydrodynamic interaction is \textbf{long ranged and decay slowly as the inverse of the particle separation}.
+            This interaction can be expressed by extending Stokes's relation to multiple particle:
+            \begin{equation}
+                \vb{v} = H \vb{F}
+            \end{equation}
+            Here H is the mobility matrix
+        \subsection{Poiseuille flow} 
+            \textbf{Pressure driven} steady states flow through small channels. (Recall that both Couette flow consider system in absence of pressure)
+            \begin{example}
+                {Parallel Plate Channel}{Fluid flows in x-direction, symmetry in both y and z direction:
+                \begin{align*}
+                    \partial_z^2 v_x(z) &= -\frac{\Delta p}{\eta L}\\
+                    \intertext{Given B.C. At $z=0$ and $h$}
+                    v_x(z=0) &=0\\
+                    v_x(z=h) &=0\\
+                    \intertext{Solution is a parabolic}
+                    v_x(z) &= \frac{\Delta p}{2 \eta L}(h-z)z\\
+                    \intertext{Overall flow is characterised by the volumetric flow rate, Q}
+                    Q &= \int_c dydzv_x(y,z)
+                    \intertext{The flow rate through a section of width x, meaning}
+                    Q &= \int^\omega_0 dy \int^h_0 dz\frac{\Delta p}{2\eta L}(h-z)z = \frac{h^3\omega}{12\eta L}\Delta p
+                \end{align*}
+                }
+            \end{example}
+            \begin{example}
+                {Channel with circular cross-section}{
+                    \begin{align*}
+                        (x,y,z)&=(x, r\cos (\psi), r\sin(\psi))\\
+                        \vectorarrow{e}_x &= \vectorarrow{e}_x\\
+                        \vectorarrow{e}_r &= \cos \psi \vectorarrow{e}_y + \sin \psi \vectorarrow{e}_z\\
+                        \vectorarrow{e}_{\psi} &= -\sin \psi \vectorarrow{e}_y + \cos \psi \vectorarrow{e}_z\\
+                        \intertext{Volumetric flow rate:}
+                        Q &= \int^{2\pi}_0 d\psi \int^a_0 dr r \frac{\Delta p}{4\eta L}(a^2-r^2) = \frac{\pi a^4}{8\eta L}\Delta p\\
+                    \end{align*}
+                }
+            \end{example}
+        \subsubsection{Hydraulic resistance and Compliance}
+            \begin{definition}
+                {Hydraulic resistance}{$\Delta p = R_{hydr}Q$}
+                {
+                    The flow rate, $Q$ in a straight channel at a steady state is proportionalto the pressure difference at its ends $\Delta p$. This relationship holds for any channel geomertry and is known as the Hagen-Poiseuille law.
+                }
+            \end{definition}
+            Compare Fluid to Circuits,\\
+            \begin{tabular}{ p{5cm}p{5cm}p{7cm}  }
+                \hline
+                \multicolumn{3}{c}{Summay} \\
+                \hline
+                                & Ohm's Law&Hagen-Poiseuille's Law\\
+                Current & Electric current $I$  & Volumetric flow rate$Q$\\
+                Transported quantity    & Charge $q$    & Fluid volume $\nu$\\
+                Driving force & Potential Different $\Delta V$ & Pressure  difference $\Delta p$\\
+                Resistance& Electric resistance     &Hydraulic resistance $R_{hydr}=\frac{\Delta p}{Q}$\\
+                Capacitance & $C=\frac{dq}{dv}$ & Hydraulic Capacitance $C_{hydr}=\frac{d\nu}{dp}$\\
+                \hline
+               \end{tabular}
 
+            
+            
 \section{Viscoelasticity}
 \section{Polymers}
 \section{Molecular self-assembly}

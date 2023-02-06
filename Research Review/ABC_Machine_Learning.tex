@@ -1,0 +1,115 @@
+\documentclass[12pt,a4paper]{article}
+\author{Xinyu Zhong\\Wolfson College}
+\usepackage{physics, amsmath}
+\usepackage{xcolor}
+\usepackage[margin=0.5in]{geometry}
+
+\title{Notes}
+%\date{2nd Nov 2021}
+
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{\fancyplain{}{Xinyu Zhong, xz447@cam.ac.uk}}
+\rhead{\fancyplain{}{ABC to Machine Learning}}
+\cfoot{\fancyplain{}{\thepage{}}}
+\setlength {\headheight}{15pt}
+
+\newcommand{\definition}[3]
+    {
+    \textit{Definition #1: }
+    \begin{center}
+        {#2}
+    \end{center}
+    {#3}\\
+    }
+\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}\textcolor{red}{#2}}
+\newcommand{\example}[1]{\par\textbf{Example: }\textcolor{blue}{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+\section{Introduction}
+mention supervised vs. unsupervised, supervised is more relavent for physics.
+\section{Overview of fitting}
+\paragraph*{}
+Although the idea of machine learning is first introduced in 1959,
+% https://citeseerx.ist.psu.edu/doc/10.1.1.368.2254
+the most fundamental technique involved in machine learning dates way back in history when man explore ways to find the best method of curve fitting.
+Curve fitting is a process of construction a curve, or mathematics function, that has the best fit to a series of data points. It still remains as one of the most theoretically challenging part of machine learning.
+% https://towardsdatascience.com/a-deep-dive-into-curve-fitting-for-ml-7aeef64755d2
+\paragraph{Linear regression}
+The most basic, and commonly seen fitting technique is a first order polynomial equation:
+\begin{equation}
+    y=ax+b
+\end{equation}
+which is a straight line that connects two points with distinct x coordinates. This is also known as linear regression.
+\paragraph{Taylor Theorem}
+With 3 data to fit,  we could always add a term of higher power of $x$, to make it a quadratic equation
+\begin{equation}
+    y= ax^2 +bx+ c
+\end{equation}
+or another term too construct a cubic regression:
+\begin{equation}
+    y= ax^3 +bx^2 + cx+d
+\end{equation}
+%Ideals:
+% Zachary Taylor's answer about Taylor's theorm and tis limitations
+This reminds us a 
+Taylor expansion only works for small x, disaster at large x.
+The limitation of this Taylor expansion comes when the x becomes an infinitely large value, which will cause the magnitude of $y$ to become infinitely large, which many not reflects the datasets properly. 
+Another limitation comes in when the number of independent variables becomes more than 1. For example, $y$ is now a function of $x_1$ and $x_2$. i.e. $y(x_1,x_2)$.
+Taylor series cannot extrapolate the function for then the independet variable x becomes large
+In this case, we would have to include a term such as $x_1x_2$ and $x_1^2x_2$, which means that the number of coefficient we used is now grows exponentially to the number independent variable 
+
+\paragraph{Padé approximant}
+A Pade approximant is an approximation of a function using rational polynomials.
+An $[N/M]$ Pade approximant is formed of a Nth degree polynomial on the numerator and an Mth degree polynomial on the denominator:
+\begin{equation}
+    P(x)=\frac{a_0+a_1 x+a_2x^2+... a_Nx^N}{b_0+b_1 x+b_2x^2+... b_Mx^M}
+\end{equation}
+% https://mathworld.wolfram.com/PadeApproximant.html
+This technique is developed by Henri Padé around year 1890.
+% https://en.wikipedia.org/wiki/Pad%C3%A9_approximant
+Padé approximant $\frac{ax^2+bx^3+...}{c+dx+...+x^6}$ making sure that $f(x)$ does not tend to infinity at large x, in this case tend to 1/x\\
+Padé approximant does not have the same problem of using 
+Padé approximant is superior to the Taylor series when describing function that contains poles. 
+Also by dividing a polynomial by another, the Pade approximant prevents the function from diverging by letting $N<=M$
+\paragraph{Neural network}
+After 150 years or so \\
+Neuro network, $\frac{x}{1+a\abs{x}}$ using less indicator\\
+after 30 years\\
+\paragraph{Deep Neural network}
+Deep neuro network, layers of sum of indicator
+the deepness refers to the layers
+
+\section{Different methods in Machine learning}
+\paragraph{Decision Trees}
+%https://link.springer.com/content/pdf/10.1007/BF00116251.pdf
+
+Decision trees are used f two main types: classification tree and regression tree. We shall discuss the later in this article as in physics, we usually expect a numerical outcome 
+Random forest/Gaussian etc.
+\paragraph{Boosted Trees}
+\paragraph{Bootstrap aggregated}
+\paragraph{Random forest}
+%https://web.archive.org/web/20160417030218/http://ect.bell-labs.com/who/tkh/publications/papers/odt.pdf
+
+
+\section{Real life example}
+\subsection{Tide-prediction Machine}
+%https://en.wikipedia.org/wiki/Tide-predicting_machine
+William Thompson first invented 
+
+
+\end{document}

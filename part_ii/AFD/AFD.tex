@@ -25,10 +25,16 @@ Eulerian and Lagrangian framework\\
 Concepts of streamlines, particle paths and streaklines:\\
 They coinside if the flow is steady.i.e. \\
 \section{Formulation of the Fluid Equations}
-This chapter talked about the conservation of mass and momentum. Some of spec
+This chapter talked about the conservation of mass and momentum.
 \subsection{Conservation of mass}
+\begin{equation}
+    \pdv{\rho}{t} + \div{\rho \vb{u}} = 0
+\end{equation}
 \subsection{Conservation of momentum}
-We consider 4 different which contribute to the change of momentum,?
+\begin{equation}
+    \rho \pdv{\vb{u}}{t} + \rho (\vb{u}\dotproduct \grad)vb{u} = -\grad{p}+ \rho \vb{g}
+\end{equation}
+We consider 4 different which contribute to the change of momentum?
 \section{Gravitation}
 In this section, 
 we used $\va{g}$ to denote gravitational acceleration; 
@@ -50,8 +56,8 @@ Kinetic energy T has contribution from local flows and random/thermal motions.\\
 A result of virial theorem is that the gravitational potential sets the temperature or velocity dispersion of the system.
 \section{Equation of state and the energy equation}
 So far we have 4 variables, density $\rho$, pressure,$p$, gravitational potential $\Psi$ and velocity which is $\vb*{v}$.
-In terms of equations to solve them, we have the scalar equation of mass conservation and the the vector equation for conservation of momentum. We also have Poisson equation for the potential term.
-Now what we need is another equation: `Equation of state' to determinate pressure (which is a thermodynamic property). While doing so we might Introduce another equation, the energy equation when the system is not barotropic,i.e. $p$ is a function of $T$.
+In terms of equations to solve them, we have the scalar equation of mass conservation and the vector equation for conservation of momentum. We also have Poisson equation for the potential term.
+Now what we need is another equation: `Equation of state' to determinate pressure (which is a thermodynamic property). While doing so we might Introduce another equation, the energy equation when the system is not barotropic, i.e. $p$ is a function of $T$.
 \subsection{Equation of state}
     \begin{enumerate}
         \item Astrophysical fluid are treated as ideal gas, and corresponding EoS is:
@@ -62,7 +68,7 @@ Now what we need is another equation: `Equation of state' to determinate pressur
         \item This EoS introduces another scalar field, temperature, $T$
     \end{enumerate}
     \subsubsection{Barotropic}
-        Barotropic means that $p$ independent of $T$. i.e. only a fucntion of $\rho$. This comes in two cases: Isothermal and Adiabatic.
+        Barotropic means that $p$ independent of $T$.\ i.e. only a function of $\rho$. This comes in two cases: Isothermal and Adiabatic.
         \begin{enumerate}
             \item Isothermal: Constant T
             \item Adiabatic: Ideal has undergoes reversible thermodynamic changes
@@ -81,13 +87,79 @@ Now what we need is another equation: `Equation of state' to determinate pressur
             \begin{equation}
                 E=\rho(\frac{1}{2}u^2 +\Psi + \mathcal{E})
             \end{equation}
-            \item take material derivative, note that $\dfrac{DE}{Dt}=\pdv{E}{t}+\vb{u}\dotproduct\grad{E}$, gives Energy Equation
+            \item take material derivative, note that $\frac{DE}{Dt}=\pdv{E}{t}+\vb{u}\dotproduct\grad{E}$, gives Energy Equation
             \begin{equation}
                 \pdv{E}{t}+\div{[(E+p)\vb{u}]= \rho\pdv{\Psi}{t}-\rho \dot{Q}_{cool}}
             \end{equation}
             In many settings $\partial{\Psi}/\partial{\Psi}=0$, If there is no cooling, the equation expresses the conservation for energy in which
             the total energy density $E$ is driven by the divergence of the enthalpy flux $(E+p)\vb{u}$
         \end{enumerate}
+    \subsection{Heating and Cooling Processes}
+        Combining cooling and heating effects, we can parametrise $\dot{Q}_{cool}$
+        \begin{equation}
+            \dot{Q}_{cool} = A \rho T^{\alpha} - H
+        \end{equation}
+        where the first and second term on RHS means radiative cooling and cosmic ray heating
+    \subsection{Energy Transport process}
+        Transport processes move energy through the fluid, via
+        Thermal conduction, convention and radiation transport.
+\section{A lot of different system}
+    \subsection{Full set of equations describing the dynamics of an ideal non-relativisitc fluid}
+        \begin{equation}
+            \pdv{\rho}{t} + \div{\rho \vb{u}} = 0 \tag{Continuity Equation}
+        \end{equation}
+        \begin{equation}
+            \tag{Momentum Equation}
+        \end{equation} 
+        \begin{equation}
+            \tag{Poisson's Equation}
+        \end{equation}
+        \begin{equation}
+            \tag{Energy Equation}
+        \end{equation}
+        \begin{equation}
+            \tag{Definition fo Total energy}
+        \end{equation}
+        \begin{equation}
+            \tag{EoS of total energy}
+        \end{equation}
+        \begin{equation}
+            \tag{Internal Energy}
+        \end{equation}
+    \subsection{Hydrostatic Equilibrium}
+        A System of hydrostatic equilibrium if 
+        \begin{equation}
+            \vb{u} = \pdv{}{t} =0
+        \end{equation}
+        Continuity equation is trivially satisfied
+        Sub into momentum equation gives:
+        \begin{equation}
+            \frac{1}{\rho}\grad{p} = - \grad{\Psi}\tag{Equation of Hydrostatic equilibirum}
+        \end{equation}
+        \begin{example}
+            {Isothermal atmosphere}{
+                Isothermal atmosphere with constant $\vb{g}=-g\hat{\vb{z}}$
+                \begin{equation}
+                    \rho = \rho_0 \exp{-\frac{\mu g} {R_{*} T} z}
+                \end{equation}
+                i.e. exponential atmosphere
+            }
+        \end{example}
+        \begin{example}
+            {Isothermal self-gravitating slab}{
+                Isothermal atmosphere with constant $\vb{g}=-g\hat{\vb{z}}$
+                \begin{equation}
+                    \laplacian{\Psi} = 4\pi G\rho
+                \end{equation}
+                Is gives
+                \begin{equation}
+                    \Psi-\Psi_0 = 2A\ln{\cosh{\sqrt{\frac{2\pi G\rho}{A}z}}}
+                \end{equation}
+                \begin{equation}
+                    \rho = \frac{\rho_0}{\cosh^2{\sqrt{\frac{2\pi G\rho}{A}z}}}
+                \end{equation}
+            }
+        \end{example}
+    \section{Stars/Self-Gravitating Polytropes}
         
-
 \end{document}

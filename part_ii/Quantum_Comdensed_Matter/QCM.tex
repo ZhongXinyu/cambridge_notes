@@ -45,9 +45,9 @@ Abstract of this course
         \begin{align}
             \epsilon (\omega\approx 0) = 1+ n_v \frac{q^2}{m\epsilon_0\omega_T^2}
         \end{align}
-        This explains the different static permittivities of different materials.\\
+        This explains the different static permittivity of different materials.\\
         \begin{example}
-            {Atomic absorption}{?? Something about linewidth}
+            {Atomic absorption}{?? Something about line width}
         \end{example}
     \subsubsection{Link to quantum mechanics
     }
@@ -87,8 +87,8 @@ Abstract of this course
     \subsection{Sommerfeld Model}
         Both Lorentz and Drude theories fails dramatically describing thermodynamic properties. 
         Now we apply equipartition theorem to the dipole model, expect contribution of $k_B$ to heat capacity of each oscillator, and $3/2k_B$ per atom.
-        Also we consider quatum static effects.
-        \subsubsection{density of states}
+        Also we consider quantum static effects.
+        \subsubsection{Density of states}
             \begin{enumerate}
                 \item Fermi sphere
                 \item Note spin degeneracy 
@@ -103,16 +103,65 @@ Abstract of this course
             \end{enumerate}
         \subsubsection{Screening and the Tomas-Fermi approximation}
             \begin{enumerate}
-                \item Screening: placing positive charges in metal will result in electrons moving around to screen its potential resulting in zero electric field. (Compare to dielectric material with electrons are not free to move and have potential reduced by $\epsilon$)
-                \item A balance is reached between minimising potentail and kinetic energy, screening over a short but finite range.
-                \item Free electron gas as a perturbing potential:
+                \item Screening: placing positive charges in metal will result in electrons moving around to screen its potential resulting in zero electric field. Compare to dielectric material with electrons are not free to move and have potential reduced by $\epsilon$
+                \item A balance is reached between minimising potential and kinetic energy, screening over a short but finite range.
+                \item In order to study the effect of introducing external potential. We study response of a free electron in a perturbing potential. Free electron in \textbf{METAL}, without external potential, gives potential in the metal to be:
                 \begin{equation}
                     \laplacian {V_0}(r) = - \frac{\rho_0(r)}{\epsilon}
                 \end{equation}
-                \item ??? if positive background charge to be homogeneous with electrons moving, in this case $\rho_0 =0$
-                \item In the presence of perturbing potential $V_{ext}$, we have:
-            \end{enumerate}
+                indicating that potential is linked to charge distribution. In plasma or Jellium model. $\rho_0 =0$
+                \item In the presence of perturbing potential $V_{ext}$, chaneg density will redistribute and we have a perturbing potential in the metal, its correction is :
+                \begin{equation}
+                    \laplacian \delta{V_0}(r) = - \frac{\delta \rho_0(r)}{\epsilon}
+                \end{equation}d
+                \paragraph*{Slowly varying potential} 
+                The approximation is: Slowly varying potential, and only shifts the free electron.
+                \paragraph*{Constant chemical potential}
+                keeping the electrons states filled up to a constant energy $\mu$ requires we adjust local Fermi energy $E_F(\vb{r})$:
+                \begin{equation}
+                    \mu = E_F(\vb{r}) - e V_{tot}(\vb{r})
+                \end{equation}
+                \paragraph*{Local density approximation}
+                    Small shift in the Fermi energy $\delta E_F(\vb{r})$ will give rise to a change in number densit, $n$:
+                    Recalll the then relationship:
+                    \begin{equation}
+                        \int^{E_F} g_v(E) dE = n
+                    \end{equation}
+                    we obtain:
+                    \begin{equation}
+                        \delta n = e g_V(E_F)(\delta V + V_{ext})
+                    \end{equation}
+                \paragraph*{Lineariesd Thomas Fermi}
+                    now we know the small change in $\rho$, as $\rho = e n$
+                    We obtain:
+                    \begin{equation}
+                        \laplacian{\delta V(\vb{r})} = \frac{e^2 g_V(E_F)}{\epsilon_0}(\delta V + V_{ext})
+                    \end{equation}
+                \paragraph {Density Response}
+                    Solve the Equation above, by Fourier Transformation, we obtain:
+                    \begin{equation}
+                        \delta V(\vb{q}) = -\frac{q^2_{TF}}{q^2+q^2_{TF}}V_{ext}(\vb{q})
+                    \end{equation}
+                    Here $q_{TF}$ is the \it{Thomas-Fermi Wave vector}
+                    The number density, as now we know $\delta V$, 
+                \paragraph*{Dielectric permitivity}
+                    the dieelctric permitivity $\epsilon_{TF}(q)$
+                    \begin{equation}
+                        \epsilon_{TF}(q)= 1+ \frac{q_{TF}^2}{q^2}
+                    \end{equation}
+                \paragraph*{Screening}
+                    At small q, long distance, \epsilon_{TF}
+                
 
+            \end{enumerate}
+        \subsubsection{}
+\subsection{Electrons and honons in periodic solids}
+    \subsubsection{Inert gas}
+        \begin{enumerate}
+            \item Filled electron shells and large ioinsation energies.
+            \item Interaction between neutral atoms is weak, and leading attractive force is van der Waals interaction, which gives potential proportional to $1/R^6$.
+            \item 
+        \end{enumerate}
 
             
         
