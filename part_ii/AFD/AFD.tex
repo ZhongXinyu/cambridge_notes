@@ -112,7 +112,7 @@ Now what we need is another equation: `Equation of state' to determinate pressur
             \tag{Momentum Equation}
         \end{equation} 
         \begin{equation}
-            \tag{Poisson's Equation}
+            \laplacian{\Psi} = 4\pi\rho \tag{Poisson's Equation}
         \end{equation}
         \begin{equation}
             \tag{Energy Equation}
@@ -160,6 +160,41 @@ Now what we need is another equation: `Equation of state' to determinate pressur
                 \end{equation}
             }
         \end{example}
-    \section{Stars/Self-Gravitating Polytropes}
-        
+    \subsection{Stars/Self-Gravitating Polytropes}
+    \begin{enumerate}
+        \item In this section, we consider spherically-symmetric, self-gravitating system in hydrostatic equilibirum, which is called "star". Note that non-rotating stars are barotropes.
+        \item In this system, we have $p=p(\rho)$,
+        and barotropic EoS can be written as $p=K\rho^{1+1/n}$
+        If the star is isentropic, i.e. constant entropy. ${1+1/n} = \gamma$. 
+        \item When $n$ is constant, the structure is called a Polytrope
+        \item Assuming a polytropics EoS, the equation of hydrostatic equilibrium is 
+        \begin{align*}
+            -\grad{\Psi} = \frac{1}{\rho}\grad(K\rho^{1+1/n}) = (n+1)\grad({K\rho^{1/n}})
+            \intertext{Which has a solution for $\rho$:}
+            \rho  =\left(\frac{\Psi_T-\Psi}{(n+1)K}\right)^n
+            \intertext{In which $\Psi_T$ is $\Psi(\rho=0)$ at surface.}
+            \intertext{
+            Given boundary condition at for central density and central potential $\rho_c$ and $\Psi_c$.}
+            \rho =\rho_c\left(\frac{\Psi_T-\Psi}{\Psi_T-\Psi_C}\right)^n
+            \intertext{Now feed into Poisson Equation gives a differential equation for $\Psi$}
+            \intertext{Define $\theta$ (which is equivalent to $\Psi$)and $\mathcal{E}$ (which is scaled radial coordinate), we get Lane-Emden Eqn of index n}
+            \frac{1}{\mathcal{E}}\frac{d}{d\mathcal{E}^2}\left(\mathcal{E}^2\dv{\theta}{\mathcal{E}}\right)=-\theta^n
+            \intertext{which is an differential equation for $\theta$.}
+            \intertext{Analytical solution for n =0,1,5}
+        \end{align*}
+    \end{enumerate}
+    \subsection{Isothermal Sphere}
+        \begin{enumerate}
+        \item Isothemal case means that $p=K\rho$, 
+        \begin{align}
+            \intertext{From the momentum equation gives:}
+            \Psi - \Psi_c = -K\ln(\rho/\rho_c)
+            \intertext{From Possion's Equation gives differential equation for $\rho$}
+            \intertext{Take $\rho = \rho_c e^{-\Psi}$,we get a differential equation for $\Psi$}
+            \frac{1}{\mathcal{E}}\frac{d}{d\mathcal{E}^2}\left(\mathcal{E}^2\dv{\Psi}{\mathcal{E}}\right)=e^{-\Psi}
+            \intertext{which is equivalent to Lane-Equation in this isothermal case.}
+        \end{align}
+    \end{enumerate}
+    \subsection{Scaling Relations}
+        Scaling relation relates the mass and radius of a polytrope star.
 \end{document}

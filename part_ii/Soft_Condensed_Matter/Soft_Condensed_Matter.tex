@@ -40,7 +40,7 @@ This section devotes itself to the basics of fluid dynamics,
                 \begin{equation}
                     \pdv{P_i(V,t)}{t}=\pdv{t} \int_{V}d^3r\rho v_i=\int_{V}(\pdv{t}\rho) v_i+\rho\pdv{t}v_i
                 \end{equation}
-                \item The change in momentum is the sum of the forces, which take into account 4 contributions,\textbf{Convention of momentum, Pressure Forces, Viscous Forces, Body Forces}.
+                \item The change in momentum is the sum of the forces, which take into account 4 contributions, \textbf{Convention of momentum, Pressure Forces, Viscous Forces, Body Forces}.
                 \item Overall stress tensor 
                 \begin{equation}
                     \sigma_{ij}=\sigma' {ij} - p\delta{ij}
@@ -92,8 +92,8 @@ This section devotes itself to the basics of fluid dynamics,
                 \item Since time doesn't enter explicitly the Stokes equation, and it is linear, the flow pattern is unchanged when the pressure is increased, only the flow velocity is changed.
                 \item If reverse spacial direction, the pressure gradient changes sign while the Laplacian keeps its sign, the flow velocity changes sign, therefore Stoke equation is unchanged under reversal of spatial coordinates.
                 \item Kinetic reversibility properties of Stokes flow implies that a microorganism attempts
-                \item This observation has interesting consequences for locomotion on small scales as is applicable to micro-organisms or artificial nanomachines. 
-                Indeed, the kinematic reversibility property of Stokes flows implies that a micoorganism which attempts to swim through a reversible sequence of changes of shape, returning to its original shape by going through the sequence in reverse, will not translate, since any motion that it undergoes in the first half of the cycle will be reversed in the second part of the swimming cycle. 
+                \item This observation has interesting consequences for locomotion on small scales as is applicable to microorganisms or artificial nanomachines. 
+                Indeed, the kinematic reversibility property of Stokes flows implies that a microorganism which attempts to swim through a reversible sequence of changes of shape, returning to its original shape by going through the sequence in reverse, will not translate, since any motion that it undergoes in the first half of the cycle will be reversed in the second part of the swimming cycle. 
                 This is known as the Scallop theorem (originally by Edward Purcell). 
                 A scallop swims to a good approximation by opening and closing a single hinge. 
                 At low Reynolds numbers, the forward movement upon opening would be exactly cancelled by the motion during the reverse stroke and thus the scallop would remain stationary. 
@@ -220,10 +220,149 @@ This section devotes itself to the basics of fluid dynamics,
                 Capacitance & $C=\frac{dq}{dv}$ & Hydraulic Capacitance $C_{hydr}=\frac{d\nu}{dp}$\\
                 \hline
                \end{tabular}
+        
 
             
             
 \section{Viscoelasticity}
+\subsection{Basic Concept of Elasticity}
+    \subsubsection{Strain}
+        \begin{enumerate}
+            \item Definition of strain tensor
+            \begin{equation}
+                \epsilon_{ik}= \dfrac{1}{2}(\partial_{k}u_i-\partial_{i}u_k)
+            \end{equation}
+            Strain tensor is symmetric and diagonaisable
+        \end{enumerate}
+    \subsubsection{Stress}
+        \begin{enumerate}
+            \item Stress in defined as force $d\vb{f}$ per unit area $dS$ transmitted across the surface element $dS$:
+            \begin{equation}
+                dF_i=\sigma_{ik} dS_k
+            \end{equation}
+            \item For example, $\sigma_{xy}$ is the force per unit area in teh x direction transmitted across the plane into the normal vector in the y-direction.
+        \end{enumerate}
+\subsection{Linear elasticity and Hooke's Law}
+    \subsubsection{Hooke's Law}
+        \begin{enumerate}
+            \item For small strains, there is a linear relationship between stress and strain as stated in the Hookes's law. 
+            \begin{equation}
+                \sigma_{ij}=C_{ijkl}\epsilon_{kl}
+            \end{equation}
+            where $C_{ijkl}$ is the stiffness tensor.
+            \item Stiffness tensor has element, given that it is symmetric, it has 21 independent elements, of which 3 are related to the orientation of body in space. Therefore, 18 independent tensor element need to be considered.
+            \item Consider an \textbf{isotropic linear} elastic medium. For such material, all directions be have the same way and no specific internal directions; as such the \textcolor{red}{The right handside of the equation can onlu ahve elements proportional to the strain tensor itself, or the only scalar combination$\sum_{k}\epsilon_{kk}$ of the matrix element of the strain tensor, as any other combination of matrix elements of the strain tensor would not result in behavior which is identical in all spatial directions}
+        \end{enumerate}
+    \subsubsection{Poisson's ratio} 
+        \begin{enumerate}
+            \item When a stress $\sigma_{xx}$ is applied for instance , along x axis, it streches along this direction by strain $\epsilon_{xx}$. Stress and stains are linearly proportional:
+            \begin{equation}
+                \sigma_{xx} = E \epsilon_{xx}
+            \end{equation}
+            where $E$ is the Young's modulus, which has unit of \textbf{pressure}.
+            \item Material also contract in the other directions, $\epsilon_{yy} = \epsilon_{zz} < 0$. We define Poisson's ration as:
+            \begin{equation}
+                \nu = -\dfrac{\epsilon_{yy}}{\epsilon_{zz}}
+            \end{equation}
+            \item The resultant strain tensor is:
+            $\begin{pmatrix}
+                \epsilon_{xx} & 0 & 0\\
+                0 & -\nu \epsilon_{xx} & 0\\
+                0 & 0 & -\nu \epsilon_{xx}
+            \end{pmatrix}$
+            \item and strains due to $\sigma_{xx}$ is given as:
+                \begin{align}
+                    E\epsilon_{xx}  &= \sigma_{xx}\\
+                    E\epsilon_{yy}  &= -\nu \sigma_{xx}\\
+                    E\epsilon_{yy}  &= -\nu \sigma_{xx}
+                \end{align}
+            \item Moreover, the linear system can be solved for $\sigma_{ii}$:
+            \begin{equation}
+                \sigma_{xx}= \frac{E}{(1+\nu)(1-2\nu)}[(1-\nu)\epsilon_{xx}+\nu \epsilon_{yy}+ \nu\epsilon_{zz}]
+            \end{equation}
+        \end{enumerate}
+    \subsubsection{Bulk Modulus}
+        \begin{enumerate}
+            \item Bulk modulus measures the contraction of body under isotropic pressure:
+            \begin{equation}
+                -p= \sigma_{xx}+\sigma_{yy}+\sigma_{zz}
+            \end{equation}
+            \item Bulk Modulus is defined as:
+            \begin{equation}
+                p=-B\frac{\Delta V}{V} 
+            \end{equation}
+            where $\frac{\Delta V}{V} = \Tr{\epsilon}=-3p(1-2\nu)/E$
+            \item we get:
+            \begin{equation}
+                B = \frac{E}{3(1-2\nu)}
+            \end{equation}
+        \end{enumerate}
+    \subsubsection{Shear deformation}
+    \subsubsection{Physical Constrains}
+        \begin{enumerate}
+            \item Bulk Modulus cannot be negative, otherwise would expand
+            \item This also means that $\nu <1/2$.
+            \item For a perfectly incompressible material, $\nu = 0$
+            \item While most materials have $\nu > 0$, there are materials that have negative $\nu$
+            \item Shear Modulus $G$ and Young's Modulus $E$ are positive 
+        \end{enumerate}
+\subsection{Viscoelasticity}
+    \paragraph*{Newtonian liquids}
+        Do not have shear modulus but resist flow through their viscosity, which is assumed to be constant and independent of the flow rate.
+    \paragraph*{Hookean Solids}
+        Respond immediately to a stress and change their shape and do not dissipate energy
+\subsection{Linear viscoelastic materials and experiments}
+    Linear means that a system whose response is linearly proportional to the applied stresses. \textcolor{red}{shear modulus independent of strain.}
+    \paragraph*{Creep experiment}
+    Stress $\sigma_0$ is applied, response strain $\epsilon$ is measured.
+    \paragraph*{Stress relaxation experiment}
+    Rapid strain $\epsilon_0$ is applied and maintained, and the decay of stress $\sigma(t)$ is measured.Decay is governed by relaxation modulus $G(t)$, with $\sigma(t) = G(t)\epsilon_0$
+\subsection {Time translation invariance}
+    In this section, we add incremental stresses accumulated as a function of history of material and see how is strain $\sigma$ behaves.
+    \begin{enumerate}
+        \item Each of these strain increment will trigger time-dependent increment in stress $d\sigma(t) = G(t-t')d\epsilon(t')$
+        Overall stress is linear superposition of all the contribution of $d\sigma(t)$:
+        \begin{equation}
+            \sigma(t)=\int d\sigma(t) = \int G(t-t')d\epsilon(t') =\int^{t}_{-\infty } G(t-t')\dv{\epsilon(t')}{t'} dt' 
+        \end{equation}
+        This is a `retarded' linear response.
+        \item In the case of complex viscoelastic fluids, we have constant shear rate $\dot{\epsilon}$, therefore:
+        \begin{equation}
+            \sigma(t) = \dot{\epsilon}\int^{t}_{-\infty}G(t-t')dt'= \int^{\infty}_{0}G(\tau)d\tau
+        \end{equation}
+        From here we get viscosity
+        \begin{equation}
+            \eta =\int^{\infty}_{0}G(\tau)d\tau
+        \end{equation}
+    \end{enumerate}
+\subsection{Complex modulus}
+    In this section ,we consider response of a stress in response to an applied oscillating strain:
+    \begin{equation}
+        \epsilon(t)=\epsilon_0 e^{i\omega t}
+    \end{equation}
+    \begin{enumerate}
+        \item Substitute this into previous expression for $\sigma$.
+        \item We have:
+        \begin{equation}
+            \sigma(t) = G^{*}(\omega)\epsilon_0 e^{i\omega t}
+        \end{equation}
+        where
+        \begin{equation}
+            G^{*}(\omega) = i\omega \int^{\infty}_{0} G(\tau)e^{-i\omega \tau} d\tau
+        \end{equation}
+        \item Ideal solid $G(\tau)=G_0$ and $G^{*}(\omega) = G_0$
+        \item Newtonian fluid $G(\tau)=\delta(\tau)\eta$ and $G^{*}(\omega) = i \omega \eta$
+        \item General visco-elastic material, we have $G^{*}(\omega) = G'+i G''$, where $G'$ describes in-phase response from elastic contribution and $G''$  is the out of phase response from the viscous dissipative contribution.
+    \end{enumerate}
+\subsection{Simple model of viscoelasic material}
+In this section, we discuss some models of viscoelastic material such as Maxwell fluid. 
+    \subsubsection{Maxwell fluid}
+    Maxwell fluid has a relaxation time scale $\tau$:
+    \begin{equation}
+        G(t) = G_0 e^{-t/\tau}
+    \end{equation}
+    \subsubsection{Kelvin-Voigt solid}
+    \subsubsection{Zener standard linear solid}
 \section{Polymers}
 \section{Molecular self-assembly}
 

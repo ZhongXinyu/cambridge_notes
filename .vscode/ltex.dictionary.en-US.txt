@@ -15,3 +15,5 @@ EoS
 non-relativisitc
 Polytropes
 Couette
+Hookean
+nanomachines

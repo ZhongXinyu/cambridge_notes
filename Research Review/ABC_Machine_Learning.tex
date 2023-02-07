@@ -64,6 +64,10 @@ or another term too construct a cubic regression:
 \begin{equation}
     y= ax^3 +bx^2 + cx+d
 \end{equation}
+The objective is to minimise the ordinary least squares:
+\begin{equation}
+    sum{y_i-(kx_i+c)}^2
+\end{equation}
 %Ideals:
 % Zachary Taylor's answer about Taylor's theorm and tis limitations
 This reminds us a 
@@ -90,26 +94,44 @@ Also by dividing a polynomial by another, the Pade approximant prevents the func
 After 150 years or so \\
 Neuro network, $\frac{x}{1+a\abs{x}}$ using less indicator\\
 after 30 years\\
+Neural Network is used to solve classification problems, sometimes regression problem.
+
 \paragraph{Deep Neural network}
-Deep neuro network, layers of sum of indicator
+Deep neural network, layers of sum of indicator
 the deepness refers to the layers
 
 \section{Different methods in Machine learning}
+The most natural and commonly used machine learning technique is classification and regression
+
+\subsection{Regression}
+\paragraph{Support Vector Regression}
+% https://towardsdatascience.com/an-introduction-to-support-vector-regression-svr-a3ebc1672c2
+Instead of minimsing the error, SVR give us the flexibility to define how much error is tolerable and will find an appropirate line. The term we are minimising is the oefficient vector while we keep the error as a constrain.(Hypersurface)
+\subsection{Classification}
+The output is discrete, can be more than 2.
 \paragraph{Decision Trees}
 %https://link.springer.com/content/pdf/10.1007/BF00116251.pdf
 
-Decision trees are used f two main types: classification tree and regression tree. We shall discuss the later in this article as in physics, we usually expect a numerical outcome 
+Decision trees are used for two main types: classification tree and regression tree. We shall discuss the latter in this article as in physics, we usually expect a numerical outcome.
+
 Random forest/Gaussian etc.
 \paragraph{Boosted Trees}
 \paragraph{Bootstrap aggregated}
 \paragraph{Random forest}
 %https://web.archive.org/web/20160417030218/http://ect.bell-labs.com/who/tkh/publications/papers/odt.pdf
-
-
+\paragraph*{KNN}
+% https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761
+K-nearest Neighbours
+\paragraph*{SVN}
+Non-linear problem
 \section{Real life example}
 \subsection{Tide-prediction Machine}
 %https://en.wikipedia.org/wiki/Tide-predicting_machine
 William Thompson first invented 
 
+A parallel relationship? Linear Regression between dicission tree, SVN and 
+
+Machine learning Loss functions
+% https://www.linkedin.com/posts/damienbenveniste_machinelearning-datascience-artificialintelligence-activity-7028762585705451520-iqtz/?utm_source=share&utm_medium=member_ios
 
 \end{document}
