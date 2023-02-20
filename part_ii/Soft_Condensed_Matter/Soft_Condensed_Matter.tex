@@ -29,31 +29,31 @@ This section devotes itself to the basics of fluid dynamics,
                 \item  Conservation of mass states that the rate of change is equal to the net flux of mass flowing, 
                 followed by a divergence theorem to change surface integral to volume integral.
                 \item Combining the rate of change in mass and conservation of mass, as both are volume integral:            
-                \begin{equation}
+                $$
                     \pdv{\rho}{t} = -\div(\rho \vb{v})
-                \end{equation}
+                $$
                 \item For incompressible fluid, $\rho$ is constant, and the continuity equation simplify to $\div\vb{v} = 0$.
             \end{enumerate}
         \subsubsection{Momentum Flux and the equation of motion}
             \begin{enumerate}
                 \item Rate of change in total momentum $P_i(V,t)$
-                \begin{equation}
+                $$
                     \pdv{P_i(V,t)}{t}=\pdv{t} \int_{V}d^3r\rho v_i=\int_{V}(\pdv{t}\rho) v_i+\rho\pdv{t}v_i
-                \end{equation}
+                $$
                 \item The change in momentum is the sum of the forces, which take into account 4 contributions, \textbf{Convention of momentum, Pressure Forces, Viscous Forces, Body Forces}.
                 \item Overall stress tensor 
-                \begin{equation}
+                $$
                     \sigma_{ij}=\sigma' {ij} - p\delta{ij}
-                \end{equation}
+                $$
                 where the two items are contribution for viscous pressure and pressure forces
                 \item 
             \end{enumerate}
         \subsection{Navier-Stokes equation}
             \begin{enumerate}
                 \item The complete Navier-Stokes equation
-                \begin{equation}
+                $$
                     \rho [\partial_t\vb*{v} + (\vb*{v}\dotproduct \nabla)\vb*{v}]= - \grad{p} +\eta\laplacian{v}+\rho\vb*{g}
-                \end{equation}
+                $$
                 \item Left-hand side relate to inertial force densities
                 \item Right-hand side encompass intrinsic viscosity and applied force densities (pressure gradient and gravity)
                 \item Conservative external forces, including gravity, the eternal force term is absorbed into pressure term.
@@ -62,30 +62,31 @@ This section devotes itself to the basics of fluid dynamics,
             \begin{enumerate}
                 \item Concept of streamline
                 \item Lagrangian rate of 
-                \begin{equation}
+                $$
                     \frac{Df}{Dt} = \pdv{f}{t} = (\vb*{v} \dotproduct \vb{\nabla})f
-                \end{equation}
+                $$
                 \item In particular, the acceleration of fluid element is:
-                \begin{equation}
+                $$
                     \frac{D\vb{v}}{Dt} = \pdv{\vb{v}}{t} = (\vb*{v} \dotproduct \vb{\nabla})\vb{v}
-                \end{equation}
+                $$
                 \item 
             \end{enumerate}
         \subsection{Reynold Number and Stokes Flow}
+            When discussing fluid of limit of low flow velocities, or small sizes. Reynolds number is inversely proportional to the viscosity.
             \begin{enumerate}
-                \item Limit of low flow velocities, or small sizes, 
                 \item Reynold number 
-                \begin{equation}
+                $$
                     Re =\frac{\rho v_0 L_0}{\eta}
-                \end{equation}
+                $$
+                Take note that Reynold number is inversely proportional to viscosity.
                 \item Low Reynolds number $Re << 1$, the viscous term dominates over inertia, non-linear Navier-Stokes equation is reduced to linear Stokes equation:
-                \begin{equation}
-                    0 = -\grad p +\eta\laplacian \vb{v}
-                \end{equation}
+                $$
+                    0 = -\grad p +\eta\laplacian \vb*{v}
+                $$
                 \item If an external force is applied, for instance an oscillating boundary, time derivative is given by the external force and is not negligible, which gives time-dependent Navier Stokes Equation
-                \begin{equation}
+                $$
                     \rho \partial_{v}\vb*{v} = -\grad p +\eta\laplacian \vb*{v}
-                \end{equation}
+                $$
             \end{enumerate}
         \subsection{Properties of Stokes flow and locomotion of microorganism and nanomachines}
             \begin{enumerate}
@@ -106,21 +107,21 @@ This section devotes itself to the basics of fluid dynamics,
             \begin{enumerate}
                 \item Viscous Fluid in mechanical equilibrium has to be at rest, $\vb*{v}=0$ relative to contain.
                 \item Navier-Stokes equation reduce to:
-                \begin{equation}
+                $$
                     0 = -\grad{p} -\rho g \vb*{e}_z
-                \end{equation}
+                $$
                 \item Incompressible fluid, integrate this equation to yield:
-                \begin{equation}
+                $$
                     p(z) = p^{*} - \rho g z
-                \end{equation}
+                $$
                 where $p^{*}$ is constant of integration, which represents the pressure at z = 0 and the z dependent constribution to the pressure is given as the hydrostatic pressure:
-                \begin{equation}
+                $$
                     p_{hs} = - rho gz
-                \end{equation}
+                $$
                 We can therefore regroup the effects of gravity into the pressure term and write the total pressure as:
-                \begin{equation}
+                $$
                     p_{tot} = p + p{hs}
-                \end{equation}
+                $$
                 \item 
             \end{enumerate}
         \subsection{Couette Flow}
@@ -129,9 +130,9 @@ This section devotes itself to the basics of fluid dynamics,
                 {Planar geometry}{
                     Bottom plate at $z=0$ and top plate $z=h$, liquid is moving with speed $v_0$ while stationary at bottom.
                     Use stokes equations, together with boundary condition
-                    \begin{equation}
+                    $$
                         \eta \partial^2_z v_x(z) = 0
-                    \end{equation}
+                    $$
                     Use viscous stress tensor $\sigma '$ to determine the horizontal force where $F_z=\sigma '_{xz}A = \eta \frac{v_0 A}{h}$
                 }
             \end{example}
@@ -140,14 +141,14 @@ This section devotes itself to the basics of fluid dynamics,
                 \item The equation for motion for the flow field is given by time-dependent Stokes equation
                 
                 \item Wave solution:
-                \begin{equation}
+                $$
                     v_x = v_0 e^{i\omega t}e^{(-1+i)z/\sigma}
-                \end{equation}
+                $$
                 where the parameter $\sigma$ gives the decay length of the wave in the fluid.
                 \item Force per area is given by:
-                \begin{equation}
+                $$
                     FA = \eta \partial_z v_x (z=0) = (-1+i) \frac {\eta v}{\sigma}
-                \end{equation}
+                $$
             \end{enumerate}
         \subsection{Diffusion of momentum}
             \begin{enumerate}
@@ -158,17 +159,17 @@ This section devotes itself to the basics of fluid dynamics,
             Consider A spherical body of radius $a$ moving with a velocity $\vb{v}$ through a fluid with is overall stationary. It creates a temporary disturbance in the flow field which disappears after body passes a fixed observation point. The drag force that teh shpere experieences due to the motion of the underlying fluid is $\vb{F} = 6\pi \eta a \vb*{v}$
             \subsubsection{Scaling argument}
             In the low Reynolds number regime, assuming stationary flow and neglecting the pressure gradient term, we have Navier Strokes equation:
-            \begin{equation}
+            $$
                 \laplacian{v_T}=0 
-            \end{equation}
+            $$
             \subsubsection{Full analysis}
             **No examinable
         \subsection{Hydrodynamic interaction between colloidal particles}
             As a consequence of the moving colloid. The flow velocity at a distance r decays as 1/r. Through this velocity field, one colloid can exert drag force on another. Such hydrodynamic interaction is \textbf{long ranged and decay slowly as the inverse of the particle separation}.
             This interaction can be expressed by extending Stokes's relation to multiple particle:
-            \begin{equation}
+            $$
                 \vb{v} = H \vb{F}
-            \end{equation}
+            $$
             Here H is the mobility matrix
         \subsection{Poiseuille flow} 
             \textbf{Pressure driven} steady states flow through small channels. (Recall that both Couette flow consider system in absence of pressure)
@@ -229,26 +230,26 @@ This section devotes itself to the basics of fluid dynamics,
     \subsubsection{Strain}
         \begin{enumerate}
             \item Definition of strain tensor
-            \begin{equation}
+            $$
                 \epsilon_{ik}= \dfrac{1}{2}(\partial_{k}u_i-\partial_{i}u_k)
-            \end{equation}
+            $$
             Strain tensor is symmetric and diagonaisable
         \end{enumerate}
     \subsubsection{Stress}
         \begin{enumerate}
             \item Stress in defined as force $d\vb{f}$ per unit area $dS$ transmitted across the surface element $dS$:
-            \begin{equation}
+            $$
                 dF_i=\sigma_{ik} dS_k
-            \end{equation}
+            $$
             \item For example, $\sigma_{xy}$ is the force per unit area in teh x direction transmitted across the plane into the normal vector in the y-direction.
         \end{enumerate}
 \subsection{Linear elasticity and Hooke's Law}
     \subsubsection{Hooke's Law}
         \begin{enumerate}
             \item For small strains, there is a linear relationship between stress and strain as stated in the Hookes's law. 
-            \begin{equation}
+            $$
                 \sigma_{ij}=C_{ijkl}\epsilon_{kl}
-            \end{equation}
+            $$
             where $C_{ijkl}$ is the stiffness tensor.
             \item Stiffness tensor has element, given that it is symmetric, it has 21 independent elements, of which 3 are related to the orientation of body in space. Therefore, 18 independent tensor element need to be considered.
             \item Consider an \textbf{isotropic linear} elastic medium. For such material, all directions be have the same way and no specific internal directions; as such the \textcolor{red}{The right handside of the equation can onlu ahve elements proportional to the strain tensor itself, or the only scalar combination$\sum_{k}\epsilon_{kk}$ of the matrix element of the strain tensor, as any other combination of matrix elements of the strain tensor would not result in behavior which is identical in all spatial directions}
@@ -256,14 +257,14 @@ This section devotes itself to the basics of fluid dynamics,
     \subsubsection{Poisson's ratio} 
         \begin{enumerate}
             \item When a stress $\sigma_{xx}$ is applied for instance , along x axis, it streches along this direction by strain $\epsilon_{xx}$. Stress and stains are linearly proportional:
-            \begin{equation}
+            $$
                 \sigma_{xx} = E \epsilon_{xx}
-            \end{equation}
+            $$
             where $E$ is the Young's modulus, which has unit of \textbf{pressure}.
             \item Material also contract in the other directions, $\epsilon_{yy} = \epsilon_{zz} < 0$. We define Poisson's ration as:
-            \begin{equation}
+            $$
                 \nu = -\dfrac{\epsilon_{yy}}{\epsilon_{zz}}
-            \end{equation}
+            $$
             \item The resultant strain tensor is:
             $\begin{pmatrix}
                 \epsilon_{xx} & 0 & 0\\
@@ -277,25 +278,25 @@ This section devotes itself to the basics of fluid dynamics,
                     E\epsilon_{yy}  &= -\nu \sigma_{xx}
                 \end{align}
             \item Moreover, the linear system can be solved for $\sigma_{ii}$:
-            \begin{equation}
+            $$
                 \sigma_{xx}= \frac{E}{(1+\nu)(1-2\nu)}[(1-\nu)\epsilon_{xx}+\nu \epsilon_{yy}+ \nu\epsilon_{zz}]
-            \end{equation}
+            $$
         \end{enumerate}
     \subsubsection{Bulk Modulus}
         \begin{enumerate}
             \item Bulk modulus measures the contraction of body under isotropic pressure:
-            \begin{equation}
+            $$
                 -p= \sigma_{xx}+\sigma_{yy}+\sigma_{zz}
-            \end{equation}
+            $$
             \item Bulk Modulus is defined as:
-            \begin{equation}
+            $$
                 p=-B\frac{\Delta V}{V} 
-            \end{equation}
+            $$
             where $\frac{\Delta V}{V} = \Tr{\epsilon}=-3p(1-2\nu)/E$
             \item we get:
-            \begin{equation}
+            $$
                 B = \frac{E}{3(1-2\nu)}
-            \end{equation}
+            $$
         \end{enumerate}
     \subsubsection{Shear deformation}
     \subsubsection{Physical Constrains}
@@ -322,34 +323,34 @@ This section devotes itself to the basics of fluid dynamics,
     \begin{enumerate}
         \item Each of these strain increment will trigger time-dependent increment in stress $d\sigma(t) = G(t-t')d\epsilon(t')$
         Overall stress is linear superposition of all the contribution of $d\sigma(t)$:
-        \begin{equation}
+        $$
             \sigma(t)=\int d\sigma(t) = \int G(t-t')d\epsilon(t') =\int^{t}_{-\infty } G(t-t')\dv{\epsilon(t')}{t'} dt' 
-        \end{equation}
+        $$
         This is a `retarded' linear response.
         \item In the case of complex viscoelastic fluids, we have constant shear rate $\dot{\epsilon}$, therefore:
-        \begin{equation}
+        $$
             \sigma(t) = \dot{\epsilon}\int^{t}_{-\infty}G(t-t')dt'= \int^{\infty}_{0}G(\tau)d\tau
-        \end{equation}
+        $$
         From here we get viscosity
-        \begin{equation}
+        $$
             \eta =\int^{\infty}_{0}G(\tau)d\tau
-        \end{equation}
+        $$
     \end{enumerate}
 \subsection{Complex modulus}
     In this section ,we consider response of a stress in response to an applied oscillating strain:
-    \begin{equation}
+    $$
         \epsilon(t)=\epsilon_0 e^{i\omega t}
-    \end{equation}
+    $$
     \begin{enumerate}
         \item Substitute this into previous expression for $\sigma$.
         \item We have:
-        \begin{equation}
+        $$
             \sigma(t) = G^{*}(\omega)\epsilon_0 e^{i\omega t}
-        \end{equation}
+        $$
         where
-        \begin{equation}
+        $$
             G^{*}(\omega) = i\omega \int^{\infty}_{0} G(\tau)e^{-i\omega \tau} d\tau
-        \end{equation}
+        $$
         \item Ideal solid $G(\tau)=G_0$ and $G^{*}(\omega) = G_0$
         \item Newtonian fluid $G(\tau)=\delta(\tau)\eta$ and $G^{*}(\omega) = i \omega \eta$
         \item General visco-elastic material, we have $G^{*}(\omega) = G'+i G''$, where $G'$ describes in-phase response from elastic contribution and $G''$  is the out of phase response from the viscous dissipative contribution.
@@ -358,11 +359,92 @@ This section devotes itself to the basics of fluid dynamics,
 In this section, we discuss some models of viscoelastic material such as Maxwell fluid. 
     \subsubsection{Maxwell fluid}
     Maxwell fluid has a relaxation time scale $\tau$:
-    \begin{equation}
+    $$
         G(t) = G_0 e^{-t/\tau}
-    \end{equation}
+    $$
     \subsubsection{Kelvin-Voigt solid}
     \subsubsection{Zener standard linear solid}
+\subsection{Stochastic forces and Brownian Motion}
+\subsection{Langevin equation}
+\begin{definition}
+    {Langevin Equation}{$m\dv{\vb{v}}{t}=-\gamma \vb{v}+\vb{\mathcal{E}}(t)$}{$\vb{\mathcal{E}}$ is the random force field which described the molecular collisions.\\$\gamma$ is the drag coefficient, if we approxiamte the particle as a spherical object, then $\gamma=6\pi\eta r$}
+\end{definition}
+\\
+\begin{enumerate}
+    \item In this section, we considered the Langevin equation, its solution and relationship to the diffusion equation. We then considered the over damped limit of the equation in a system with a potential energy, `Confined Brownian Motion'.
+    \item The probability density function is an equivalent approach to the Langevin equation.
+    \item We also find mean square value of dispalcement and velocity and compare them with the equipartition theorem in thermal dynamics.
+    \item The motion of a thermally exited particle subjected to a stocahstic force can be described by two equivalent approaches:
+\end{enumerate}
+
+\subsubsection{White noise}
+In an isotropic fluid, molecular collisions with the solvent do not have a preferential direction. Thus, we have $\langle\vec{\xi}(t)\rangle=0$. Moreover, due to the random uncorrelated nature of the noise force field, $\vec{\xi}(t)$ and $\vec{\xi}\left(t^{\prime}\right)$ must be uncorrelated when $t \neq t^{\prime}$, i.e. $\left\langle\vec{\xi}(t) \cdot \vec{\xi}\left(t^{\prime}\right)\right\rangle=\langle\vec{\xi}(t)\rangle\left\langle\vec{\xi}\left(t^{\prime}\right)\right\rangle=0$ for $t \neq t^{\prime}$. The properties of $\vec{\xi}$ can therefore be summarised as:
+$$
+\begin{aligned}
+\langle\vec{\xi}(t)\rangle & =0 \\
+\left\langle\vec{\xi}(t) \cdot \vec{\xi}\left(t^{\prime}\right)\right\rangle & =c \delta\left(t-t^{\prime}\right)
+\end{aligned}
+$$
+This is the definition of white noise. The value of the constant $c$ will be discussed
+\subsubsection{Solution of Langevin equation and fluctuation-dissipation theorem}
+In this section we obtained the solution for velocity for Langevin equation before investigating the mean square velocity in the long time limit, in which we find, by considering partition theorem, the constant term in the mean square random force field. We find the solution by substitution: $\vec{v}(t)=\vec{w}(t) e^{-\frac{\gamma}{m} t}$
+$$
+\langle\vec{v}(t)\rangle=\vec{v}_0 e^{-\frac{\gamma}{m} t}+\int_0^t e^{-\frac{\gamma}{m}\left(t-t^{\prime}\right)} \underbrace{\frac{\left\langle\vec{\xi}\left(t^{\prime}\right)\right\rangle}{m}}_{=0} d t^{\prime}=\vec{v}_0 e^{-\frac{\gamma}{m} t} .
+$$
+Next, we will \textbf{evaluate mean square velocity and find the constant c}:
+\begin{align}
+    \langle\vec{v}(t) \cdot \vec{v}(t)\rangle= & \vec{v}_0^2 e^{-2 \frac{\gamma}{m} t}+\frac{2}{m} \int_0^t e^{-\frac{\gamma}{m}\left(2 t-t^{\prime}\right)} \vec{v}_0 \cdot \underbrace{\left\langle\vec{\xi}\left(t^{\prime}\right)\right\rangle}_{=0} d t^{\prime} \\
+    & +\frac{1}{m^2} \int_0^t d t^{\prime} \int_0^t d t^{\prime \prime} e^{-\frac{\gamma}{m}\left(2 t-t^{\prime}-t^{\prime \prime}\right)} \underbrace{\left\langle\vec{\xi}\left(t^{\prime}\right) \cdot \xi\left(\overrightarrow{t^{\prime \prime}}\right)\right\rangle}_{=c \delta\left(t^{\prime}-t^{\prime \prime}\right)} \\
+    = & \vec{v}_0^2 e^{-2 \frac{\gamma}{m} t}+\frac{c}{2 m \gamma}\left(1-e^{-2 \frac{\gamma}{m} t}\right)
+\end{align}
+Note that solution has a characteristic time scale $m/\gamma$, which describes the time of relaxation of the initial condition.\\
+Now we make use of the equipartition theorem to fix the result at $t\approx \infty$:
+The equipartition theorem fixes the $t \rightarrow \infty$ value of $\left\langle\vec{v}^2\right\rangle \rightarrow 3 k_B T / m\left(k_B T / 2\right.$ per degree of freedom). This constraint therefore determines the value of the constant $c=6 \gamma k_B T$ and thus
+$$
+\left\langle\vec{\xi}(t) \cdot \vec{\xi}\left(t^{\prime}\right)\right\rangle=6 k_B T \gamma \delta\left(t-t^{\prime}\right)
+$$
+This result is known as the \textbf{fluctuation dissipation theorem}; Equation above relates the amplitude of the fluctuations of a particle induced by a random force to the dissipative drag $\gamma$ that the same particle experiences when it is actively moved through a fluid.
+\subsubsection{Mean square displacement and the diffusion equation}
+In this section, we find the displacement by integrating the velocity and investigated the mean square value of the displacement in the long time limit, in which we define the diffusion coefficient $D$ and the time scale $\tau_r$ for a collioidal particle to diffuse its own diameter\\
+Next, we find that the Probablility function, which is proportional to the concentration satisfies the diffusion equation.
+$$
+    \partial_{t}c(x,t) = D \laplacian{c}(x,t)
+$$
+\subsubsection{Particle flux}
+Bu considering teh continuity equation:
+$$
+    \partial_{t}c(x,t) = - \div{\vb{J}}(x,t)
+$$
+We obtain the Fick's Law
+$$
+    {\vb{J}}(x,t) = -D \div{c}(x,t)
+$$
+\subsubsection{Diffusion controlled process}
+IN this section, we consider spherical symmetric growth at steady state, This situation corresponds to particles attaching together when they meet  reference particle of radius a located at r=0 and thus forms clusters. We have a solution for c with boundary condition c(r=a)=0:
+\begin{align}
+    c(r) = c_{\infty}(1-\frac{a}{r})\\
+    \intertext{The particle current densit is radial and has form:}
+    J(r)=-D\frac{dc}{dr} =\frac{Dc_{\infty}a}{r^2}
+    \intertext{The $1/{r^2}$ actually shows that total flux crossing any spherical shell is constant and independent of distance from centre, the total flux}
+    \frac{d N}{d t}=-J(a) 4 \pi a^2=4 \pi D c_{\infty} a
+\end{align}
+\subsection{Velocity relaxation}
+Memory of the original velocity $\vec{v}_0$ is lost over a time scale
+$$
+\tau_v:=\frac{m}{\gamma}
+$$
+\subsubsection{Overdamped limit}
+If observations are made on time scales which are much larger than the velocity relaxation time $\tau_v=m / \gamma$, then the particle effectively has no acceleration or inertia. The Langevin equation therefore becomes:
+$$
+0=-\gamma \vec{v}+\vec{\xi}(t)
+$$
+or which is known as the Smoluchowski or overdamped limit. can be integrated to yield an expression for the particle position in the overdamped limit
+$$
+\vec{x}(t)=\vec{x}_0+\frac{1}{\gamma} \int_0^t \vec{\xi}\left(t^{\prime}\right) d t^{\prime}
+$$
+where $x_0$ is the initial position of the particle.
+\subsubsection{Confined Brownian Motion}
+
 \section{Polymers}
 \section{Molecular self-assembly}
 

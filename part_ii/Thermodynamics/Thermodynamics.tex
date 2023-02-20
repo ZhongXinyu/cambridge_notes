@@ -1,30 +1,9 @@
-\documentclass[10pt,a4paper]{article}
-\author{Xinyu Zhong\\Wolfson College}
-\usepackage{physics, amsmath}
-\usepackage{xcolor}
-\usepackage[margin=0.5in]{geometry}
-\usepackage{fancyhdr}
-\pagestyle{fancyplain}
-\fancyhf{}
+\documentclass[12pt,a4paper]{article}
 
+\usepackage{import}
+\import{../Template/}{format.tex}
 
-%\date{2nd Nov 2021}
-\lhead{\fancyplain{}{Zachary Zhong, xz447@cam.ac.uk}}
-\rhead{\fancyplain{}{Thermodynamics}}
-\cfoot{\fancyplain{}{\thepage{}}}
-\setlength {\headheight}{15pt}
-
-\newcommand{\definition}[3]
-    {
-    \textit{Definition #1: }
-    \begin{center}
-        {#2}
-    \end{center}
-    {#3}\\
-    }
-\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}{#2}\\}
-\newcommand{\example}[2]{\textbf{Example: #1}\\\textcolor{blue}{#2}\\}
-\title{Notes}
+\newcommand{\topic}{Thermodynamics}
 
 \begin{document}
 
@@ -46,8 +25,9 @@ Abstract of this course
     \subsection{Open systems}
     Open system is a system that is linked to a reservoir.\\
     Equilibrium condition is to maximize the total entropy of the system and the reservoir.\\
-    Hence, introducing the ideal of Availability, which is minimized when the entropy of the universe is maximized with respect to the state of the system.
+    Hence, introducing the ideal of \textbf{availability}, which is minimized when the entropy of the universe is maximized with respect to the state of the system.
     \subsubsection{Availability}
+    For thermally isolated system thermodynamic equilibrium is defined as the state of maximum entropy  for a given total energy, or minimum total enenrgy for a given entropy. However, for an open system, in contact with reservior, there is alternative, availability (of the system) that is minimised when the entropy of the universe is maximised. 
     Availability A is defined as:
     \begin{equation*}
         dA=-T_R dS_{tot}
@@ -55,17 +35,24 @@ Abstract of this course
     Note: $dA\leq 0$ and equilibrium is achieved at $dA=0$\\
     Given that:
     \begin{align*}
-        dS_{tot} &= dS+dS_R >= 0\\
-        &= dS + ...\\
-        &= \dfrac{T_RdS-dU-p_RdV+\mu_RdN}{T_R}
+        dS_{\text {tot }} & =d S+d S_R \geq 0 \\
+        & =d S+\frac{d U_R+p_R d V_R-\mu_R d N_R}{T_R} \\
+        & =\frac{T_R d S-d U-p_R d V+\mu_R d N}{T_R}
     \end{align*}
-    Some function variables sum up to U:
+    Here we used the fact that $dU_R=-dU$ .etc 
+    Note that $-dA$ is the negative denominator.
     \begin{equation*}
         A = U- T_RS+p_RV-\mu_R N
     \end{equation*}
-    \subsubsection*{Boltzmann expression for entropy}
-    \subsubsection{Availability is equivalent to useful work}
 
+    \subsubsection{Boltzmann expression for entropy}
+    $S_{\text {Boltz }}=k_B \ln \Omega$
+    \subsubsection{Availability is equivalent to useful work}
+    \begin{theorem}
+        {Availiabily is the the maximum amount of work that can be extracted from a system by bringin the system in contact with equilibrium}{
+            Proof:
+        }
+    \end{theorem}
     \subsection{Close systems}
     The method we used to study closed system is to play \textbf{imaginary partition}
     to partition it into two or more systems.\\
@@ -74,21 +61,40 @@ Abstract of this course
     \subsubsection{Constant temperature at equilibrium}
     \subsubsection{Constant chemical potential at equilibrium}
     \subsection{Overview of thermodynamics potentials}
+    Energy conservation is not sufficient to determine the equilibrium state, we need to introduce Thermodynamics potential to determine the equilibrium state.
+    $$
+    \begin{array}{lll}
+        \hline \text { internal energy } & U=T S-p V+\mu N & d U=T d S-p d V+\mu d N \\
+        \text { enthalpy } & H=U+p V & d H=T d S+V d p+\mu d N \\
+        \text { Helmholtz free energy } & F=U-T S & d F=-S d T-p d V+\mu d N \\
+        \text { Gibbs free energy } & G=U-T S+p V & d G=-S d T+V d p+\mu d N \\
+        \text { grand potential } & \Phi=F-\mu N & d \Phi=-S d T-p d V-N d \mu \\
+        \hline
+    \end{array}
+    $$
+
     Here are some thermodynamics potential examples:\\
     Internal energy: $dU = TdS - pdV+\mu dN$\\
     Enthalpy: $dH = TdS + Vdp +\mu dN$\\
     Helmholtz Free energy: $dF = -TdS -pdV + \mu dN$\\ ...see discussion in mechanical equilibrium \\
     Gibbs Free energy: $dG = -SdT + Vdp +\mu dN$\\ ...see discussion in phase equilibrium \\
     \textbf{Grand potential : $d\phi = -SdT -pdV - Nd\mu$}\\ ...see discussion in Fermion and Boson Gas \\
-    \\
     For given external conditions, the appropriate thermodynamic potential is a minimum in equilibrium:\\
     the minimization of these thermodynamic potential of the system is a direct consequence of the maximization of global energy.
     \subsubsection{Detailed discussion about each thermodynamic potential}
-    ... Handout page 33 - 35
+    \begin{example}
+        {Energy U for equilibrium at constant $V$, $S$ and $N$}{A schematic flow process}
+    \end{example}
+    Handout page 33 - 35
     \subsection {Phase Equilibrium}
-    Consider a one component system at constant temperature, pressure and particle number, the equilibrium is that the Gibbs free energy is conserved.
-    i.e. the total Gibbs free energy is minimized, $dS =0$ in a mixture of gas and liquid.
+    In this section, we consider a one component system at constant temperature, pressure and particle number. The equilibrium is that the Gibbs free energy is minimised.
+    i.e. the total Gibbs free energy is minimized, $dS =0$ in a mixture of gas and liquid.\\
+    \begin{theorem}
+        {Condition for equilibrium is such that chemical potential is the same}{Prove:}
+    \end{theorem}
     \subsubsection {Phase Equilibrium in Van de Waal gas}
+    Two shaded areas have equal areas.
+    
     \subsubsection {Clausius-Clapeyron Equation}
     \subsection {Mixture of ideal gas}
         In ideal gas, particles do not interact with each other, the thermodynamics properties are the sum of individual contribution of each species of "component".
@@ -237,12 +243,10 @@ The probability distribution is actually a Gaussian approximation w.r.t
             \end{theorem}
     \subsection{Diffusion}
     \subsection{Diffusion in external potentials}
-    \begin{example}
-        {Derivation of kinetic equation of $P(x,t)$, with external potential $V(x)$}
-        {
-        {Random walk from bias}\\
-        {From analogy with sediment problem in gravity, $V=mgh$} 
-        }
-    \end{example}
+    % % \begin{example}
+    %     {Derivation of kinetic equation of $P(x,t)$, with external potential $V(x)$}
+    % %     {Random walk from bias
+    % %     From analogy with sediment problem in gravity, $V=mgh$}
+    % % \end{example}
     \subsection{Kramers problem: escape over a potential barrier}
 \end{document}

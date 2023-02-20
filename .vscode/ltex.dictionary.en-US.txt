@@ -17,3 +17,9 @@ Polytropes
 Couette
 Hookean
 nanomachines
+Hypersurface
+equipartition
+Langevin
+Bravais
+Rankine-Hugoniot
+irrotational

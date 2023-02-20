@@ -105,15 +105,11 @@ Now what we need is another equation: `Equation of state' to determinate pressur
         Thermal conduction, convention and radiation transport.
 \section{A lot of different system}
     \subsection{Full set of equations describing the dynamics of an ideal non-relativisitc fluid}
-        \begin{equation}
-            \pdv{\rho}{t} + \div{\rho \vb{u}} = 0 \tag{Continuity Equation}
-        \end{equation}
-        \begin{equation}
-            \tag{Momentum Equation}
-        \end{equation} 
-        \begin{equation}
-            \laplacian{\Psi} = 4\pi\rho \tag{Poisson's Equation}
-        \end{equation}
+        \begin{align*}
+            \pdv{\rho}{t} + \div{\rho \vb{u}} = 0 \tag{Continuity Equation}\\
+            \rho \pdv{\vb{u}}{t}+\rho (\vb{u}\dotproduct \div)\vb{u}=-\div{p}-\rho\div{\Psi}\tag{Momentum Equation}\\
+            \laplacian{\Psi} = 4\pi\rho \tag{Poisson's Equation}\\
+        \end{align*}
         \begin{equation}
             \tag{Energy Equation}
         \end{equation}
@@ -197,4 +193,69 @@ Now what we need is another equation: `Equation of state' to determinate pressur
     \end{enumerate}
     \subsection{Scaling Relations}
         Scaling relation relates the mass and radius of a polytrope star.
+\section{Sound waves, supersonic flows and shock waves}
+\subsection{Sound Waves}
+    In this section, we find the sound wave a derivative of a $p(\rho)$
+    \begin{example}
+        {Isothermal}{$c^2_s=\sqrt{\frac{R_{*}T}{\mu}}$}
+    \end{example}
+    \begin{example}
+        {Adiabatic}{$c^2_s=\sqrt{\mu\frac{R_{*}T}{\mu}}$}
+    \end{example}
+\subsection{Sound Waves in Stratified Atmosphere}
+    Now we consider sound waves traveling in a fluid with a background structure, i.e. constant gravitational field.
+    We will end up with a dispersion relationship and a $k$ that could be imaginary, meaning a decaying wave.
+    $$
+    \omega^2=c_u^2\left(k^2-\frac{\mathrm{i} k}{H}\right)
+    $$
+    DISPERSION RELATION
+\subsection{Sound waves across interfaces}
+    We then matches B.C. to get reflection coefficient and transmission radiation.
+    $$
+    t=\frac{2 k_1}{k_1+k_2} \quad r=\frac{k_1-k_2}{k_1+k_2}
+    $$
+\subsection{Supersonic Fluid and Shocks}
+    Shock occurs when there is a disturbance in the fluid cause by compression by a large factor.\\
+    \begin{definition}
+        {Mach Number}{$M_1= u_1/c_{s,1}$}{This number helps us to simplify the R-H relationships in the next section.}
+    \end{definition}
+\subsection{The Rankine-Hugoniot Relations}
+    We discovered 3 R-H relations, from conservation of mass, momentum and energy.
+    \begin{align*}
+        \rho_1 u_1&=\rho_2 u_2\\
+        \rho_1 u_1^2+p_1&=\rho_2 u_2^2+p_2\\
+        \frac{1}{2} u_1^2+\mathcal{E}_1+\frac{p_1}{\rho_1}&=\frac{1}{2} u_2^2+\mathcal{E}_2+\frac{p_2}{\rho_2}
+    \end{align*}
+    \subsubsection{Adiabatic Case}
+    The last R-H relationship becomes, in an adiabatic idea gas:
+    \begin{align*}
+        \frac{1}{2} u_1^2+\frac{c_{s, 1}^2}{\gamma-1}&=\frac{1}{2} u_2^2+\frac{c_{s, 2}^2}{\gamma-1}
+    \end{align*}
+
+    \subsubsection{Isothermal Case}
+    The last R-H relationship becomes $T_1=T_2$
+    with this relationship, we have $c_s^2=u_1u_2$ and 
+    $$ 
+    \frac{\rho_2}{\rho_1}=\frac{u_1}{u_2}=\left(\frac{u_1}{c_s}\right)^2=M_1^2
+    $$
+    Note that if $u_1>c_s$ then $u_2<c_s$, flow behind the shock is subsonic.
+
+\section{Bernuolli's Equation}
+This gives us Bernoulli's Principle: For steady barotropic flows, the quantity
+$$
+H=\frac{1}{2} u^2+\int \frac{\mathrm{d} p}{\rho}+\Psi
+$$
+is constant along a streamline. The quantity $H$ is called Bernoulli's constant.\\
+If $p=0, H=$ constant is the statement that kinetic $+$ potential energy is constant along streamlines.\\
+
+If $p \neq 0$, pressure differences accelerate or decelerate the flow as it flows along the streamline.
+\subsection{Rotational and irrotational Flow}
+Let's start with the momentum equation:
+$$
+\frac{\partial \mathbf{u}}{\partial t}+(\mathbf{u} \cdot \boldsymbol{\nabla}) \mathbf{u}=-\frac{1}{\rho} \boldsymbol{\nabla} p-\nabla \Psi
+$$
+
+
+\subsection{Laplacian}
+Laplacian Equation is derived if we have incompressible and irrotational flow. i.e $\div{\vb{u}=0}$ and $\curl{\vb{u}}=0$
 \end{document}

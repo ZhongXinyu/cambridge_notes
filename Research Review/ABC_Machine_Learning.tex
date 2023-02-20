@@ -43,6 +43,7 @@ Abstract of this course
 \section{Introduction}
 mention supervised vs. unsupervised, supervised is more relavent for physics.
 \section{Overview of fitting}
+\subsection{Fitting techniques}
 \paragraph*{}
 Although the idea of machine learning is first introduced in 1959,
 % https://citeseerx.ist.psu.edu/doc/10.1.1.368.2254
@@ -69,7 +70,7 @@ The objective is to minimise the ordinary least squares:
     sum{y_i-(kx_i+c)}^2
 \end{equation}
 %Ideals:
-% Zachary Taylor's answer about Taylor's theorm and tis limitations
+%Zachary Taylor's answer about Taylor's theorm and tis limitations
 This reminds us a 
 Taylor expansion only works for small x, disaster at large x.
 The limitation of this Taylor expansion comes when the x becomes an infinitely large value, which will cause the magnitude of $y$ to become infinitely large, which many not reflects the datasets properly. 
@@ -90,25 +91,47 @@ Padé approximant $\frac{ax^2+bx^3+...}{c+dx+...+x^6}$ making sure that $f(x)$ d
 Padé approximant does not have the same problem of using 
 Padé approximant is superior to the Taylor series when describing function that contains poles. 
 Also by dividing a polynomial by another, the Pade approximant prevents the function from diverging by letting $N<=M$
-\paragraph{Neural network}
+\subsection{Neural network}
 After 150 years or so \\
 Neuro network, $\frac{x}{1+a\abs{x}}$ using less indicator\\
+Use a sum of such $\frac{x}{1+a\abs{x}}$ element, which resembles a hyperbolic tangent.
 after 30 years\\
 Neural Network is used to solve classification problems, sometimes regression problem.
+Example of Neural network code:
+\subparagraph*{Back Propagation}
+Backpropagation is just a way of propagating the total loss back into the neural network to know how much of the loss every node is responsible for, and subsequently updating the weights in a way that minimizes the loss by giving the nodes with higher error rates lower weights, and vice versa.
+\subparagraph*{Gradient decent}
+    Slowly updating parameters 
+% https://towardsdatascience.com/deep-neural-networks-for-regression-problems-81321897ca3
+\subparagraph*{Activation functioon}
+\begin{enumerate}
+    \item Activation function: takes in a real vale and spit out a value between (0 to 1) to add linearity to the network.
+    %Paraphrase the below item%
+    \item Activation functions introduce an additional step at each layer during the forward propagation, but its computation is worth it. Here is why—
+    In that case, every neuron will only be performing a linear transformation on the inputs using the weights and biases. It’s because it doesn’t matter how many hidden layers we attach in the neural network; all layers will behave in the same way because the composition of two linear functions is a linear function itself.
+    \item Different Types of activation function.
 
+\end{enumerate}
+\subparagraph*{Loss function}
+% https://www.linkedin.com/posts/damienbenveniste_machinelearning-datascience-artificialintelligence-activity-7028762585705451520-iqtz/?utm_source=share&utm_medium=member_ios
 \paragraph{Deep Neural network}
 Deep neural network, layers of sum of indicator
-the deepness refers to the layers
+the deepness refers to the layers\\
+Layers can be seen as $f(f'(f''(x)))$\\
 
 \section{Different methods in Machine learning}
 The most natural and commonly used machine learning technique is classification and regression
-
+\subsection{Gaussian Process}
+\subsection{Neural network}
+\subsection{Decision Tree}
 \subsection{Regression}
+\subsection{Classification}
+The output is discrete, can be more than 2.\\
+Classification does give step function\\ not differentiable. 
 \paragraph{Support Vector Regression}
 % https://towardsdatascience.com/an-introduction-to-support-vector-regression-svr-a3ebc1672c2
-Instead of minimsing the error, SVR give us the flexibility to define how much error is tolerable and will find an appropirate line. The term we are minimising is the oefficient vector while we keep the error as a constrain.(Hypersurface)
-\subsection{Classification}
-The output is discrete, can be more than 2.
+Instead of minim sing the error, SVR give us the flexibility to define how much error is tolerable and will find an appropriate line. The term we are minimising is the efficient vector while we keep the error as a constraint.(Hypersurface)
+Non-linear Classification.
 \paragraph{Decision Trees}
 %https://link.springer.com/content/pdf/10.1007/BF00116251.pdf
 
@@ -128,10 +151,46 @@ Non-linear problem
 \subsection{Tide-prediction Machine}
 %https://en.wikipedia.org/wiki/Tide-predicting_machine
 William Thompson first invented 
+\subsection{Gravitational Waves}
+Problem 
+metric that doesn't changed when shift or 
+coefficient  shift-free and dimension free
+$R^2$
 
-A parallel relationship? Linear Regression between dicission tree, SVN and 
+$r^2$ different things.
+\section{Choosing ML techniques}
+Testing protocal 
+Train validate test 5 fold. 
+Tranlational text recogonisation. 
 
-Machine learning Loss functions
-% https://www.linkedin.com/posts/damienbenveniste_machinelearning-datascience-artificialintelligence-activity-7028762585705451520-iqtz/?utm_source=share&utm_medium=member_ios
+Take fouriour transform for symmetery
+Translationall invarianct.
 
+not invariant forest,
+invariant covolution neural network.
+
+Gaussian more perfect,
+
+\section{Conclusion}
+Put exam bullet point in conclusion.
+Also, show future prospect, big advancement, is physics ready machine learning, what is the data collection like in physics
+
+MCC for categorical data.
+\begin{example}
+    {Overall structure of this review.}{The over structure should be general concepts about machine learning followed by specific example.}
+\end{example}
+\begin{example}
+    {How deep should I look into each case. For example, different activation function for neural network, different definition of distance in KNN problem, different definition of Loss function in liner regression?}{}
+\end{example}
+\begin{example}
+    {Marking Scheme:}{communication/ Would they read my report, if yes, methods/how to next step}
+\end{example}
+
+
+Sum of F(ax+b)+F(ax+B) more superior to the Parday when no fit data with lesser parameters.
+
+
+
+
+independently tested.
 \end{document}

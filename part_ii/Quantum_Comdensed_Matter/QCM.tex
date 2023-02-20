@@ -152,8 +152,9 @@ Abstract of this course
                 \paragraph*{Screening}
                     At small q, long distance, $\epsilon_{TF}$
             \end{enumerate}
-\subsection{Electrons and honons in periodic solids}
-    In this section ,we discuss the type of bonds: "Van der Waal", ionic, covalent. Crystal structure
+\section{Electrons and phonons in periodic solids}
+    In this section, we discuss the type of bonds: "Van der Waal", ionic, covalent. Crystal structure
+    This is like a section that dedicated to material science
     \subsubsection{Binding of crystals}
         \paragraph*{Inert gas}
         \begin{enumerate}
@@ -172,9 +173,93 @@ Abstract of this course
                 \end{equation}
                 where $\alpha_M$ is a dimensionless constant that depend only on the crystal structure
             \end{enumerate}
+    \subsection{Complex materials}
+    \subsection{Description of periodic materials}
+        \subsubsection{Index system for lattice}
+        \subsubsection{Reciprocal Lattice and Diffraction}
+        \subsubsection{Diffraction Condition}
+        The spacing 
+        \begin{equation}
+            2 d \sin \theta=n \lambda
+        \end{equation}
+\subsection{Lattice dynamics and phonons}
+\paragraph{1D monatomic chain}
+\paragraph{1D diatomic chain}
+\paragraph{1D different spring constant}
+\paragraph{1D different mass}
+\paragraph{3D crystal}
+In 3D crystall, eher are 
+There are always 3 acoustic modes and 3(m-1) optical modes where m is the number of atoms per unit cell.
+\subsection{Density of states}
+\subsection{Heat Capacity} 
+    When studying heat capacities, we discuss optical branch (Einstein Model)and acoustic model (Debye model)
+    \subsubsection{Debye Model}
+    2.8 Lattice specific heat
+    Phonons obey Bose-Einstein statistics, but their number is not conserved and so the chemical potential is zero, leading to the Planck distribution
+    $$
+    n(\omega)=\frac{1}{\exp \left(\hbar \omega / k_{\mathrm{B}} T\right)-1}
+    $$
+    The internal energy is
+    $$
+    U=\int d \omega D(\omega) n(\omega) \hbar \omega
+    $$
+    For the Einstein model
+    $$
+    U_E=\frac{N \hbar \omega_o}{\mathrm{e}^{\hbar \omega_o / k_{\mathrm{B}} T}-1}
+    $$
+    and the heat capacity is
+    $$
+    C_V=\left(\frac{\partial U}{\partial T}\right)_V=N k_{\mathrm{B}}\left(\frac{\hbar \omega_o}{k_{\mathrm{B}} T}\right)^2 \frac{\mathrm{e}^{\hbar \omega_o / k_{\mathrm{B}} T}}{\left(\mathrm{e}^{\hbar \omega_o / k_{\mathrm{B}} T}-1\right)^2}
+    $$
+    At low temperatures, this grows as exp $-\hbar \omega_o / k_{\mathrm{B}} T$ and is very small, but it saturates at a value of $N k_{\mathrm{B}}$ (the Dulong and Petit law) above the characteristic temperature $\theta_E=\hbar \omega_o / k_{\mathrm{B}} \cdot{ }^6$
 
-            
-        
+    At low temperature, the contribution of optical modes is small, and the Debye spectrum is appropriate. This gives
+    $$
+    U_{\mathrm{D}}=\int_0^{\omega_{\mathrm{D}}} d \omega \frac{V \omega^2}{2 \pi^2 v^3} \frac{\hbar \omega}{\mathrm{e}^{\hbar \omega / k_{\mathrm{B}} T}-1}
+    $$
+    Defining the Debye temperature $\theta_{\mathrm{D}}=\hbar \omega_{\mathrm{D}} / k_{\mathrm{B}} T$ and using $\omega_{\mathrm{D}}^3=6 \pi^2 v^3 N / V$ from above, we obtain $\theta_{\mathrm{D}}=\left(6 \pi^2 N / V\right)^{1 / 3} \hbar b / k_{\mathrm{B}}$. \\
+    By writing $x=\hbar \omega / k_{\mathrm{B}} T$ and including a factor of 3 for different modes, we obtain for the internal energy
+    $$
+    U_{\mathrm{D}}=\frac{3 V \hbar}{2 \pi^2 v^3} \int_0^{\omega_{\mathrm{D}}} d \omega \frac{\omega^3}{\mathrm{e}^{\hbar \omega / k_{\mathrm{B}} T}-1}=9 N k_{\mathrm{B}} T \frac{T}{\theta_{\mathrm{D}}} \int_0^{\theta_{\mathrm{D}} / T} d x \frac{x^3}{\mathrm{e}^x-1}
+    $$
+    and by differentiating the middle expression with respect to temperature, the heat capacity (see Fig. 2.29) is
+    $$
+    C_V=9 N k_{\mathrm{B}}\left(\frac{T}{\theta_{\mathrm{D}}}\right)^3 \int_0^{\theta_{\mathrm{D}} / T} d x \frac{x^4 \mathrm{e}^x}{\left(\mathrm{e}^x-1\right)^2}
+    $$
+    where the Debye temperature is $\theta_{\mathrm{D}}=\hbar \omega / k_{\mathrm{B}}$. We have multiplied by 3 to account for the three acoustic branches.
+    \subsubsection{Heat capacity due to lattice vibration and electrons}
+    Two major contribution to heat capacity: electrons and lattice vibrations. Electron heat capacity is linear to $T$ ??? while lattice vibration heat capacity is $\propto T^3$
+    \subsubsection{Compare Einstein and Debye models}
+    Why we are comparing these two models???
+\subsection{Thermal Conductivity of insulators}
+    \begin{enumerate}
+        \item The thermal conductivity, $\kappa$ is defined by $\boldsymbol{J}_q=-\kappa \nabla T$, where $\boldsymbol{J}_q$ is the flux of heat (energy per unit area per unit time).
+        \item Kinetic theory gives $\kappa=\frac{1}{3} C_{\mathrm{V}} \ell v=\frac{1}{3} C_{\mathrm{V}} v^2 \tau$, where $C_{\mathrm{V}}$ is the phonon specific heat per unit volume, $v$ is the phonon velocity, $\ell=v \tau$ is the mean free path and $\tau$ is the scattering time. 
+        \item Debye theory predicts that $C_{\mathrm{V}} \propto T^3$ \textbf{at low $T$} and that it is constant at high $T$(While in reality, at high temperature, thermal conductivity is dominated by scattering). 
+        \item $v$, the velocity of sound, is almost constant, but $\tau$ depends on several scattering mechanisms. 
+        \item Scattering Mechanisms include normal, Umklapp, points defects sample boundaries and crystal dislocations.
+        \item At high temperaturem $\kappa$ falls rapidly due to rapid fall in $\tau$, the scattering time. 
+    \end{enumerate}
+\section{Electrons in periodic potential}
+    By solving Hamiltonian's equation, we conclude Bloch's theorem: Eigenstates of the 1D Hamiltonian can be chosen to be a plane wave multiplied by a function with the periodicity of the Bravais lattice.\\
+    We consider first a formal treatment in terms of a complete set of basis functions, namely the set of all plane-wave states which satisfy the periodic boundary conditions. The results from this treatment can be used to obtain Bloch's theorem, which is one of the cornerstones of electronic structure in solids. Next, we will approach Bloch's theorem from a more abstract but also more elegant direction, which uses the translational symmetry of the lattice directly.
+
+\subsection{Shrodinger equation ina periodic table}
+\subsection{Bloch theorem from discrete translational symmetry}
+Another way to think about Bloch theorem, consider what happends to eigenstate of Hamiltonian.\\ 
+
+The underlying reason is that if an operator is unchanged under a change of coordinate sstem, then applying a symmetry opertatioin on the eigenstate of such operator produces another eigenstate of the operatore, with teh sam eigenvalue of teh original one.\\
+
+For two commuting operators H and T, we can always choose simulatneous eienstates of both H and T 
+
+Two forms of Bloch theorem:
+$$
+\psi_{\boldsymbol{q}}(\boldsymbol{r})=\mathrm{e}^{\mathrm{i} \boldsymbol{q} \cdot \boldsymbol{r}} \sum_{\boldsymbol{G}} c_{\boldsymbol{q}-\boldsymbol{G}} \mathrm{e}^{-\mathrm{i} \boldsymbol{G} \cdot \boldsymbol{r}}=\mathrm{e}^{\mathrm{i} \boldsymbol{q} \cdot \boldsymbol{r}} u_{j, \boldsymbol{q}}(\boldsymbol{r})
+$$            
+
+$$
+\psi_{\boldsymbol{k}}^{(n)}(\boldsymbol{r}+\boldsymbol{R})=\mathrm{e}^{\mathrm{i} \boldsymbol{k} \cdot \boldsymbol{R}} \psi_{\boldsymbol{k}}^{(n)}(\boldsymbol{r})
+$$        
     
 
 \end{document}
