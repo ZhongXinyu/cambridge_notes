@@ -196,12 +196,17 @@ Now what we need is another equation: `Equation of state' to determinate pressur
 \section{Sound waves, supersonic flows and shock waves}
 \subsection{Sound Waves}
     In this section, we find the sound wave a derivative of a $p(\rho)$
+
     \begin{example}
-        {Isothermal}{$c^2_s=\sqrt{\frac{R_{*}T}{\mu}}$}
+        {Isothermal sound wave }
+        {$c^2_s=\sqrt{\frac{R_{*}T}{\mu}}$}
     \end{example}
+
     \begin{example}
-        {Adiabatic}{$c^2_s=\sqrt{\mu\frac{R_{*}T}{\mu}}$}
+        {Adiabatic sound wave }
+        {$c^2_s=\sqrt{\gamma\frac{R_{*}T}{\mu}}$}
     \end{example}
+
 \subsection{Sound Waves in Stratified Atmosphere}
     Now we consider sound waves traveling in a fluid with a background structure, i.e. constant gravitational field.
     We will end up with a dispersion relationship and a $k$ that could be imaginary, meaning a decaying wave.
@@ -240,13 +245,26 @@ Now what we need is another equation: `Equation of state' to determinate pressur
     $$
     Note that if $u_1>c_s$ then $u_2<c_s$, flow behind the shock is subsonic.
 
-\section{Bernuolli's Equation}
+\section{Bernoulli's Equation and transonic flows}
+\begin{enumerate}
+    \item In this section, we started with the Berbulli's equation which gives us Bernoulli Principle, ain nvaraint term connecting the velocity and $p$, $\rho$, $\psi$.
+    \item Then we briefly discuss the vorticities of the fluid.
+    \item In the third section, we researched on the De Laval Nozzle, the behaviour of a flow in a tube of area $A$:
+    $$
+    \left(u^2-c_s^2\right) \nabla \ln u=c_s^2 \nabla \ln A
+    $$
+    before we applied Bernoulli's principle to the isotermal and adiabatic case to discuss the phyiscal meaning of the equations.
+    \item Lastly, we studied Spherical Accretion and wind, where we considered steady-state and spherically-symmertic accretion flow in the gravitational potential of a central body, i.e.a sun.
+\end{enumerate}
+
+\subsection{Bernoulli equation}
 This gives us Bernoulli's Principle: For steady barotropic flows, the quantity
 $$
 H=\frac{1}{2} u^2+\int \frac{\mathrm{d} p}{\rho}+\Psi
 $$
-is constant along a streamline. The quantity $H$ is called Bernoulli's constant.\\
-If $p=0, H=$ constant is the statement that kinetic $+$ potential energy is constant along streamlines.\\
+is constant along a streamline. The quantity $H$ is called Bernoulli's constant.
+
+If $p=0, H=$ constant is the statement that kinetic $+$ potential energy is constant along streamlines.
 
 If $p \neq 0$, pressure differences accelerate or decelerate the flow as it flows along the streamline.
 \subsection{Rotational and irrotational Flow}
@@ -255,7 +273,108 @@ $$
 \frac{\partial \mathbf{u}}{\partial t}+(\mathbf{u} \cdot \boldsymbol{\nabla}) \mathbf{u}=-\frac{1}{\rho} \boldsymbol{\nabla} p-\nabla \Psi
 $$
 
-
-\subsection{Laplacian}
+\subsection{The De Laval Nozzle}
 Laplacian Equation is derived if we have incompressible and irrotational flow. i.e $\div{\vb{u}=0}$ and $\curl{\vb{u}}=0$
+
+\subsection{Spherical Accretion}
+In this section, we are considering symmtric flow of mater in gravitational potential of point like central body, assuming:
+\begin{enumerate}
+    \item rest at infinity
+    \item flow in steady state
+    \item barotropic equation of state
+\end{enumerate}
+BYconsidering mass conservaiton and momentum conservation for steady states:
+$$
+\left(u^2-c_s^2\right) \frac{\mathrm{d}}{\mathrm{d} r} \ln u=\frac{2 c_s^2}{r}\left(1-\frac{G M}{2 c_s^2 r}\right)
+$$
+which means that there is a ctritical point where:
+$$
+r=r_s=\frac{G M}{2 c_s^2}
+$$
+that we call a \textbf{Sonic pint}, where $u$ has an extremum or $u=c_s$\\
+
+\begin{example}
+    {Isothermal accretion case, $c_s=\sqrt{\frac{\mathcal{R}_* T}{\mu}}=\mathrm{const}$}
+    {We can find the mass accretion rate:
+    $$
+    \dot{M}=\frac{\pi G^2 M^2 e^{3 / 2} \rho_{\infty}}{c_s^3}
+    $$
+    }
+\end{example}
+
+\begin{example}
+    {Polytropic accretion case, $p=K \rho^{1+1 / n}$: }{
+        We can find the mass accretion rate:
+        $$
+        \dot{M}=\frac{\pi(G M)^2 \rho_{\infty}}{c_{s, \infty}^3}\left(\frac{n}{n-\frac{3}{2}}\right)^{n-3 / 2}
+        $$
+        we can recover the iso termal case by taking limit:
+        $$
+        n \rightarrow \infty
+        $$
+    }
+\end{example}
+\subsubsection{Dependency of the accretion rate}
+\begin{enumerate}
+    \item Dependence of accretion rate on mass of object
+    $$
+    \dot{M}=A M^2
+    $$
+    - If initial mass is $M_0$ and it accretes like this for time $t$, then we can integrate to get
+    $$
+    \int_{M_0}^M \frac{\mathrm{d} M}{M^2}=A t \quad \Rightarrow \quad M=\frac{M_0}{1-A M_0 t}
+    $$
+    so $\quad M \rightarrow \infty$ as $t \rightarrow 1 / A M_0$
+    - In reality, the accretion rate will become limited by fuel supply and/or the Eddington limit (which has $M \dot{\propto} M$, so exponential growth).
+    \item Dependence of accretion rate on reservoir properties:
+    $$
+    \dot{M} \propto \frac{\rho_{\infty}}{c_{\infty}^3} \propto \frac{p_{\infty}}{c_{\infty}^5}
+    $$
+    - Much higher accretion rates from colder material.
+    \item The $n=3 / 2$ is a singular case:
+    - Sonic point goes to origin, with infinite sound speed and density
+    $$
+    \begin{aligned}
+    c_s^2 & =\left(\frac{n}{n-\frac{3}{2}}\right) c_{s, \infty}^2, \rho_s=\left(\frac{n}{n-\frac{3}{2}}\right)^n \rho_{\infty} \\
+    r_s & =\frac{G M}{2 c_s^2} \rightarrow 0 \text { as } n \rightarrow \frac{3}{2}
+    \end{aligned}
+    $$
+    - But accretion rate remains finite
+    $$
+    \dot{M}=\frac{\pi(G M)^2 \rho_{\infty}}{c_{s, \infty}^3}\left(\frac{n}{n-\frac{3}{2}}\right)^{n-3 / 2} \quad \rightarrow \frac{\pi(G M)^2 \rho_{\infty}}{c_{s, \infty}^3} \quad \text { as } n \rightarrow \frac{3}{2}
+    $$
+    \item Can extend (with less rigor) to the case of the mass moving at speed $v_{\infty}$ through a uniform medium. Accretion rate
+    $$
+    \dot{M} \sim \frac{(G M)^2 \rho_{\infty}}{\left(c_{\infty}^2+v_{\infty}^2\right)^{3 / 2}} \quad \quad \quad \begin{aligned}
+    & \text { BONDI-HOYLE } \\
+    & \text { ACCRETION }
+    \end{aligned}
+    $$
+\end{enumerate}
+\section{Fluid Instabilities}
+We say that for a fluid in a steady state, ($\partial{t} = 0$), this is in a state of equilibrium. This results in:
+\begin{enumerate}
+    \item small perturbation that grows with time and unstable
+    \item small perturbation that decays with time or osicalltes around the equilibirum configuration, the configuration is stable.
+\end{enumerate}
+In this section, we explore the example of instabilities.
+\subsubsection{Convective Instability}
+For convective instabilites, we consider an equilibrium system that under an uniform field.
+Consider a system that has ($p,\rho$) that moves to a surrounding medium of ($p',\rho'$).As its pressure changes to $p'$, its denisity that undergoes adiabatic change, will become $\rho^{*}$ instead of $\rho'$.
+
+Now we have to compare $\rho'$ and $\rho^{*}$ to see if the density difference will grow or decay the instability.
+Hence, we have the Schwarzschild stability criterion which reads
+$$
+\frac{\mathrm{d} T}{\mathrm{~d} z}>\left(1-\frac{1}{\gamma}\right) \frac{T}{p} \frac{\mathrm{d} p}{\mathrm{~d} z}
+$$
+Since hydrostatic equilibrium requires $\mathrm{d} p / \mathrm{d} z<0$, we see that (since $\gamma>1$ )
+- Always stable to convection if $\mathrm{d} T / \mathrm{d} z>0$;
+- Otherwise, can tolerate a negative temperature gradient provided
+$$
+\left|\frac{\mathrm{d} T}{\mathrm{~d} z}\right|<\left(1-\frac{1}{\gamma}\right) \frac{T}{p}\left|\frac{\mathrm{d} p}{\mathrm{~d} z}\right|
+$$
+So convective instability develops when $T$ declines too steeply with increasing height.
+
+
+
 \end{document}

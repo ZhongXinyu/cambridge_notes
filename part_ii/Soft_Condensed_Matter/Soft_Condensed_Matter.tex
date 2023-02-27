@@ -386,6 +386,7 @@ $$
 \end{aligned}
 $$
 This is the definition of white noise. The value of the constant $c$ will be discussed
+\subsection{Free system}
 \subsubsection{Solution of Langevin equation and fluctuation-dissipation theorem}
 In this section we obtained the solution for velocity for Langevin equation before investigating the mean square velocity in the long time limit, in which we find, by considering partition theorem, the constant term in the mean square random force field. We find the solution by substitution: $\vec{v}(t)=\vec{w}(t) e^{-\frac{\gamma}{m} t}$
 $$
@@ -428,7 +429,7 @@ IN this section, we consider spherical symmetric growth at steady state, This si
     \intertext{The $1/{r^2}$ actually shows that total flux crossing any spherical shell is constant and independent of distance from centre, the total flux}
     \frac{d N}{d t}=-J(a) 4 \pi a^2=4 \pi D c_{\infty} a
 \end{align}
-\subsection{Velocity relaxation}
+\subsubsection{Velocity relaxation}
 Memory of the original velocity $\vec{v}_0$ is lost over a time scale
 $$
 \tau_v:=\frac{m}{\gamma}
@@ -443,9 +444,66 @@ $$
 \vec{x}(t)=\vec{x}_0+\frac{1}{\gamma} \int_0^t \vec{\xi}\left(t^{\prime}\right) d t^{\prime}
 $$
 where $x_0$ is the initial position of the particle.
+\subsection {System with Potential energy}
+We now consider a system with a potential energy
 \subsubsection{Confined Brownian Motion}
+New solution for the Langevin equation:
+$$
+\vec{x}(t)=\vec{x}_0 e^{-\frac{k}{\gamma} t}+\int_0^t e^{\frac{k}{\gamma}\left(t-t^{\prime}\right)} \frac{1}{\gamma} \vec{\xi}\left(t^{\prime}\right) d t^{\prime}
+$$
+As expected, $\langle\vec{x}(t)\rangle=\vec{x}_0 e^{-\frac{k}{\gamma} t} \rightarrow 0$, when $t \rightarrow \infty$ and the mean square deviation can be computed to yield
+$$
+\left\langle\vec{x}(t)^2\right\rangle=\vec{x}_0^2 e^{-2 \frac{k}{\gamma} t}+\frac{3 k_B T}{k}\left(1-e^{-2 \frac{k}{\gamma} t}\right) .
+$$
+\subsubsection{Diffusion in external potentials}
+The particle current flux density:
+$$
+\vec{J}(\vec{x})=-D \vec{\nabla} c(\vec{x}, t)-\frac{1}{\gamma} \vec{\nabla} U(\vec{x}) c(\vec{x}, t)
+$$
+\subsection{Escape over a potential barrier}
+In this section, we get the escape rate of a particle escape from a metastable state separated by a barrier from reaching thermodynamic equilbrium by considering the flux denisity, therefore the escape rate is:
+$$
+r=D \frac{\sqrt{\kappa_A \kappa^{\ddagger}}}{2 \pi k_B T} e^{-\beta U^{\ddagger}}
+$$
+This result shows that the escape rate is proportional to the Boltzmann factor of the barrier. This type of exponential behaviour was discovered empirically to apply for many chemical reactions by Arrhenius.
+\subsection{Reaction controlled processes}
+\subsection{Microrheology}
+Microrheology is a technique to measure the viscoelastic properties of a ma- terial by monitoring the trajectories of an ensemble of small and inert tracer par- ticles embedded in it.
 
 \section{Polymers}
-\section{Molecular self-assembly}
+\subsection{Ploymer definition and examples}
+\subsection{Polydispersity}
+\subsection{The ideal chain}
+Definition of constant;
+\begin{enumerate}
+    \item $\vec{u}$ : bond vector, $\vec{u}_i=\vec{r}_{i+1}-\vec{r}_i$
+    \item $R$ : end-to-end vector, $\vec{R}=\vec{r}_N-\vec{r}_0$
+    \item $b_0$: bond length
+    \item $\sqrt{\left\langle\vec{R}^2\right\rangle}$: end-to-end distance 
+\end{enumerate}
+WE discussed three ideal chain models: Random walk, Freel rotating chain, and Beads and spings and discussed heri Kuhn length
+$$
+\begin{array}{ll}
+    \hline \text { Model } & \text { Kuhn length } \\
+    \hline \text { Random walk } & b_0 \\
+    \text { Freely rotating chain } & b_0 \sqrt{\frac{1+\cos \theta}{1-\cos \theta}} \\
+    \text { Beads and springs } & \sqrt{\frac{3 k_B T}{\kappa}}
+\end{array}
+$$
+The quantity $l_p$ is known as te persistence length.
+\subsubsection{Random walk}
+\subsection{Freely joint chain}
+End-to-end distance of a freely joint chain is $\sqrt{\left\langle\vec{R}^2\right\rangle}=N^{1 / 2} b_0$
+\subsection{Freely rotating chain}
+End-to-end distance of a freely rotating chain is $N b_0^2 \frac{1+\cos \theta}{1-\cos \theta}$
+\subsubsection{Bead springs model}
+We can also describe an ideal chain as a series of $\mathrm{N}+1$ beads $i=0 \ldots N$ connected linearly by springs with spring constant $\kappa$, leading to an energy of the form $U=$ $\frac{\kappa}{2}\left(\vec{r}_{i+1}-\vec{r}_i\right)^2$. 
 
+The end-to-end distance can then be evaluated as:
+$$l\left\langle R^2\right\rangle=\frac{\int Z(R) R^2 d^3 R}{\int Z(R) d^3 R}=\underbrace{\frac{3 k_B T}{\kappa}}_{=\tilde{b}_0^2} N$$
+
+\subsection{Real chains: excluded volume}
+
+
+\section{Molecular self-assembly}
 \end{document}
