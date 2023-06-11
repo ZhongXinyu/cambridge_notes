@@ -23,3 +23,9 @@ Langevin
 Bravais
 Rankine-Hugoniot
 irrotational
+eigenstates
+wavefunction
+Equipartition
+poynting
+spherically-symmertic
+spherically-symmertic

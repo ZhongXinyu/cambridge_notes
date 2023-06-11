@@ -27,7 +27,7 @@ This section devotes itself to the basics of fluid dynamics,
             \begin{enumerate}
                 \item  Rate of change in mass in volume integral of change in density.
                 \item  Conservation of mass states that the rate of change is equal to the net flux of mass flowing, 
-                followed by a divergence theorem to change surface integral to volume integral.
+                followed by a divergence theorem to change the surface integral to a volume integral.
                 \item Combining the rate of change in mass and conservation of mass, as both are volume integral:            
                 $$
                     \pdv{\rho}{t} = -\div(\rho \vb{v})
@@ -45,7 +45,7 @@ This section devotes itself to the basics of fluid dynamics,
                 $$
                     \sigma_{ij}=\sigma' {ij} - p\delta{ij}
                 $$
-                where the two items are contribution for viscous pressure and pressure forces
+                where the two items are contributions for viscous pressure and pressure forces
                 \item 
             \end{enumerate}
         \subsection{Navier-Stokes equation}
@@ -54,9 +54,9 @@ This section devotes itself to the basics of fluid dynamics,
                 $$
                     \rho [\partial_t\vb*{v} + (\vb*{v}\dotproduct \nabla)\vb*{v}]= - \grad{p} +\eta\laplacian{v}+\rho\vb*{g}
                 $$
-                \item Left-hand side relate to inertial force densities
-                \item Right-hand side encompass intrinsic viscosity and applied force densities (pressure gradient and gravity)
-                \item Conservative external forces, including gravity, the eternal force term is absorbed into pressure term.
+                \item Left-hand side relates to inertial force densities
+                \item Right-hand side encompasses intrinsic viscosity and applied force densities (pressure gradient and gravity)
+                \item Conservative external forces, including gravity, the eternal force term is absorbed into the pressure term.
             \end{enumerate}
         \subsection{Material Derivative}
             \begin{enumerate}
@@ -65,25 +65,25 @@ This section devotes itself to the basics of fluid dynamics,
                 $$
                     \frac{Df}{Dt} = \pdv{f}{t} = (\vb*{v} \dotproduct \vb{\nabla})f
                 $$
-                \item In particular, the acceleration of fluid element is:
+                \item In particular, the acceleration of fluid elements is:
                 $$
                     \frac{D\vb{v}}{Dt} = \pdv{\vb{v}}{t} = (\vb*{v} \dotproduct \vb{\nabla})\vb{v}
                 $$
                 \item 
             \end{enumerate}
         \subsection{Reynold Number and Stokes Flow}
-            When discussing fluid of limit of low flow velocities, or small sizes. Reynolds number is inversely proportional to the viscosity.
+            When discussing fluids of limited of low flow velocities, or small sizes. Reynolds number is inversely proportional to the viscosity.
             \begin{enumerate}
                 \item Reynold number 
                 $$
                     Re =\frac{\rho v_0 L_0}{\eta}
                 $$
-                Take note that Reynold number is inversely proportional to viscosity.
-                \item Low Reynolds number $Re << 1$, the viscous term dominates over inertia, non-linear Navier-Stokes equation is reduced to linear Stokes equation:
+                Take note that Reynold's number is inversely proportional to viscosity.
+                \item Low Reynolds number $Re << 1$, the viscous term dominates over inertia, non-linear Navier-Stokes equation is reduced to the linear Stokes equation:
                 $$
                     0 = -\grad p +\eta\laplacian \vb*{v}
                 $$
-                \item If an external force is applied, for instance an oscillating boundary, time derivative is given by the external force and is not negligible, which gives time-dependent Navier Stokes Equation
+                \item If an external force is applied, for instance, an oscillating boundary, the time derivative is given by the external force and is not negligible, which gives time-dependent Navier Stokes Equation
                 $$
                     \rho \partial_{v}\vb*{v} = -\grad p +\eta\laplacian \vb*{v}
                 $$
@@ -94,18 +94,18 @@ This section devotes itself to the basics of fluid dynamics,
                 \item If reverse spacial direction, the pressure gradient changes sign while the Laplacian keeps its sign, the flow velocity changes sign, therefore Stoke equation is unchanged under reversal of spatial coordinates.
                 \item Kinetic reversibility properties of Stokes flow implies that a microorganism attempts
                 \item This observation has interesting consequences for locomotion on small scales as is applicable to microorganisms or artificial nanomachines. 
-                Indeed, the kinematic reversibility property of Stokes flows implies that a microorganism which attempts to swim through a reversible sequence of changes of shape, returning to its original shape by going through the sequence in reverse, will not translate, since any motion that it undergoes in the first half of the cycle will be reversed in the second part of the swimming cycle. 
+                Indeed, the kinematic reversibility property of Stokes flows implies that a microorganism that attempts to swim through a reversible sequence of changes of shape, returning to its original shape by going through the sequence in reverse, will not translate, since any motion that it undergoes in the first half of the cycle will be reversed in the second part of the swimming cycle. 
                 This is known as the Scallop theorem (originally by Edward Purcell). 
                 A scallop swims to a good approximation by opening and closing a single hinge. 
-                At low Reynolds numbers, the forward movement upon opening would be exactly cancelled by the motion during the reverse stroke and thus the scallop would remain stationary. 
+                At low Reynolds numbers, the forward movement upon opening would be exactly canceled by the motion during the reverse stroke and thus the scallop would remain stationary. 
                 A real scallop is able to avoid this problem by closing the hinge very rapidly, escaping the low Reynolds number regime. 
-                This is made possible by its size such an escape becomes increasingly difficult for smaller scale objects such as microorganisms and artificial nanorobots.
-                \item Different strategy to break time-reversal symmetry to operator with circular motion using rotary molecular motors. Example like E.coli
+                This is made possible by its size such an escape becomes increasingly difficult for smaller-scale objects such as microorganisms and artificial nanorobots.
+                \item Different strategies to break time-reversal symmetry to the operator with a circular motion using rotary molecular motors. Example like E.coli
             \end{enumerate}
         \subsection{Vorticity}
         \subsection{Fluid in mechanical equilibrium}
             \begin{enumerate}
-                \item Viscous Fluid in mechanical equilibrium has to be at rest, $\vb*{v}=0$ relative to contain.
+                \item Viscous Fluid in mechanical equilibrium has to be at rest, $\vb*{v}=0$ relative to containing.
                 \item Navier-Stokes equation reduce to:
                 $$
                     0 = -\grad{p} -\rho g \vb*{e}_z
@@ -125,11 +125,11 @@ This section devotes itself to the basics of fluid dynamics,
                 \item 
             \end{enumerate}
         \subsection{Couette Flow}
-            Couette flow is  a flow induced in a liquid through the movement of one or more walls. No pressure gradiant.  
+            Couette flow is a flow induced in a liquid through the movement of one or more walls. No pressure gradient.  
             \begin{example}
                 {Planar geometry}{
-                    Bottom plate at $z=0$ and top plate $z=h$, liquid is moving with speed $v_0$ while stationary at bottom.
-                    Use stokes equations, together with boundary condition
+                    Bottom plate at $z=0$ and top plate $z=h$, the liquid is moving with speed $v_0$ while stationary at the bottom.
+                    Use Stokes equations, together with boundary condition
                     $$
                         \eta \partial^2_z v_x(z) = 0
                     $$
@@ -138,7 +138,7 @@ This section devotes itself to the basics of fluid dynamics,
             \end{example}
         \subsection{Oscillatory flow}
             \begin{enumerate}
-                \item The equation for motion for the flow field is given by time-dependent Stokes equation
+                \item The equation for the motion for the flow field is given by the time-dependent Stokes equation
                 
                 \item Wave solution:
                 $$
@@ -153,12 +153,12 @@ This section devotes itself to the basics of fluid dynamics,
         \subsection{Diffusion of momentum}
             \begin{enumerate}
                 \item Equation of flow field is a diffusion equation for the transverse flow with a diffusion coefficient equal to $\eta/\rho=\nu$, the kinetic viscosity.
-                \item Transverse momentum diffuse in the z-direction away from its source at the moving plate.
+                \item Transverse momentum diffuses in the z-direction away from its source at the moving plate.
             \end{enumerate}    
         \subsection{Stokes drag force}
-            Consider A spherical body of radius $a$ moving with a velocity $\vb{v}$ through a fluid with is overall stationary. It creates a temporary disturbance in the flow field which disappears after body passes a fixed observation point. The drag force that teh shpere experieences due to the motion of the underlying fluid is $\vb{F} = 6\pi \eta a \vb*{v}$
+            Consider A spherical body of radius $a$ moving with a velocity $\vb{v}$ through a fluid with is overall stationary. It creates a temporary disturbance in the flow field which disappears after body passes a fixed observation point. The drag force that the sphere experiences due to the motion of the underlying fluid is $\vb{F} = 6\pi \eta a \vb*{v}$
             \subsubsection{Scaling argument}
-            In the low Reynolds number regime, assuming stationary flow and neglecting the pressure gradient term, we have Navier Strokes equation:
+            In the low Reynolds number regime, assuming stationary flow and neglecting the pressure gradient term, we have the Navier Strokes equation:
             $$
                 \laplacian{v_T}=0 
             $$
@@ -182,7 +182,7 @@ This section devotes itself to the basics of fluid dynamics,
                     v_x(z=h) &=0\\
                     \intertext{Solution is a parabolic}
                     v_x(z) &= \frac{\Delta p}{2 \eta L}(h-z)z\\
-                    \intertext{Overall flow is characterised by the volumetric flow rate, Q}
+                    \intertext{Overall flow is characterized by the volumetric flow rate, Q}
                     Q &= \int_c dydzv_x(y,z)
                     \intertext{The flow rate through a section of width x, meaning}
                     Q &= \int^\omega_0 dy \int^h_0 dz\frac{\Delta p}{2\eta L}(h-z)z = \frac{h^3\omega}{12\eta L}\Delta p
@@ -371,9 +371,9 @@ In this section, we discuss some models of viscoelastic material such as Maxwell
 \end{definition}
 \\
 \begin{enumerate}
-    \item In this section, we considered the Langevin equation, its solution and relationship to the diffusion equation. We then considered the over damped limit of the equation in a system with a potential energy, `Confined Brownian Motion'.
+    \item In this section, we considered the Langevin equation, its solution and its relationship to the diffusion equation. We then considered the over-damped limit of the equation in a system with potential energy, `Confined Brownian Motion'.
     \item The probability density function is an equivalent approach to the Langevin equation.
-    \item We also find mean square value of dispalcement and velocity and compare them with the equipartition theorem in thermal dynamics.
+    \item We also find the mean square value of displacement and velocity and compare them with the equipartition theorem in thermal dynamics.
     \item The motion of a thermally exited particle subjected to a stocahstic force can be described by two equivalent approaches:
 \end{enumerate}
 
@@ -388,11 +388,11 @@ $$
 This is the definition of white noise. The value of the constant $c$ will be discussed
 \subsection{Free system}
 \subsubsection{Solution of Langevin equation and fluctuation-dissipation theorem}
-In this section we obtained the solution for velocity for Langevin equation before investigating the mean square velocity in the long time limit, in which we find, by considering partition theorem, the constant term in the mean square random force field. We find the solution by substitution: $\vec{v}(t)=\vec{w}(t) e^{-\frac{\gamma}{m} t}$
+In this section, we obtained the solution for velocity for the Langevin equation before investigating the mean square velocity in the long time limit, which we find, by considering the partition theorem, the constant term in the mean square random force field. We find the solution by substitution: $\vec{v}(t)=\vec{w}(t) e^{-\frac{\gamma}{m} t}$
 $$
 \langle\vec{v}(t)\rangle=\vec{v}_0 e^{-\frac{\gamma}{m} t}+\int_0^t e^{-\frac{\gamma}{m}\left(t-t^{\prime}\right)} \underbrace{\frac{\left\langle\vec{\xi}\left(t^{\prime}\right)\right\rangle}{m}}_{=0} d t^{\prime}=\vec{v}_0 e^{-\frac{\gamma}{m} t} .
 $$
-Next, we will \textbf{evaluate mean square velocity and find the constant c}:
+Next, we will \textbf{evaluate the mean square velocity and find the constant c}:
 \begin{align}
     \langle\vec{v}(t) \cdot \vec{v}(t)\rangle= & \vec{v}_0^2 e^{-2 \frac{\gamma}{m} t}+\frac{2}{m} \int_0^t e^{-\frac{\gamma}{m}\left(2 t-t^{\prime}\right)} \vec{v}_0 \cdot \underbrace{\left\langle\vec{\xi}\left(t^{\prime}\right)\right\rangle}_{=0} d t^{\prime} \\
     & +\frac{1}{m^2} \int_0^t d t^{\prime} \int_0^t d t^{\prime \prime} e^{-\frac{\gamma}{m}\left(2 t-t^{\prime}-t^{\prime \prime}\right)} \underbrace{\left\langle\vec{\xi}\left(t^{\prime}\right) \cdot \xi\left(\overrightarrow{t^{\prime \prime}}\right)\right\rangle}_{=c \delta\left(t^{\prime}-t^{\prime \prime}\right)} \\
@@ -421,7 +421,7 @@ $$
     {\vb{J}}(x,t) = -D \div{c}(x,t)
 $$
 \subsubsection{Diffusion controlled process}
-IN this section, we consider spherical symmetric growth at steady state, This situation corresponds to particles attaching together when they meet  reference particle of radius a located at r=0 and thus forms clusters. We have a solution for c with boundary condition c(r=a)=0:
+Incompressible this section, we consider spherical symmetric growth at steady state, This situation corresponds to particles attaching together when they meet reference particle of radius a located at r=0 and thus form clusters. We have a solution for c with boundary condition c(r=a)=0:
 \begin{align}
     c(r) = c_{\infty}(1-\frac{a}{r})\\
     \intertext{The particle current densit is radial and has form:}
@@ -435,7 +435,7 @@ $$
 \tau_v:=\frac{m}{\gamma}
 $$
 \subsubsection{Overdamped limit}
-If observations are made on time scales which are much larger than the velocity relaxation time $\tau_v=m / \gamma$, then the particle effectively has no acceleration or inertia. The Langevin equation therefore becomes:
+If observations are made on time scales that are much larger than the velocity relaxation time $\tau_v=m / \gamma$, then the particle effectively has no acceleration or inertia. The Langevin equation therefore becomes:
 $$
 0=-\gamma \vec{v}+\vec{\xi}(t)
 $$
@@ -474,10 +474,10 @@ Microrheology is a technique to measure the viscoelastic properties of a ma- ter
 \subsection{Ploymer definition and examples}
 \subsection{Polydispersity}
 \subsection{The ideal chain}
-Definition of constant;
+Definition of constants:
 \begin{enumerate}
     \item $\vec{u}$ : bond vector, $\vec{u}_i=\vec{r}_{i+1}-\vec{r}_i$
-    \item $R$ : end-to-end vector, $\vec{R}=\vec{r}_N-\vec{r}_0$
+    \item $\vec{R}$ : end-to-end vector, $\vec{R}=\vec{r}_N-\vec{r}_0$
     \item $b_0$: bond length
     \item $\sqrt{\left\langle\vec{R}^2\right\rangle}$: end-to-end distance 
 \end{enumerate}
@@ -490,10 +490,30 @@ $$
     \text { Beads and springs } & \sqrt{\frac{3 k_B T}{\kappa}}
 \end{array}
 $$
-The quantity $l_p$ is known as te persistence length.
+The quantity $l_p$ is known as the persistence length.
+
+\begin{definition}
+    {Persistence length}{$l_p = \vec{R} \cdot \frac{\vec{u_0}}{b_0} = \frac{2b_0}{\theta}$}{is the mean value of projection of the end-to-end distance on the first segments. Note that $\theta$ is the angle between two adjacent bonds.}
+\end{definition}
 \subsubsection{Random walk}
 \subsection{Freely joint chain}
+We construct an equivalent feely joint chain with the same end-to-end distance and the same contour length as the actual polymer by considering a polymer formed N effective Kuhn segments, each one with an effective bond length  
+Also known as worm-like chain
+
 End-to-end distance of a freely joint chain is $\sqrt{\left\langle\vec{R}^2\right\rangle}=N^{1 / 2} b_0$
+
+In reality, Kuhn length is much larger than true size, as chian retain its memory of its orentiation over a significant length.
+
+Here $\theta$ determine the mean end-to-end distance:
+
+The contour length $L$ and the mean end-to-end distance $\left\langle R^2\right\rangle$ are related to the persistence length $l_p$ by:
+$$
+\left\langle R^2\right\rangle=2 l_p^2\left[\exp \left(-L / l_p\right)-1+L / l_p\right] .
+$$
+
+If $L \ll l_p$, then $\left\langle R^2\right\rangle \approx L^2$ and the chain is stiff. If $L \gg l_p$, then $\left\langle R^2\right\rangle \approx 2 l_p^2$ and the chain is flexible.
+
+
 \subsection{Freely rotating chain}
 End-to-end distance of a freely rotating chain is $N b_0^2 \frac{1+\cos \theta}{1-\cos \theta}$
 \subsubsection{Bead springs model}
@@ -502,8 +522,195 @@ We can also describe an ideal chain as a series of $\mathrm{N}+1$ beads $i=0 \ld
 The end-to-end distance can then be evaluated as:
 $$l\left\langle R^2\right\rangle=\frac{\int Z(R) R^2 d^3 R}{\int Z(R) d^3 R}=\underbrace{\frac{3 k_B T}{\kappa}}_{=\tilde{b}_0^2} N$$
 
+\subsection{Entropy of Real Chains
+}
+
+For an ideal Gaussian chain Eq. (4.17) shows that the probability of observing an end-to-end distance $\vec{R}$ for a chain with $N$ segments is
+$$
+P(\vec{R}, N)=\left(\frac{3}{2 \pi N b_0^2}\right)^{\frac{3}{2}} e^{-\frac{3 \vec{R}^2}{2 N b_0^2}}
+$$
+We have $S = k_b \ln(P)$ and $F= U- TS$:
+$$
+F(\vec{R}, N)=k_B T \frac{3}{2} \frac{\vec{R}^2}{N b_0^2}+F(0)
+$$
+since
+$$
+S(\vec{R}, N)=-k_B \frac{3}{2} \frac{\vec{R}^2}{N b_0^2}+S(0)
+$$
+where $F(0)$ and $S(0)$ represent the constants that do not depend on $R$.
+
 \subsection{Real chains: excluded volume}
+Real chains have excluded volume which reduces the number of ways of assembly and hence reduces the entropy and then an extra term in the Helmholtz free energy. The size of R is then found by minimising the free energy.
+\begin{enumerate}
+    \item Reduced Entropy:
+    $$S_{\mathrm{ex}}=S_{\mathrm{id}}-k_B \frac{N^2 v}{V}$$
+    \item Then will have excess term in Helmholtz free energy:
+    $$F_{\mathrm{excl}}=\frac{3 k_B T v N^2}{4 \pi R^3}$$
+    \item The new equilibrium can be found at minimized F:
+    $$F=k_B T \frac{3 v N^2}{4 \pi R^3}+k_B T \frac{3 R^2}{2 N b_0^2}$$
+    \item Therefore the size of the polymer coil is given as:
+    $$
+    R=\left(\frac{3 v b_0^2}{4 \pi}\right)^{1 / 5} N^{3 / 5}
+    $$
+\end{enumerate}
+Note that the ideal chain relationship is $R=\sqrt{N} b_0$.
+\subsection{Coil-globule transition}
+In this section, we consider a negative exclude volume due to attractive interaction. Chains with negative excluded volume will collapse into a globule. 
+\begin{enumerate}
+    \item The change in Helmotz free energy in the chain:
+    $$
+    \frac{F_{\text {int }}}{V}=k_B T v(T) n^2
+    $$
+    with
+    $$
+    v(T)=v_0-\frac{a}{k_B T}=v_0\left(1-\frac{a}{v_0 k_B T}\right)
+    $$
+    \item \definition{Flory parameter}{$\chi(T)=\frac{1}{2}\left(1-v(T) / v_0\right)$}{is introduced such that $v(T)=v_0(1-2 \chi(T))$, $\chi \sim T^{-1}$ is typically observed }
+    \item In particular, there is a temperature at which the excluded volume interaction vanishes: this is known as the $\theta$ temperature and is given by $\theta=a /\left(v_0 k_B\right)$ or $\chi(\theta)=1 / 2$. Note that with $\theta$ defined, we can now rewrite $v(T)=v_0\left(1-\frac{\theta}{T}\right)$ and $\chi(T)=\frac{\theta}{2 T}$.
+\end{enumerate}
+\subsubsection{Flory Huggins free energy
+}
+In this section, we try to find out the physical origin of the $\chi$, by considering regular solutions which are mixtures of low molecular weight species A with solvent molecules B AND STUDY ITS FREE ENERGY DENSITY:
 
+Taken together, we can express the free energy density $f=\Delta F / M=\Delta U / M-$ $T \Delta S / M$ of mixing as
+$$
+f_{\text {mix }}=k_B T\left[\frac{\Phi}{N} \ln \Phi+(1-\Phi) \ln (1-\Phi)+\chi \Phi(1-\Phi)\right]
+$$
+We will see this energy used in derivation of Osmotic pressure and chemical potential
+\subsection{Osmotic pressure and chemical potential of polymer solutions}
+\begin{definition}
+    {Osmotic pressure $\Pi$}{$\Pi=-\left.\frac{\partial \Delta F}{\partial V}\right|_{N_A}=-\frac{1}{b_0^3} \frac{\partial(M f)}{\partial M}=-\frac{1}{b_0^3}\left(f+M \frac{\partial f}{\partial M}\right)=\frac{1}{b_0^3}\left(-f+\Phi \frac{\partial f}{\partial \Phi}\right)$}{is pressure exerted by molecules in solution against a membrane which is impenetrable to them but allows the flow of solvent molecules and can be obtained from the change in the free energy of the system as a function of volume with constant number of solutes NA}
+\end{definition}
 
+\begin{definition}
+    {Chemical potential of polymer}{$\mu=\frac{\partial \Delta F}{\partial N_A}=M \frac{\partial f}{\partial N_A}=M \underbrace{\frac{\partial \Phi}{\partial N_A}}_{=M^{-1}} \frac{\partial f}{\partial \Phi}=\frac{\partial f}{\partial \Phi}$}{given as the rate of change in the free energy as a function of the number of polymers in solution}
+\end{definition}
 \section{Molecular self-assembly}
+\subsection{Driving Forces behind molecular self-assembly}
+\section{Self-assembl II}
+In this section we discuss lipid membrance, which are diffusion barrier for charged molecules and ions.
+
+We will discuss the properties of bilayesd that are a direct consequence of the self-assembly. Shape, Phase, curvature adn membrane fluctuations.
+\subsection{Simple argument for the shape}
+Lipid bilayers consists of double layer of amphiphilic moeclues:
+\begin{enumerate}
+    \item The head area $a_0$. This results from a balance of repulsions between the surfactant molecules (electrostatic, excluded volume, etc), and an effective attraction to minimise the contact area of hydrocarbon tails with water.
+    \item The critical chain length $l_{c^*}$. This is the maximum length of the hydrocarbon chain if stretched.
+    \item The hydrocarbon volume $v$. This is the volume occupied by the chain, irrespective of the conformation.
+\end{enumerate}
+\subsection{Shpae of assembly}
+\begin{enumerate}
+    \item Sphere
+    \item Cylinder
+    \item Bilayer
+\end{enumerate}
+\subsection{ Bilayers}
+\subsubsection{ Phase transition}
+Thre main states called $L_{\alpha}$, $L_\beta$ and $P_\beta$
+pThe three states $L_\beta, P_\beta$ and $L_\alpha$ are indicated as well as the two transition temperatures, pre transition $L_\beta \leftrightarrow P_\beta$ at $T_P$, and main transition $T_m$ at $P_\beta \leftrightarrow L_\alpha$, observable due to a clear change in $c_p$. The enthalpy corresponding to the transition can be deduced from the melting curve:
+$$
+\Delta H=\int_{T_0}^{T_1} \Delta c_p d T
+$$
+while the corresponding entropy is
+$$
+\Delta S=\int_{T_0}^{T_1} \frac{\Delta c_p}{T} d T
+$$
+The last equation can be simplified if the melting transition is very sharp and resembles a delta function $\left(c_p / T \approx c_p / T_m\right)$ one can define
+$$
+\Delta S=\Delta H / T_m
+$$
+\subsubsection{Influence of pressure on phase transition temperature}
+Pressure could shife the phase transition temperature by changing $\Delta H$, It will also result in a volume change.
+$$\Delta T_m=\frac{\Delta p \Delta V}{\Delta S}=\Delta p T_m \frac{\Delta V}{\Delta H_0}$$
+$$\Delta V=\frac{\Delta T_m \Delta H_0}{T_m \Delta p}$$
+\subsubsection{ Micelles, Nematic, Hexagonal and Lamellar phases}
+Balance between translational entropy and curvature energies gives rise to complex phase diagrams \textbf{at high concentration},as interatction between the assembleed structures become more significant.
+\subsection{ Soft Membranes}
+differential geomertry
+\paragraph*{Defomration causes stretch}
+For a small displacements $h$ relative to the average membrane plane $z=0$, the area of a surface element can be obtained by expanding eq. 7.10:
+$$
+d A=\left(1+\frac{1}{2}(\nabla h)^2\right) d x d y
+$$ is 
+the actual icrease in the infinitesimall area is $d A-d x d y$
+\paragraph*{Deformation causes curvature}
+$H=\frac{1}{2} \nabla \cdot \frac{\nabla h(\mathbf{x})}{\left[1+(\nabla h(\mathbf{x}))^2\right]} \simeq \frac{1}{2} \nabla^2 h(\mathbf{x})$
+\paragraph*{Increase in energy }due to the work against membrance tension and the bending of the membrance is (to first order)
+$$\begin{aligned} \delta E & =\delta E_\sigma+\delta E_B \\ & =\sigma \int_0^L \int_0^L \frac{1}{2}\left[\left(\frac{\partial h}{\partial x}\right)^2+\left(\frac{\partial h}{\partial y}\right)^2\right] d x d y+ \\ & +\kappa \int_0^L \int_0^L \frac{1}{2}\left[\frac{\partial^2 h}{\partial x^2}+\frac{\partial^2 h}{\partial y^2}\right]^2 d x d y\end{aligned}$$
+\paragraph*{Minimising the energy}
+The membrane will try to minimise the free energy of the equation above given the boundary conditions.
+
+\section{Surface energy}
+The work required to create a new surface of area $\delta A$ is
+$$
+\delta E=\gamma \delta A
+$$
+where $\gamma$ is the surface tension, has the unit of Newton over meter.
+
+
+\section{Colloids}
+Colloids are small particles with size around $10^{-7}$
+\subsection{Forces between colloids}
+\begin{enumerate}
+    \item Exclude volume interaction
+    \item Dispersion forces, i.e. van der Waals forces
+    \item Coulomb interaction
+    \item Depletion forces
+    \item Steric interactions
+\end{enumerate}
+We will many focus on the van der Waals forces and Coulmob initeraction, which is the dominant force between colloids.
+\subsection{Dispersion}
+Dispersion forces are from the induced dipole momentum
+\begin{definition}
+    {Induced dipole}{$\mu_{\text {ind}}=\alpha E$}{is the dipole moment induced by an external electric field}
+\end{definition}
+
+\begin{definition}
+    {Dispersion force}{$V(r)=-\frac{B}{r^6}$}{is the force between two atoms or molecules caused by the attraction of instantaneous multipoles}
+\end{definition}
+
+Thin is the force that encourages aggregation
+\subsection{Coulomb interactions}
+Coulomb interaction is the repulsive force that stops the aggregation
+
+\begin{definition}
+    {Bjerrum length}{$\lambda_B=\frac{e^2}{4 \pi \epsilon_0 \epsilon_r k_B T}$}{is the distance at which the electrostatic interaction energy between two elementary charges is equal to the thermal energy, it is derived by equation the electrostatic energy to the thermal energy$k_B T$. Its physical meaning is the closet distance that two like-charged ions can have at a certain temperature}
+\end{definition}
+\subsubsection{Poisson-Boltzmann Equation}
+\begin{definition}
+    {Poisson-Boltzmann Equation}{$\nabla^2 \phi(\mathbf{r})=\frac{1}{\epsilon_0 \epsilon_r} \rho(\mathbf{r})$}{is the equation that describes the electrostatic potential $\phi(\mathbf{r})$ due to a set of point charges $z_i e$ in a medium with dielectric constant $\epsilon_r$}
+\end{definition}
+The average concentration of charged molecules follows the Boltzmann distribution:
+$$
+n_{\pm}(\mathbf{r})=n_{\pm}^{0} \exp \left(-\frac{ e {\mp}\phi(\mathbf{r})}{k_{B} T}\right)
+$$
+Assuming $z$ is singly charged.
+
+Note that $\rho$ is the charge density, and $n$ is the number density, with a connection of $\rho = \sum_{i=1}^{N} e z_{i} n_{i}(\mathbf{r}) $.
+
+Combining the Poisson equation and Boltzmann distribution, we have:
+$$
+\nabla^{2} \phi(\mathbf{r})=-\frac{e}{\epsilon_{0} \epsilon_{r} k_{B} T} \sum_{i=1}^{N} z_{i} n_{i}^{0} \exp \left(-\frac{e z_{i} \phi(\mathbf{r})}{k_{B} T}\right)
+$$
+\subsection{Solving PE equation (linear)}
+PB is not linear so quite difficult to solve, but we can linearize it by assuming $\phi$ is small, i.e. $e z_{i} \phi(\mathbf{r}) / k_{B} T \ll 1$.
+This is known as the Debye-Huckel equation, with the definition of the Debye length:
+
+\begin{definition}
+    {Debye length}{$\kappa^{-1}=\sqrt{\frac{\epsilon_{0} \epsilon_{r} k_{B} T}{2 \sum_{i=1}^{N} z_{i}^{2} n_{i}^{0}}}$}{is the length scale at which the electrostatic screening due to mobile ions in solution becomes significant}
+\end{definition}
+Note the difference in Debye length and Bjerrum length, the former is the length scale at which the electrostatic screening due to mobile ions in solution becomes significant, while the latter is the closet distance that two like-charged ions can have at a certain temperature, and is independent of the concentration of the ions.
+\subsection{DLVO}
+Combining the effect of all the interaction forces, we have the DLVO theory, which is the sum of the van der Waals and the electrostatic interactions. There is a local minimum force the potential energy and a barrier preventing that from going to 0.
+\section{Electrokinetic Phenomena}
+There are two types of electrokinetic phenomena:
+\begin{enumerate}
+    \item Electro-osmosis: The electro-osmotic flow is the uniform velocity that is far from a charged surface in contact with a liquid electrolyte solution
+    \item Electrophoresis: motion of the colloids under the influence of an external electric field
+\end{enumerate}
+\subsection{Navier-Stoke Equation}
+\begin{definition}
+    {Navier-Stoke Equation}{$ s$}{is the equation that describes the motion of viscous fluid substances}
+\end{definition}
+
 \end{document}

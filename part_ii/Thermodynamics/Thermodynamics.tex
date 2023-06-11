@@ -116,18 +116,37 @@ Abstract of this course
     In classical ideal gas, we have the probability density function and the associated partition function:
     \begin{align*}
         \rho &= \frac{e^{-\beta E({p_i,q_i})}}{Z}\\
-        Z_{classical} &= \int e^{-\beta E({p_i,q_i})} \dfrac{d^3x d^3p}{(2\pi\hbar)^3}
+        Z_{classical} &= \int e^{-\beta E({p_i,q_i})} \dfrac{d^3x d^3p}{(2\pi\hbar^2)^3}
     \end{align*}
     Note that this is 3-dimensional case.\\
     Trick to compute the integral, in example of a free particle:
     \begin{align*}
-        Z_1 &= \int e^{-\beta E({p_i,r_i})} \dfrac{d^3p d^3r}{(2\pi\hbar)^3}\\
-            &= \int d^3r \int e^{-\beta E({p_i,r_i})} \frac{d^p_x}{2\pi\hbar}\\
-            &= V(\sqrt{\dfrac{k_BTm}{2\pi\hbar}})^3\\
+        Z_1 &= \int e^{-\beta E({p_i,r_i})} \dfrac{d^3p d^3r}{(2\pi\hbar^2)^3}\\
+            &= \int d^3r \int e^{-\beta E({p_i,r_i})} \frac{d^p_x}{2\pi\hbar^2}\\
+            &= V(\sqrt{\dfrac{k_BTm}{2\pi\hbar^2}})^3\\
             &= V/\lambda^3
     \end{align*}
-    where $\lambda$ is also known as the thermal de Broglie wavelength 
+    where $\lambda$ is also known as the thermal de Broglie wavelength
+    \subsection{Thermodynamic properties of ideal gas}
+    We can derive thermodynamic properties of ideal gas from the partition function:
+    \begin{enumerate}
+        \item Partition function: $Z=\frac{1}{N !}\left(\frac{V}{\lambda^3}\right)^N $
+        \item Mean energy: $U=-\frac{\partial}{\partial \beta} \ln Z=\frac{3}{2} N k_B T$
+        \item Free energy: $F=-k_B T \ln Z = N k_B T \ln \left(\frac{N \lambda^3}{V e}\right)$
+        \item Pressure: $p=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{N k_B T}{V}$
+        \item Chemical potential:$p=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{N k_B T}{V}$
+    \end{enumerate}
     
+    \subsection {Equipartition Theorem}
+    \begin{theorem}
+        {Equipartition Theorem}
+        {Each squared, separable degree of freedom in the Hamiltonian has a mean energy of $k_BT/2$}
+    \end{theorem}
+    Equipartition holds only in classical limit, for example harmonic oscillator  the condition is $k_B T>>\hbar\omega$
+    \subsection{Gas of diatomic molecules}
+    Vibration of diatomic molecules is approximated by a harmonic oscillator with frequency $\omega_0$.\\
+    \subsection{Cross-over to quantum limit}
+    The classical limit is when $N \lambda^3 / V \ll 1$, we can move to quantum region by increase N, T or reduce m. In such way, their waypackets of size $\approx \lambda$ starts to interfere with each other.\\
 %Lecture 6:
 
 %lecture 7:
@@ -141,9 +160,19 @@ Continues on quantum ideal gas
 \section{Fermi gas}
 %lecture 9:
 \subsection{Fermi gas in low/medium/high Temperature}
+\subsection{Fermi gas//Bose gas}
+\begin{center}
+    \begin{tabularx}{\linewidth}{c|c|c}
+        Property & Fermion & Bose gas  \\
+        \hline
+        Grand partition function & $\Xi_{\mathbf{k}}=\sum^1\left(\mathrm{e}^{-\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}\right)^n=1+\mathrm{e}^{-\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}$ & $\frac{1}{1-\mathrm{e}^{-\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}}$ \\
+        Average occupation$\left\langle n_{\mathbf{k}}\right\rangle$ & $-\left(\frac{\partial \Phi_{\mathbf{k}}}{\partial \mu}\right)_{T, V}=\frac{1}{\mathrm{e}^{\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}+1}$ & $-\left(\frac{\partial \Phi_{\mathbf{k}}}{\partial \mu}\right)_{T, V}=\frac{1}{\mathrm{e}^{\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}-1}$ \\
+        Entropy $S_{\mathbf{k}}(T, \mu)$& $ -k_B\left[\left\langle n_{\mathbf{k}}\right\rangle \ln \left\langle n_{\mathbf{k}}\right\rangle+\left(1-\left\langle n_{\mathbf{k}}\right\rangle\right) \ln \left(1-\left\langle n_{\mathbf{k}}\right\rangle\right)\right]$ & $-k_B\left[\left\langle n_{\mathbf{k}}\right\rangle \ln \left\langle n_{\mathbf{k}}\right\rangle-\left(1+\left\langle n_{\mathbf{k}}\right\rangle\right) \ln \left(1+\left\langle n_{\mathbf{k}}\right\rangle\right)\right]$ 
+    \end{tabularx}    
+\end{center}
 %Lecture 10:
 \section{Bose gas}
-    Bose gas : quantum limit, Boson particles can take up any energy state instead of two\\
+    Bose gas: quantum limit, Boson particles can take up any energy state instead of two\\
     Grand partition function:
     \begin{align*}
     \Xi_k   &= \sum_{n=0}^{\inf} e^{-\beta(\epsilon_k-\mu)^n}\\
@@ -152,6 +181,13 @@ Continues on quantum ideal gas
     Here $k$ specifies the energy level.\\
     The grand partition function for the whole system
     The grand potential is then
+\subsectino{ Bose-Einstein Condensation}
+Why care about condensation?
+Condensed atoms do not contribute to the heat capacity, so the heat capacity drops sharply at the condensation temperature.\\
+
+Atoms are disappearing from the integral of $N$ piles up at the ground state
+Bose-Einstein distribution:
+\subsubsection{ Dimension of Bose-Einstein Gas}
 %lecture 11
 \subsection{Quasi-particle excitation}
 \subsection{Photons}
@@ -191,7 +227,7 @@ $$
 where when N is Large, $g_0(r)=\mathrm{e}^{-\beta \phi(r)}$
 and substitute into the virial equation of state 
 $p=n k_B T-\frac{n^2}{6} \int_0^{\infty} r \frac{d \phi}{d r} g(r) 4 \pi r^2 d r$, we can link the coefficients $B_m$ in the virial expansion to coefficients $g_{m-2}$ in the expansion of the radial distribution function.
-We substitute $g_0(r)$ into equation above, and integrate by parts:
+We substitute $g_0(r)$ into the equation above, and integrate by parts:
 $$
 \begin{aligned}
 \frac{p}{k_B T} & =n-\frac{n^2}{6 k_B T} \int_0^{\infty} 4 \pi r^3 \frac{d \phi}{d r} \mathrm{e}^{-\phi / k_B T} d r \\
@@ -200,13 +236,13 @@ $$
 & =n+n^2\left\{\int_0^{\infty} 2 \pi r^2\left(1-\mathrm{e}^{-\phi / k_B T}\right) d r\right\}
 \end{aligned}
 $$
-where to get from second to third step we have used the fact that $\mathrm{e}^{-\phi / k_B T}$ is equal to 1 at $r=\infty$. Comparing with equation of states we see that the second virial coefficient is
+where to get from the second to third step we have used the fact that $\mathrm{e}^{-\phi / k_B T}$ is equal to 1 at $r=\infty$. Comparing with equation of states we see that the second virial coefficient is
 $$
 B_2(T)=\int_0^{\infty} 2 \pi r^2\left(1-\mathrm{e}^{-\phi / k_B T}\right) d r
 $$
 \paragraph{Boyle's temperature}
 One significant quantity in Virial expansion is the \textbf{Boyle temperature}, defined as the temperature at which the second virial coefficient B2(T ) passes through zero.
-At this point ,the gas behaves like ideal gas as te long range and short range effects cancels out with each other 
+At this point, the gas behaves like ideal gas as te long range and short range effects cancels out with each other 
 
 \section{Phase Equilibrium and Transition}
 A phase transition is the occurrence of an abrupt change in the physical properties of a system when a thermodynamic variable, such as the temperature or pressure, is changed by a small amount.
@@ -247,14 +283,26 @@ $\langle \Delta x^2\rangle = \langle x^2\rangle -\langle x\rangle ^2 = ... = k_B
     {... see notes.}
 \end{example}
 \begin{example}
-    {The fluctuation in the magnetisation of a subsystem consisting of a paramagnet in an external filed B, in and contact with a reservoir at time T.}
+    {The fluctuation in the magnetization of a subsystem consisting of a paramagnet in an external filed B, in and contact with a reservoir at time T.}
     {... see handout}
 \end{example}
 \subsection{Thermodynamics}
 In a large system, the curvature of the availability function is related to the size of the fluctuations.\\
 Probability density function can be written as an exponential function of A.\\
-We can then 
-The probability distribution is actually a Gaussian approximation w.r.t
+
+The probability distribution is a Gaussian approximation
+First expand availability function around $x_0$:
+$$
+A(x)=A\left(x_0\right)+\left(x-x_0\right)\left(\frac{\partial A}{\partial x}\right)_{x=x_0}+\frac{1}{2}\left(x-x_0\right)^2\left(\frac{\partial^2 A}{\partial x^2}\right)_{x=x_0}+\ldots
+$$
+We compare that with the Gaussian Function:
+$$
+P(x)=\frac{1}{\sqrt{2 \pi\left\langle\Delta x^2\right\rangle}} \exp \left[-\frac{\Delta x^2}{2\left\langle\Delta x^2\right\rangle}\right]
+$$
+We get the fluctuation around equilibrium value $x$, for in other cases $V$
+$$
+\left\langle\Delta x^2\right\rangle=\left\langle\left(x-x_0\right)^2\right\rangle=\frac{k_B T_R}{\left(\partial^2 A / \partial x^2\right)_{x=x_0}}
+$$
 \section{Stochastic physics}
     \begin{theorem}
         {White noise properties}{

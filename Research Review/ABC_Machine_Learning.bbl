@@ -1,0 +1,161 @@
+\begin{thebibliography}{10}
+
+\bibitem{towardsdatascienceMachineLearning}
+Victor Zhou.
+\newblock {M}achine {L}earning for {B}eginners: {A}n {I}ntroduction to {N}eural
+  {N}etworks --- towardsdatascience.com.
+\newblock [Accessed 26-Apr-2023].
+
+\bibitem{ibmWhatSupervised}
+{W}hat is {S}upervised {L}earning? | {I}{B}{M} --- ibm.com.
+\newblock \url{https://www.ibm.com/topics/supervised-learning}.
+\newblock [Accessed 26-Apr-2023].
+
+\bibitem{samuel1959some}
+Arthur~L Samuel.
+\newblock Some studies in machine learning using the game of checkers.
+\newblock {\em IBM Journal of research and development}, 3(3):210--229, 1959.
+
+\bibitem{towardsdatascienceDeepDive}
+Juras Juršėnas.
+\newblock {A} {D}eep {D}ive into {C}urve {F}itting for {M}{L} ---
+  towardsdatascience.com.
+\newblock
+  \url{https://towardsdatascience.com/a-deep-dive-into-curve-fitting-for-ml-7aeef64755d2}.
+\newblock [Accessed 23-Apr-2023].
+
+\bibitem{wikipediaPadApproximant}
+{P}adé approximant - {W}ikipedia --- en.wikipedia.org.
+\newblock \url{https://en.wikipedia.org/wiki/Pad%C3%A9_approximant}.
+\newblock [Accessed 23-Apr-2023].
+
+\bibitem{wolframPadApproximant}
+{P}adé {A}pproximant -- from {W}olfram {M}ath{W}orld ---
+  mathworld.wolfram.com.
+\newblock \url{https://mathworld.wolfram.com/PadeApproximant.html}.
+\newblock [Accessed 23-Apr-2023].
+
+\bibitem{deringer2021gaussian}
+Volker~L Deringer, Albert~P Bart{\'o}k, Noam Bernstein, David~M Wilkins,
+  Michele Ceriotti, and G{\'a}bor Cs{\'a}nyi.
+\newblock Gaussian process regression for materials and molecules.
+\newblock {\em Chemical Reviews}, 121(16):10073--10141, 2021.
+
+\bibitem{TaylorSeries}
+Francis Benistant.
+\newblock {T}aylor {S}eries, {P}ade {A}pproximants, and {N}eural {N}etworks ---
+  2020machinelearning.
+\newblock \url{https://medium.com/@2020machinelearning}.
+
+\bibitem{George_2018}
+Daniel George and E.A. Huerta.
+\newblock Deep learning for real-time gravitational wave detection and
+  parameter estimation: Results with advanced {LIGO} data.
+\newblock {\em Physics Letters B}, 778:64--70, mar 2018.
+
+\bibitem{Hinners_2018}
+Trisha~A. Hinners, Kevin Tat, and Rachel Thorp.
+\newblock Machine learning techniques for stellar light curve classification.
+\newblock {\em The Astronomical Journal}, 156(1):7, jun 2018.
+
+\bibitem{v7labsActivationFunctions}
+{A}ctivation {F}unctions in {N}eural {N}etworks [12 {T}ypes {U}se {C}ases] ---
+  v7labs.com.
+\newblock
+  \url{https://www.v7labs.com/blog/neural-networks-activation-functions}.
+\newblock [Accessed 23-Apr-2023].
+
+\bibitem{Rokach2014DataMW}
+Lior Rokach and Oded Maimon.
+\newblock Data mining with decision trees - theory and applications. 2nd
+  edition.
+\newblock In {\em Series in Machine Perception and Artificial Intelligence},
+  2014.
+
+\bibitem{shalev2014understanding}
+Shai Shalev-Shwartz and Shai Ben-David.
+\newblock {\em Understanding machine learning: From theory to algorithms}.
+\newblock Cambridge university press, 2014.
+
+\bibitem{quinlan1986induction}
+J.~Ross Quinlan.
+\newblock Induction of decision trees.
+\newblock {\em Machine learning}, 1:81--106, 1986.
+
+\bibitem{ibmWhatDecision}
+{W}hat is a {D}ecision {T}ree | {I}{B}{M} --- ibm.com.
+\newblock \url{https://www.ibm.com/uk-en/topics/decision-trees}.
+\newblock [Accessed 23-Apr-2023].
+
+\bibitem{scikitlearn110Decision}
+1.10. {D}ecision {T}rees --- scikit-learn.org.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/tree.html#:~:text=Decision%20Trees%20(DTs)%20are%20a,as%20a%20piecewise%20constant%20approximation}.
+\newblock [Accessed 23-Apr-2023].
+
+\bibitem{perger2021auto}
+Manuel Perger, Guillem Anglada-Escud{\'e}, Ignasi Ribas, Albert Rosich, Enrique
+  Herrero, and Juan~Carlos Morales.
+\newblock Auto-correlation functions of astrophysical processes, and their
+  relation to gaussian processes-application to radial velocities of different
+  starspot configurations.
+\newblock {\em Astronomy \& Astrophysics}, 645:A58, 2021.
+
+\bibitem{RePEc:eee:transb:v:146:y:2021:i:c:p:88-110}
+Yun Yuan, Zhao Zhang, Xianfeng~Terry Yang, and Shandian Zhe.
+\newblock {Macroscopic traffic flow modeling with physics regularized Gaussian
+  process: A new insight into machine learning applications in transportation}.
+\newblock {\em Transportation Research Part B: Methodological}, 146(C):88--110,
+  2021.
+
+\bibitem{pedregosa2011scikit}
+Fabian Pedregosa, Ga{\"e}l Varoquaux, Alexandre Gramfort, Vincent Michel,
+  Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron
+  Weiss, Vincent Dubourg, et~al.
+\newblock Scikit-learn: Machine learning in python.
+\newblock {\em the Journal of machine Learning research}, 12:2825--2830, 2011.
+
+\bibitem{2019JCoPh.378..686R}
+M.~{Raissi}, P.~{Perdikaris}, and G.~E. {Karniadakis}.
+\newblock {Physics-informed neural networks: A deep learning framework for
+  solving forward and inverse problems involving nonlinear partial differential
+  equations}.
+\newblock {\em Journal of Computational Physics}, 378:686--707, February 2019.
+
+\bibitem{benmoseleyWhatPhysicsinformed}
+Me.
+\newblock {S}o, what is a physics-informed neural network? - {B}en {M}oseley
+  --- benmoseley.blog.
+\newblock
+  \url{https://benmoseley.blog/my-research/so-what-is-a-physics-informed-neural-network/}.
+\newblock [Accessed 23-Apr-2023].
+
+\bibitem{karniadakis2021physics}
+George~Em Karniadakis, Ioannis~G Kevrekidis, Lu~Lu, Paris Perdikaris, Sifan
+  Wang, and Liu Yang.
+\newblock Physics-informed machine learning.
+\newblock {\em Nature Reviews Physics}, 3(6):422--440, 2021.
+
+\bibitem{conduit2017design}
+BD~Conduit, Nick~G Jones, Howard~J Stone, and Gareth~John Conduit.
+\newblock Design of a nickel-base superalloy using a neural network.
+\newblock {\em Materials \& Design}, 131:358--365, 2017.
+
+\bibitem{rodirguezarticle}
+José‐Víctor Rodríguez, Ignacio Rodríguez‐Rodríguez, and Wai~Lok Woo.
+\newblock On the application of machine learning in astronomy and astrophysics:
+  A text‐mining‐based scientometric analysis.
+\newblock {\em Wiley Interdisciplinary Reviews: Data Mining and Knowledge
+  Discovery}, 12, 08 2022.
+
+\bibitem{reza2021galaxy}
+Moonzarin Reza.
+\newblock Galaxy morphology classification using automated machine learning.
+\newblock {\em Astronomy and Computing}, 37:100492, 2021.
+
+\bibitem{zooniverseZooniverse}
+{Z}ooniverse --- zooniverse.org.
+\newblock \url{https://www.zooniverse.org/projects/zookeeper/galaxy-zoo/}.
+\newblock [Accessed 25-Apr-2023].
+
+\end{thebibliography}

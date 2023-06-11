@@ -21,10 +21,90 @@ Abstract of this course
 \end{abstract}
 
 \section{Particle Dynamics}
+\subsection{4-velocity of massive particle}
+\begin{definition}
+    {4-velocity of massive particle}
+    {$
+    u^\mu=\frac{d t}{d \tau}(c, \vec{u})
+    $}
+    {Note that $
+    \frac{d t}{d \tau}=\left(1-\frac{|\vec{u}|^2}{c^2}\right)^{-1 / 2}=\gamma_u
+    $} 
+\end{definition}
+\begin{enumerate}
+    \item 4-velocity is the tangent vector to the worldline of the particle.
+    \item The length of 4 velocity is constant:
+    $$
+        \eta_{\mu \nu} u^\mu u^\nu=\left(\frac{d s}{d \tau}\right)^2=c^2
+    $$
+\end{enumerate}
+\subsubsection{Velocity Transform Laws}
+\subsection{4-acceleration of massive particle}
+\definition{
+    4-acceleration
+}{$
+a^\mu=d u^\mu / d \tau
+$}{Expanding, we have $a^\mu=\gamma_u^2\left(\frac{\gamma_u^2}{c} \vec{u} \cdot \vec{a}, \vec{a}+\frac{\gamma_u^2}{c^2}(\vec{u} \cdot \vec{a}) \vec{u}\right)$}
+\begin{enumerate}
+    \item In an inertial frame, a free particle has $d^2 x^i / d t^2=0$, so that $\vec{u}=$ const. and $\gamma_u=$ const.
+    \item It follows that the components of the 4 -velocity are also constant in Cartesian coordinates so
+    $$
+    \frac{d u^\mu}{d \tau}=0
+    $$
+    \item The acceleration 4 -vector is always orthogonal to the 4-velocity: in Cartesian inertial coordinates
+    $$
+    \eta_{\mu \nu} a^\mu u^\nu=\eta_{\mu \nu} \frac{d u^\mu}{d \tau} u^\nu=\frac{1}{2} \frac{d}{d \tau}\left(\eta_{\mu \nu} u^\mu u^\nu\right)=0,
+    $$
+    so, generally, $\boldsymbol{g}(\boldsymbol{a}, \boldsymbol{u})=0$.
+    \item In the instantaneous rest frame of the particle, $\vec{u}=\overrightarrow{0}$, and the components of the 4-acceleration in that frame are simply $a^\mu=\left(0, \vec{a}_{\mathrm{IRF}}\right)$, where $\vec{a}_{\mathrm{IRF}}$ is the 3-acceleration in the instantaneous rest frame.
+    \item Note that the magnitude of $\vec{a}_{\mathrm{IRF}}$ determines the (invariant) magnitude of the 4-acceleration:
+    $$
+    |\boldsymbol{a}|^2=-\left|\vec{a}_{\mathrm{IRF}}\right|^2
+    $$
+    which shows that the 4 -acceleration is a spacelike vector.(4-velocity is timelike)
+\end{enumerate}
+\subsection{4-momentum}
+\definition{4-momentum vector}{$\boldsymbol{p}=m \boldsymbol{u}$}{In some inertial frame, the components of $\boldsymbol{p}$ are
+$$
+p^\mu=\left(\gamma_u m c, \gamma_u m \vec{u}\right)
+$$
+or, simply
+$$p^\mu=(E / c, \vec{p})$$}
+\begin{enumerate}
+    \item At any point along the worldline of the particle, the (squared) magnitude of the 4-momentum is
+    $$
+        \boldsymbol{p}|^2=m^2 c^2
+    $$
+    compare that to the (squared) magnitude of the 4-velocity:
+    \item The time component of the 4 -momentum is the total energy $E$ of the particle (i.e., the sum of the rest-mass energy and kinetic energy):
+    $$
+    E=\gamma_u m c^2
+    $$
+    \item Forming the invariant $|\boldsymbol{p}|^2$ in an inertial frame, we find the energy-momentum invariant
+    $$
+    E^2-|\vec{p}|^2 c^2=m^2 c^4
+    $$ (squared)4-momentum in variant is equivalent to energy-(3)momentum invariant
+    \item In isolated system, (squared)4 - invariant is conserved, which is equivalent to the conservation of energy and momentum. 
+\end{enumerate}
+\subsection{4-force}
+    \definition{4-force}{$\frac{D p^\mu}{D \tau}=f^\mu$}{..}
+    \begin{enumerate}
+        \item Since $|\boldsymbol{p}|^2=m^2 c^2$ is constant, $p^\mu$ is orthogonal to $D p^\mu / D \tau$ and so the 4 -velocity and 4 -force are necessarily orthogonal:
+        $$
+        \boldsymbol{g}(\boldsymbol{f}, \boldsymbol{u})=0
+        $$
+        \item In some inertial frame,
+        $$
+        f^\mu=\gamma_u \frac{d}{d t}\left(\frac{E}{c}, \vec{p}\right)=\gamma_u\left(\frac{\vec{f} \cdot \vec{u}}{c}, \vec{f}\right)
+        $$ where we have used $d E / d t=\vec{f} \cdot \vec{u}$.
+        \item $\eta_{\mu \nu} f^\mu u^\nu=0$
+        \item Finally, note that the 4 -force can be related to the 4 acceleration via $\boldsymbol{f}=m \boldsymbol{a}$
+    \end{enumerate}
+\subsection{massless particle}
 \subsection{Lorentz transformation}
 \begin{definition}
     {homogeneous Lorentz transformation}
-    {$x^{'\mu} = {\Lambda ^ \mu}_\nu x^\nu$}
+    {$\begin{aligned} \vec{u}^1 & =\frac{\left(\vec{u}^1-v\right)}{\left(1-\vec{u}^1 v / c^2\right)} \\ \vec{u}^{\prime 2} & =\frac{\vec{u}^2}{\gamma_v\left(1-\vec{u}^1 v / c^2\right)} \\ \vec{u}^3 & =\frac{\vec{u}^3}{\gamma_v\left(1-\vec{u}^1 v / c^2\right)}\end{aligned}$}
     {...}
 \end{definition}
 \begin{definition}
@@ -153,6 +233,27 @@ In this section we study the equation of motion for 4 coordinates, $t,r,\theta,\
             \frac{d^2 u}{d\phi^2} + u -3 \mu u^2 = 0
         \end{equation}
     \end{enumerate}
+\section{Cosmology}
+Fundamental observers agrees waht thay observe at any given proper time.
 
+\subsection{Robertson-Walker Metric}
+\theorem{Robertson–Walker form}{
+    $d s^2=c^2 d t^2-a^2(t)\left[\frac{d r^2}{\left(1-K r^2\right)}+r^2 d \Omega^2\right]$
+}
+\subsection{Geometry of the 3D spaces}
+properties of the 3D maximally-symmetric spaces with line element depend on K
+\subsection{Cosmological field equations}
+The Robertson-Walker metric contains a single function of time a(t) whose evolution is determined by the Einstein field equations
+\subsection{Friedmann Equation}
+The solution for the time dependent part of R-W metric with Einstein field equations:
 
+\theorem{Friedmann Equation 1}{
+    $$
+    \frac{\ddot{a}}{a}=-\frac{4 \pi G}{3}\left(\rho+\frac{3 p}{c^2}\right)+\frac{1}{3} \Lambda c^2
+    $$
+    }
+\theorem{2}{$$
+\left(\frac{\dot{a}}{a}\right)^2+\frac{K c^2}{a^2}=\frac{8 \pi G}{3} \rho+\frac{1}{3} \Lambda c^2
+$$
+}
 \end{document}

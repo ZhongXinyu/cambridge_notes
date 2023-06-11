@@ -4,10 +4,14 @@
 \usepackage[margin=0.5in]{geometry}
 \usepackage{fancyhdr}
 \usepackage{parskip}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+\usepackage{graphicx}
 \pagestyle{fancyplain}
 \fancyhf{}
 
 %\date{2nd Nov 2021}
+\graphicspath{Images/}
 
 \lhead{\fancyplain{}{Zachary Zhong, xz447@cam.ac.uk}}
 \rhead{\fancyplain{}{\topic}}
@@ -22,7 +26,7 @@
     \end{center}
     {#3}
     }
-\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1: }}{#2}\\}
+\newcommand{\theorem}[2]{\textbf{\textcolor{red}{#1:}\\}{#2}\\}
 \newcommand{\example}[2]{\textbf{Example: #1}\\\textcolor{blue}{#2}}
-
+\newcommand{\note}[1]{\underline{\textbf{\textcolor{red}{#1:}}}}
 \title{\topic}
