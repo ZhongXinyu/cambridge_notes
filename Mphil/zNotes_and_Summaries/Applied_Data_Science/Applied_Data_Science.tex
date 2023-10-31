@@ -1,0 +1,163 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{import}
+\import{../Template/}{format.tex}
+
+\newcommand{\topic}{Applied Data Science}
+
+\begin{document}
+
+\title{\topic}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+\section{Pre-processing Data}
+\section{Understanding the structure of Data}
+\begin{itemize}
+    \item type of features: continuous, categorical
+	\item ranges of features: [min, max], number of categories
+	\item missing information [la/bels, features]
+	\item discriminative power of features (redundancy)
+\end{itemize}
+\begin{theorem}
+    {Simpson's paradox}
+    {Simpson's paradox is observed in probability and statistics; a trend appears in several groups of data but disappears or reverses when the groups are combined.}
+\end{theorem}
+
+\subsection{Adjusting data without tampering with signal}
+\subsubsection{Expression ranges and One-hot encoding}
+For categorical data, we assign value by using one-hot encode which are the n unit vectors, which are equal distance from each other, from n-dimensional space to represent n categories
+\subsubsection{Standardisation vs scaling}
+There are different ways of scaling, the most straight forward one is linear scaling, others include log scaling.
+Note that outliers will seriously affect scaling, it can be done by cap our value, however, it also means that we throw away data points
+Note that we lose certian information when standardise, i.e. for Z 
+$$
+Z=\frac{x_i-\mu}{\sigma}
+$$
+you will lose the standarad deviation.
+Also $\mu$ and $\sigma$ can be influenced by outliers. Median and MAD(median absolute deviation)are not affected by outliers
+\begin{align}
+    Z_{\text {med }} & =\frac{x_i-\text { median }}{M A D} \\
+    M A D & =\text { median }\left(\mid x_i-\text { median } \mid\right)
+\end{align} 
+\subsubsection{Near zero variance}
+Near zero variance means that the variable has little variance i.e. almost constant
+\subsubsection{Multi-collinearity}
+Multi-collinearity is a concept where independent variables are highly correlated. i.e. correlation coefficient = 1
+We use PCA analysis to reduce the dimension of the highly correlated variable space 
+\subsubsection{Dimensionality reduction}
+
+\subsection{Engineering Model Robustness}
+\begin{itemize}
+    \item we draw the samples independently and identically (iid) at random from the distribution
+    (there is no underlying structure that is present in data)
+    \item the sets are disjunct partitions of the original distribution
+    (no intersection between training set and test set)
+    the size of the validation and test sets should be comparable (if not identical)
+    \item The validation set should be large enough to detect differences between models
+    \item accuracy is not the only metric to measure the performance of the model
+    \item  on the test set, the error between the prediction and the actual label is the test error
+    \item the objective function of the algorithm minimizes the test errors by parameter tuning
+    \item Models are further evaluated for Bias and Variance (assessment of overfitting/ underfitting)
+\end{itemize}
+\subsubsection{Validation set}
+k-fold validation is essentially k models
+ALSO use multiple k, iterations
+Usually 
+\subsubsection{Confusion matrix}
+Definition of confusion matrix
+A stacked approach to deal with data with underlying substructure.
+choose a representation? PCA
+o weighted summary
+\subsubsection{Unbalanced data}
+fixed by upweighting or down sampling
+\begin{theorem}
+    {Nyquist–Shannon sampling theorem}{}
+\end{theorem}
+\begin{theorem}
+    {Kullback-Leiber divergence (per classes or using a binning approach for continuous data)
+    }{}
+\end{theorem}
+\section{Supervised Learning: Regression}
+We assume the model
+$$
+Y=\beta_0+\beta_1 X+\epsilon
+$$
+where $\beta_0$ and $\beta_1$ are two unknown constants that represent the intercept and the slope; $\beta_0$ and $\beta_1$ are also known as coefficients or parameters and $\epsilon$ is the error term.
+
+Given the estimates $\hat{\beta}_0$ and $\hat{\beta}_1$ for the model coefficients, we predict the output, $\hat{y}$ using
+$$
+\hat{y}=\hat{\beta}_0+\hat{\beta}_1 x
+$$
+where $\hat{y}$ indicates the prediction of $Y$ on the basis of $X=x$. The hat symbol denotes an estimated value.
+\subsection{Standard errors}
+\subsection{Hypothesis Testing}
+Standard errors can be used to perform hypothesis testing on the coefficients. The most common hypothesis test involves testing the null hypothesis of:
+$H_0:$ There is no relationship between $X$ and $Y$
+$H_1:$ There is some relationship between $X$ and $Y$
+Or, more formally:
+$$
+\begin{aligned}
+& H_0: \quad \beta_1=0 \\
+& H_1: \quad \beta_1 \neq 0
+\end{aligned}
+$$
+To test the $H_0$ we compute a t-statistic:
+$$
+t=\frac{\hat{\beta_1}-0}{S E\left(\hat{\beta}_1\right)}
+$$
+
+This will be a t-distribution with $n-2$ degrees of freedom.
+Using $R$, we can compute the probability of observing any value $\geq|t|$. We call this probability $\mathbf{p}$-value.
+\subsection{Type of Loss Functions}
+\begin{itemize}
+    \item Mean Absolute Error (MAE) (L1 Loss)
+    \item Mean Squared Error (MSE) (L2 Loss)
+    \item Mean Biased Error (MBE)
+    \item Hubber Loss (L1-L2 Loss)
+\end{itemize}
+\subsection{Bias and Variance Trade-off}
+\textbf{Bias:} the model's error rate on the training set (rephrased, the difference between the average prediction and the correct value we are predicting).
+
+A model with high bias is oversimplified (insufficient information acquired from the training data).
+
+\textbf{Variance: }the model's error rate on the validation (or test) set, in addition to the bias
+
+A model with high variance captures the signal and the noise in the training data and fails to generalise well on (unseen) test data.
+\subsection{Multiple (linear) regression. Model selection}
+How to choose which subsets to use, for $n$ features, there are $2^n$ subsets, which is not feasible to try all of them.
+\subsection{Model selection.}
+\paragraph{Forward Selection}
+Begin with the null model, a model that contains an intercept but no predictors\\
+-Fit p simple linear regressions, each with only one feature and add to the null model the variable that results in the lowest RSS.\\
+-Add to that model the variable that results in the lowest RSS amongst all two-variable models.\\
+- Continue until some stopping rule is satisfied, for example when all remaining variables have a $p$-value above some threshold
+\paragraph{backward selection}
+
+Start with all variables in the model; fit the model
+
+Remove the variable with the largest p-value i.e. the variable that is the least statistically significant
+
+The new $p-1$-variable model is fit, and the variable with the largest p-value is removed.
+
+Continue until a stopping rule is reached e.g. when all remaining variables have a significant $p$-value above some threshold
+\subsection{Parametric logistic regression}
+\subsection{Non-parametric regression}
+Decision tree, where the data space is partioned into regions and the patrition
+
+Complexity parameter prevents the tree to have too many branches, which is prone to overfitting
+\subsection{Regularisation}
+Regularisaition is th process of adjusting an algorithm to prefer a smaller model, to avoid overfitting. This is done by modifiying the loss function to include a penalty for large weights.
+
+\section{Python Library}
+\paragraph{statsmodels.api}
+https://www.statsmodels.org/stable/examples/index.html
+\end{document}
