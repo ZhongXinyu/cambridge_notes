@@ -1,0 +1,6 @@
+[submodule "Mphil/mResearch_Computing/c1_research_computing"]
+	path = Mphil/mResearch_Computing/c1_research_computing
+	url = https://gitlab.developers.cam.ac.uk/phy/data-intensive-science-mphil/c1_research_computing.git
+[submodule "Mphil/mPrinciples_of_Data_Science/s1_principles_of_data_science"]
+	path = Mphil/mPrinciples_of_Data_Science/s1_principles_of_data_science
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/s1_principles_of_data_science.git

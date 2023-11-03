@@ -36,14 +36,14 @@ Abstract of this course
 \subsubsection{Expression ranges and One-hot encoding}
 For categorical data, we assign value by using one-hot encode which are the n unit vectors, which are equal distance from each other, from n-dimensional space to represent n categories
 \subsubsection{Standardisation vs scaling}
-There are different ways of scaling, the most straight forward one is linear scaling, others include log scaling.
+There are different ways of scaling, the most straightforward one is linear scaling, others include log scaling.
 Note that outliers will seriously affect scaling, it can be done by cap our value, however, it also means that we throw away data points
-Note that we lose certian information when standardise, i.e. for Z 
+Note that we lose certain information when standardise, i.e. for Z 
 $$
 Z=\frac{x_i-\mu}{\sigma}
 $$
-you will lose the standarad deviation.
-Also $\mu$ and $\sigma$ can be influenced by outliers. Median and MAD(median absolute deviation)are not affected by outliers
+you will lose the standard deviation.
+Also, $\mu$ and $\sigma$ can be influenced by outliers. Median and MAD(median absolute deviation)are not affected by outliers
 \begin{align}
     Z_{\text {med }} & =\frac{x_i-\text { median }}{M A D} \\
     M A D & =\text { median }\left(\mid x_i-\text { median } \mid\right)
@@ -58,7 +58,7 @@ We use PCA analysis to reduce the dimension of the highly correlated variable sp
 \subsection{Engineering Model Robustness}
 \begin{itemize}
     \item we draw the samples independently and identically (iid) at random from the distribution
-    (there is no underlying structure that is present in data)
+    (there is no underlying structure that is present in the data)
     \item the sets are disjunct partitions of the original distribution
     (no intersection between training set and test set)
     the size of the validation and test sets should be comparable (if not identical)
@@ -151,13 +151,59 @@ The new $p-1$-variable model is fit, and the variable with the largest p-value i
 Continue until a stopping rule is reached e.g. when all remaining variables have a significant $p$-value above some threshold
 \subsection{Parametric logistic regression}
 \subsection{Non-parametric regression}
-Decision tree, where the data space is partioned into regions and the patrition
+Decision tree, where the data space is partitioned into regions
 
-Complexity parameter prevents the tree to have too many branches, which is prone to overfitting
+The complexity parameter prevents the tree from having too many branches, which is prone to overfitting
 \subsection{Regularisation}
-Regularisaition is th process of adjusting an algorithm to prefer a smaller model, to avoid overfitting. This is done by modifiying the loss function to include a penalty for large weights.
+Regularisation is the process of adjusting an algorithm to prefer a smaller model, to avoid overfitting. This is done by modifiying the loss function to include a penalty for large weights.
+
+
+\section{Machine Learning Model - KNN}
+K nearest neighbour
+\begin{itemize}
+    \item KNN is a non-parametric method
+    \item KNN distance can be defined with Eucleadian distance, Manhattan distance, etc.s
+    \item Lower K means a more complex model (Prone to overfitting)
+    \item Higher K means a less complex model (Prone to underfitting). 
+    In the most extreme case, K = N, then your model would predict the same outcome for all data points.
+\end{itemize}
+\subsection{Standardisation}
+    Standardisation is necessary as we need to make sure distances are equally weighted. Another method is to use correlation-based distance.
+    Check the skewness before Standardisation
+
+\section{Machine Learning Model Support Vector Machine}
+    There is always a misclassification
+    Transform points to higher dimensions to allow linear separation
+
+\section{Machine Learning Model - Decision Tree}
+    A decision tree is a non-parametric method, therefore it does not require data processing
 
 \section{Python Library}
-\paragraph{statsmodels.api}
-https://www.statsmodels.org/stable/examples/index.html
+\subsection{statsmodels}
+    \paragraph{statsmodels.api}
+    https://www.statsmodels.org/stable/examples/index.html
+\subsection{sklearn}
+    \subparagraph{neighbours.KNeighborsClassifier}
+        Parameters:
+        \begin{itemize}
+            \item n\_neighbors: number of neighbours
+            \item weights: uniform, distance
+            \item algorithm: auto, ball\_tree, kd\_tree, brute. Trees reduces the complexity from $O(N)$ to $O(logN)$
+            \item leaf\_size: leaf size for ball\_tree or kd\_tree
+            \item p: power in minkowski distance
+        \end{itemize}
+    \subparagraph{output}
+        conf\_matrix = confusion\_matrix(y\_test, y\_pred)
+        Cohen's Kappa: $\kappa=\frac{p_o-p_e}{1-p_e}$, where $p_o$ is the accuracy and $p_e$ is the expected accuracy, we want to maximum Kappa.
+        The definition of $p_e$ is:
+        $$
+        P_e=\frac{\sum\left(\frac{\text { Row sum for category } i \times \text { Column sum for category } i}{\text { Total number of observations }}\right)}{\text { Total number of observations }}
+        $$
+        
+        To simplify $P_e$, we can rearrange the terms:
+        $$
+        P_e=\frac{\sum(\text { Row sum for category } i \times \text { Column sum for category } i)}{(\text { Total number of observations })^2}
+        $$
+    \subparagraph{neighbours.KNeighborsRegressor}
+    
 \end{document}
