@@ -176,7 +176,98 @@ K nearest neighbour
     Transform points to higher dimensions to allow linear separation
 
 \section{Machine Learning Model - Decision Tree}
-    A decision tree is a non-parametric method, therefore it does not require data processing
+    A decision tree is a non-parametric method, therefore it does not require data pre-processing.
+    \subsection{Recursive binary partitions}
+        Resoureces: An Introduction to Statistical learning with Applications in R/Python
+        Segment feature space into simple regions (high demension rectangles)
+        Predict usinging the average, mode, classify using the most common class
+    \subsection{Characteristic of a decision tree}
+        \begin{itemize}
+            \item branches: represent the decision rules
+            \item interial nodes:
+            \item leaf nodes (terminal nodes): represent the outcome, 
+        \end{itemize}
+
+    \subsection{How to grow a tree}
+    \paragraph{}
+    How to grow the tree?
+    - General process:
+    1. Partition the predictor space (i.e. all possible values of $X_1, X_2, \ldots, X_p$ ) into $J$ distinct, non-overlapping regions, labelled $R_1, \ldots, R_J$
+    2. Each observation in a given region $R_f$ is given the same predicted value (or class), which is the mean (or mode) of all response variables in that region
+    - How do we choose the partitions? e.g. high-dimensional rectangles
+    \paragraph*{Greedy approach - regression}
+        regression trees
+        - For one of the predictors $X_j$ with a cutoff threshold $c$, we define two regions:
+    $$
+    R_1(j, c)=\left\{X \mid X_j<c\right\} \text { and } R_2(j, c)=\left\{X \mid X_j \geq c\right\}
+    $$
+    - An observation $x_i$ is in region $R_1(j, c)$ if $x_i<c$ and in region $R_2(j, c)$ if $x_{i j} \geq c$
+    - For the first iteration, $R_1(j, c)$ and $R_2(j, c)$ partitions the entire predictor space
+    - For tater tterations, $R_1(j, c)$ and $R_2(j, c)$ partitions a previous parent' region (so inherits any previous conditions of that 'parent' region)
+    \paragraph{Classification}
+    The function to minimise is to reduce the Gini-index,
+\subsection{Bagging}
+Bagging is the process of creating multiple models from different subsets of the training data, of the same size, by bootstraping. The final prediction is averaged across (majority vote or average across) the predictions of all of the sub-models.
+\subsection{Random Forest}
+Random forest is an ensemble method that combines multiple decision trees. It is a bagging method with a random selection of features. The final prediction is averaged across the predictions of all of the sub-models.
+\subsection{Boosting}
+Boosting sequentially builds a model by training a decision tree on the residuals of the previous model. The final prediction is the sum of the predictions of all of the sub-models. The parameters include the learning rate, which is the shrinkage factor of the model for the residuals.
+
+\section{Machine Learning Model - K-MEAN}
+K-mean is a clustering method, which is an unsupervised learning method. It is used to group data points into clusters, where the data points in the same cluster are similar to each other, and the data points in different clusters are dissimilar to each other.
+
+K-mean clustering are widely used in pattern recognition, computer vision, etc.
+
+K-mean is similar to k-nearest neighbour.
+
+K-mean is a NP-hard problem, which means that it is computationally expensive to find the optimal solution. Therefore, we use a heuristic approach to find a sub-optimal solution.
+\subsection{Algorithm}
+\subsubsection{Lloyd’s algorithm (naive k-means)}
+Steps of Lloyd’s algorithm:
+\begin{enumerate}
+    \item Initialisation: Randomly assign each data point to one of the $k$ clusters
+    \item Assign each data point to the closest centroid
+    \item Compute the centroid of each cluster
+    \item Repeat steps 2 and 3 until the centroids do not change
+\end{enumerate}
+This algorithm should reduce the within-cluster sum of squares (WCSS) at each iteration.
+\subsubsection{K-means alternatives}
+\begin{itemize}
+    \item K-median: use the median instead of the mean to compute the centroid
+    \item K-medoids: use the most central point in the cluster as the centroid
+    \item Manhattan distance: use Manhattan distance instead of Euclidean distance to compute the distance between a data point and a centroid (i.e. $d(x, y)=\sum_{i=1}^{n}\left|x_{i}-y_{i}\right|$)
+\end{itemize}
+\subsubsection{Initialisation}
+There are serveral ways to initialise the centroids:
+\begin{itemize}
+    \item Random partition: Randomly assign each data point to one of the $k$ clusters
+    \item Forgy: Randomly select $k$ data points as the initial centroids
+    \item K-means++: select the first centroid randomly, then select the next centroid from the remaining data points with a probability proportional to the distance from the previous centroid
+\end{itemize}
+
+\subsection{Fuzzy k-means}
+\begin{enumerate}
+    \item Multiple cluster assignment: $x_i$ has cluster assignment $w_{i k}$, with $w_{i k}^{-1}=\sum_{j=1}^K\left(\frac{\left\|x_i-c_k\right\|}{\left\|x_i-c_j\right\|}\right)^{\frac{2}{m-1}}$
+    \item Centroid update
+- New cluster centroids are $c_k=\frac{\sum_{i=1}^n w_{i k}^m x_i}{\sum_{i=1}^n w_{i k}^m}$
+- This minimises the weighted mean squared error $E=\sum_{i=1}^n \sum_{k=1}^K w_{i k}^m\left\|x_i-c_k\right\|^2$
+- $m$ is a fuzziness hyper parameter
+\end{enumerate}
+
+\subsection{Types of clustering}
+\begin{itemize}
+    \item Hard vs soft clustering
+    \item Hierarchical vs non-Hierarchical clustering
+    \item AgglomeraCve vs partitioning/divisive
+    \item Centroid vs distribuCon-based vs density vs graph-based vs spectral
+\end{itemize}
+
+\section{Clustering}
+\subsection{GMM}
+\subsection{Density}
+\subsection{Evaluation}
+The challenge in evaluating clustering is that quantitative measures are not available.
+There is internal evaluation and external evaluation.
 
 \section{Python Library}
 \subsection{statsmodels}
@@ -184,7 +275,7 @@ K nearest neighbour
     https://www.statsmodels.org/stable/examples/index.html
 \subsection{sklearn}
     \subparagraph{neighbours.KNeighborsClassifier}
-        Parameters:
+    Parameters:
         \begin{itemize}
             \item n\_neighbors: number of neighbours
             \item weights: uniform, distance

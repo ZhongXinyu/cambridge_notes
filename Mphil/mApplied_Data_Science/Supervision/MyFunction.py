@@ -40,9 +40,6 @@ class Lagrangian(ErrorFunction):
     def __init__(self, params = {}):
         super().__init__("Lagrangian", {})
         self.evaluate = self.Lagrangian
-    
-    def Lagrangian(self, x,y):
-
 
 class RegularisationFunction(Function):
     def __init__(self, name, params):

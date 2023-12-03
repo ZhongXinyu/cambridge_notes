@@ -4,3 +4,15 @@
 [submodule "Mphil/mPrinciples_of_Data_Science/s1_principles_of_data_science"]
 	path = Mphil/mPrinciples_of_Data_Science/s1_principles_of_data_science
 	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/s1_principles_of_data_science.git
+[submodule "Mphil/mApplied_Data_Science/ads2023"]
+	path = Mphil/mApplied_Data_Science/ads2023
+	url = https://github.com/tedinburgh/ads2023.git
+[submodule "Mphil/mPrinciples_of_Data_Science/course_work"]
+	path = Mphil/mPrinciples_of_Data_Science/course_work
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/s1_assessment/xz447.git
+[submodule "Mphil/mResearch_Computing/course_work"]
+	path = Mphil/mResearch_Computing/course_work
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/c1_assessment/xz447.git
+[submodule "Mphil/mApplied_Data_Science/m1_applied_data_science"]
+	path = Mphil/mApplied_Data_Science/m1_applied_data_science
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/m1_applied_data_science.git

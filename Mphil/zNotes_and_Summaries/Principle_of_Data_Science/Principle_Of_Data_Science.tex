@@ -8,6 +8,7 @@
 \begin{document}
 
 \title{\topic}
+
 \begin{titlepage}
     \maketitle
 \end{titlepage}
@@ -365,10 +366,8 @@ Derivation of Poisson Distribution from binomial
 $$
 P(k ; \lambda / n, n)=\left(\frac{\lambda}{n}\right)^k\left(1-\frac{\lambda}{n}\right)^{n-k} \frac{n !}{k !(n-k) !}
 $$
-Mean of Poisson Distribution
-
-Variance of Poisson Distribution
-
+Mean of Poisson Distribution : $\lambda$\\
+Variance of Poisson Distribution : $\lambda$
 \subsubsection{Normal Distribution}
 \begin{definition}
     {Normal Distribution}{}{}
@@ -402,6 +401,11 @@ $(x-\mu)^T V^{-1} (x-\mu)$
 \subsubsection{The exponential decay Distributions}
 \subsubsection{Polynomial distributions}
 \subsubsection{Chi-squared Distribution}
+\begin{definition}
+    {Chi-squared Distribution}
+    {P(x ; k)=\frac{1}{2^{k / 2} \Gamma(k / 2)} x^{k / 2-1} e^{-x / 2}}
+    {Chi-squared distribution with $k$ degree of freedom gives the distribution of the sum of squares of k independent standard normal variables}
+\end{definition}
 \subsubsection{Generating samples from distributions and the inverse c.d.f.}
 using inverse c.d.f. to generate samples from distributions
 or use accept and reject method
@@ -409,5 +413,138 @@ or use accept and reject method
 \subsubsection{Convergence}
 \subsubsection{Central Limit Theorem}
 \subsubsection{Errors}
+
+\section{Classical Statistics, Estimation and Uncertainties}
+\subsection{Frequentist evaluation of estimators}
+\subsubsection{Consistency, bias and efficiency of estimates}
+\paragraph{Consistency}
+    A Consistent estimator will converge to true value as datasize increases:
+    $$
+    \lim _{N \rightarrow \infty} \hat{\theta}(\vec{x})=\theta
+    $$
+\paragraph{Bias}
+    The bias of an estimator is the difference between the expected value of the estimator and the true value of the parameter being estimated:
+    $$
+    \operatorname{Bias}(\hat{\theta})=E[\hat{\theta}]-\theta
+    $$
+    It is generally preferrable to have consistent estimator as opposed to biased estimators.
+\paragraph{Efficiency}
+    The efficiency of an estimator is the ratio of the variances of two unbiased estimators. The estimator with the lower variance is said to be more efficient.
+    $$
+    \operatorname{Eff}(\hat{\theta})=\frac{\operatorname{Var}(\hat{\theta})}{\operatorname{Var}(\hat{\theta}')}
+    $$
+\subsubsection{Bias-Variance Trade-off}
+    In order to minimise the variance, we want to take in more data, however, the more data we take in, the more bias we introduce. This is the bias-variance trade-off.
+\subsubsection{Estimation of the mean, variance and standard deviation}
+\subsection{The likelihood function}
+\begin{definition}
+    {The likelihood function}
+    {p(X|\theta) = \prod_{i=1}^N p(x_i|\theta)}
+    {The likelyhood function is a function of $\theta$ only, and is the probability of observing the data given the parameter $\theta$}
+\end{definition}
+\subsection{Minimym Variance Bound}
+\subsubsection{Maximum Likelihood Estimation}
+Maximise L is equivalent to maximise $\ln(L)$
+\subsection{Least-square method}
+$$
+\chi^2  = \sum_{i=1}^N \frac{(y_i - f(x_i))^2}{\sigma_i^2}
+$$
+$\sigma_{y_i}$ is the associated uncertainty of $y_i$.
+We will see that it is liked to the log likelihood function by 
+$$
+\chi^2 = -2 \ln L + C
+$$
+note that both side of the equation is a function of $\theta$ (estimated ?) only.\\
+This allows us to obtain the relationship in difference:
+$$
+{\Delta \chi^2}= -2  \Delta \ln L
+$$
+\begin{theorem}
+    {Wilks' theorem}
+    {As $N\rightarrow\infty $, the test-statistic which is twice the negative log likelihood ratio approached the $\chi^2$ distribtion. This is an example of hypothesis test where the null hypothesis is the valule of the parameter at the best fit and the alternative hypothesis is the value of the parameter where we read off the log likelihood difference.}
+\end{theorem}
+\subsubsection{Fisher information}
+\begin{definition}
+    {Fisher information}
+    {I(\theta)=E\left[\left(\frac{\partial \ln (p(X ; \theta))}{\partial \theta}\right)^{2}\right]}
+    {The Fisher information is the expected value of the squared score function, which is the derivative of the log likelihood function.}
+\end{definition}
+\subsection{Method of Moments}
+Method of moments is a method of estimating the parameters of a statistical model.
+Foe example, give a distribution of known form but unknown parameters, $$f(x;\va{\theta})$$
+We can estimate the parameters by equating the sample moments to the theoretical moments.
+
+\begin{align}
+    1 &= \int_{-\infty}^{\infty} f(x ; \va{\theta}) d x \\
+    \mu &= \int_{-\infty}^{\infty} x f(x ; \va{\theta}) d x  = \text{some funciton of theta}, i.e. g(\mu,\sigma)\approx \hat{\mu} \\
+    \mu^{2} &=\int_{-\infty}^{\infty}(x-\mu)^{2} f(x ; \va{\theta}) d = \text{some function of theta} \approx \hat{\mu}^{2} \\
+    &...
+\end{align}
+Here $\va{\theta}$ is a vector of parameters, hence we need the right amount (number of independent parameters, i.e. $\mu$,$\sigma$) of moments to estimate the parameters.
+We can estimate the parameters by equating the sample moments $\hat{\mu}$ to real moments $\mu$, and solve simultaneous equations to get the parameters.
+\subsubsection{Uncetainties from method of moments estimates}
+
+\subsection{Goodness-of-Fit Tests}
+This section will discuss the question of "how good was my fit in the first place", the answer to which is the goodness-of-fit test.
+
+\begin{definition}
+    {Test Statistics}
+    {\text{Quantify the agreement between the data and the model}}
+    {i.e. from the probability distribution, we can compute the probabilitay that we got the value we did, which in term gives us info on what we think the quality of the fit. Example of Test Statistics include $\chi^2$}
+\end{definition}
+
+\subsubsection{$\chi^2$ Tests}
+$\chi^2$ tests is chosen as we expect $\chi^2/d.o.f = 1$, as the expectation of the $\chi^2$ for $k$ degree of freedom is $k$. 
+
+The $\chi^2$ probability, i.e. $1 - F(\chi^2)$ (1 - c.d.f. of the $\chi^2$ distribution of the appropriate degree of freedom). What the value $p$ means is the probability that a function that does describe the data gives a value of the $\chi^2$ larger than the one you find (A larger $\chi^2$ means you did a bad job fitting).
+
+For p-value:
+\begin{itemize}
+    \item if p-value is small, the model do not agree well
+    \item if p-value is large, the model and data agree too well, over fitting the data.
+\end{itemize}
+
+$\chi^2$ test is very good at spotting the small p-value.
+
+
+This test is very dependent on the binning that us used and it is bad if you are trying to assess the compatibility of a model with may only contain a discrepancy in one bin. Example in Higgs Boson
+
+\subsubsection{Kolmogorov-Smirnoff KS Tests}
+It is an unbinned test, so it can be an alternative to the $\chi^2$ test when the number of the event is small.
+Fins the maximum difference between the two cumulative distributions.
+\begin{definition}
+    {KS score}
+    {P_{\text {KS}}=\max\left|F_{1}(x)-F_{2}(x)\right|\sqrt{N}}
+    {which is the maximum deviation between the two distributions cdf and multiplying bu the square root of the sample size.}
+\end{definition}
+\subsection{Confidence Intervals}
+Whenever we qant to quote a point estimate, we should also quote an interval estimate. 
+e.g. The common practise is quote 68.3\% or 95.4\% confidence interval.
+\subsubsection{Bayesian Intervals}
+\subsubsection{Classical Intervals (Neyman-Pearson intervals)}
+Classical intervals are based on the Neyman-Pearson lemma, which states that the likelihood ratio test is the most powerful test for a given significance level $\alpha$.
+\subsubsection{Feldman-Cousins intervals}   
+\subsection{Hypothesis Testing}
+\subsubsection{Neyman-Pearson Lemma}
+\begin{theorem}
+    {Neyman-Pearson Lemma}
+    {The likelihood ratio test is the most poweful test }
+\end{theorem}
+
+The Neyman-Pearson Lemma addresses the case where you want to construct a test with the maximum power subject to a specified Type I error rate ($\alpha$). In other words, it helps you design the most powerful test for detecting a particular effect, given a constraint on the probability of making a Type I error.
+\subsection{Resampling Methods}
+Resampling is the process of drawing data from a sample to produce additional samples.
+\section{Advanced Topics}
+\subsection{Measurement errors and forward modelling}
+\subsection{Optimisation}
+\subsection{Regularisation}
+\subsection{Density Estimation}
+This chapter uses the Kernal Density Estimation (KDE) method to estimate the probability density function of a random variable,which replaces the step function.
+\subsubsection{Kernal Density Estimation}
+\begin{definition}
+    {Kernal Density Estimation}
+    {\hat{f}(x)=\frac{1}{N} \sum_{i=1}^{N} \frac{1}{h} K\left(\frac{x-x_{i}}{h}\right)}
+    {where $K$ is the kernal function, $h$ is the bandwidth, and $N$ is the number of data points.}
+\end{definition}
 
 \end{document}

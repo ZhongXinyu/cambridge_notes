@@ -78,12 +78,10 @@ class MyModel:
         return prediction
 
 
-class KNN:
+class KNN: 
     def __init__(self, k = 5, method = "mean"):
         self.k = k
         self.x = []
         self.y = []
         self.method = method
-        self.kernal = None
-
-    
+        self.kernal = None  
