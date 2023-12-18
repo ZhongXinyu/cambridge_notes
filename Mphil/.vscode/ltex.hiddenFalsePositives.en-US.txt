@@ -1,9 +1,0 @@
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qls, pwd, cd, Ownership.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qchomd, chown, cumask Search.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qtouch mv rm, mkdir, rmdir Read.\\E$"}
-{"rule":"MOST_COMPARATIVE","sentence":"^\\Qcat more less Wildcards.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qls pwd cd Ownership.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qfile, tar, zip, unzip,diff tar -czf (c:create, z:zip f:file) tar -xf (x: extract) tar vs zip, tar creates smaller zipped files, can only zip and unzip all the files together diff tells you what has changed diff Git uses a bunch of diff files to keep track of the file changes for version control .\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q../Template/ format.tex\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qfile, tar, zip, unzip, diff, cut tar -czf (c:create, z:zip f:file) tar -xf (x: extract) tar vs zip, tar creates smaller zipped files, can only zip and unzip all the files together diff tells you what has changed diff Git uses a bunch of diff files to keep track of the file changes for version control .\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Qfile, tar, zip, unzip, diff, cut tar -czf (c:create, z:zip f:file) tar -xf (x: extract) tar vs zip, tar creates smaller zipped files, can only zip and unzip all the files together diff tells you what has changed diff Git uses a bunch of diff files to keep track of the file changes for version control .\\E$"}

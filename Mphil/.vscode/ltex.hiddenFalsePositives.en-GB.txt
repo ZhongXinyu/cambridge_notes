@@ -1,1 +1,0 @@
-{"rule":"SENTENCE_WHITESPACE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, V(X, Y)=E[(X-_X)(Y-_Y)]=E[X Y]-E[X] E[Y], \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q (X, Y)=V(X, Y) _X _Y\\E$"}
