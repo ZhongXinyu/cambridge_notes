@@ -1,1 +1,0 @@
-{"rule":"DOUBLE_PUNCTUATION","sentence":"^\\Q../Template/ format.tex\\E$"}
