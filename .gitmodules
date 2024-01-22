@@ -1,22 +1,33 @@
-[submodule "Mphil/mResearch_Computing/c1_research_computing"]
-	path = Mphil/mResearch_Computing/c1_research_computing
+[submodule "Mphil/1Research_Computing/c1_research_computing"]
+	path = Mphil/1Research_Computing/c1_research_computing
 	url = https://gitlab.developers.cam.ac.uk/phy/data-intensive-science-mphil/c1_research_computing.git
-	update = merge
-[submodule "Mphil/mPrinciples_of_Data_Science/s1_principles_of_data_science"]
-	path = Mphil/mPrinciples_of_Data_Science/s1_principles_of_data_science
+[submodule "Mphil/1Principles_of_Data_Science/s1_principles_of_data_science"]
+	path = Mphil/1Principles_of_Data_Science/s1_principles_of_data_science
 	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/s1_principles_of_data_science.git
-[submodule "Mphil/mApplied_Data_Science/ads2023"]
-	path = Mphil/mApplied_Data_Science/ads2023
-	url = https://github.com/tedinburgh/ads2023.git
-[submodule "Mphil/mPrinciples_of_Data_Science/course_work"]
-	path = Mphil/mPrinciples_of_Data_Science/course_work
-	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/s1_assessment/xz447.git
-[submodule "Mphil/mResearch_Computing/course_work"]
-	path = Mphil/mResearch_Computing/course_work
-	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/c1_assessment/xz447.git
-[submodule "Mphil/mApplied_Data_Science/m1_applied_data_science"]
+[submodule "Mphil/1Applied_Data_Science/m1_applied_data_science"]
 	path = Mphil/mApplied_Data_Science/m1_applied_data_science
-	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/m1_applied_data_science.git
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/m1_applied_data_science.gits
+
+[submodule "Mphil/1Applied_Data_Science/ads2023"]
+	path = Mphil/1Applied_Data_Science/ads2023
+	url = https://github.com/tedinburgh/ads2023.git
+
 [submodule "Mphil/m2_application_of_machine_learning"]
 	path = Mphil/m2_application_of_machine_learning
 	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/m2_application_of_machine_learning.git
+
+# [submodule "Mphil/1Research_Computing/Supervision_RC"]
+#     path = Mphil/1Research_Computing/Supervision_RC
+
+[submodule "Mphil/1Applied_Data_Science/m1_applied_data_science"]
+	path = Mphil/1Applied_Data_Science/m1_applied_data_science
+
+[submodule "Mphil/1Applied_Data_Science/coursework_ADS/xz447"]
+	path = Mphil/1Applied_Data_Science/coursework_ADS/xz447
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/m1_assessment/xz447.git
+[submodule "Mphil/1Principles_of_Data_Science/coursework_PDS/xz447"]
+	path = Mphil/1Principles_of_Data_Science/coursework_PDS/xz447
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/s1_assessment/xz447.git
+[submodule "Mphil/1Research_Computing/coursework_RC/xz447"]
+	path = Mphil/1Research_Computing/coursework_RC/xz447
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/c1_assessment/xz447.git
