@@ -1,0 +1,259 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{import}
+\import{../Template/}{format.tex}
+
+\newcommand{\topic}{General Relativity}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+
+\section{Particle Dynamics}
+\subsection{4-velocity of massive particle}
+\begin{definition}
+    {4-velocity of massive particle}
+    {$
+    u^\mu=\frac{d t}{d \tau}(c, \vec{u})
+    $}
+    {Note that $
+    \frac{d t}{d \tau}=\left(1-\frac{|\vec{u}|^2}{c^2}\right)^{-1 / 2}=\gamma_u
+    $} 
+\end{definition}
+\begin{enumerate}
+    \item 4-velocity is the tangent vector to the worldline of the particle.
+    \item The length of 4 velocity is constant:
+    $$
+        \eta_{\mu \nu} u^\mu u^\nu=\left(\frac{d s}{d \tau}\right)^2=c^2
+    $$
+\end{enumerate}
+\subsubsection{Velocity Transform Laws}
+\subsection{4-acceleration of massive particle}
+\definition{
+    4-acceleration
+}{$
+a^\mu=d u^\mu / d \tau
+$}{Expanding, we have $a^\mu=\gamma_u^2\left(\frac{\gamma_u^2}{c} \vec{u} \cdot \vec{a}, \vec{a}+\frac{\gamma_u^2}{c^2}(\vec{u} \cdot \vec{a}) \vec{u}\right)$}
+\begin{enumerate}
+    \item In an inertial frame, a free particle has $d^2 x^i / d t^2=0$, so that $\vec{u}=$ const. and $\gamma_u=$ const.
+    \item It follows that the components of the 4 -velocity are also constant in Cartesian coordinates so
+    $$
+    \frac{d u^\mu}{d \tau}=0
+    $$
+    \item The acceleration 4 -vector is always orthogonal to the 4-velocity: in Cartesian inertial coordinates
+    $$
+    \eta_{\mu \nu} a^\mu u^\nu=\eta_{\mu \nu} \frac{d u^\mu}{d \tau} u^\nu=\frac{1}{2} \frac{d}{d \tau}\left(\eta_{\mu \nu} u^\mu u^\nu\right)=0,
+    $$
+    so, generally, $\boldsymbol{g}(\boldsymbol{a}, \boldsymbol{u})=0$.
+    \item In the instantaneous rest frame of the particle, $\vec{u}=\overrightarrow{0}$, and the components of the 4-acceleration in that frame are simply $a^\mu=\left(0, \vec{a}_{\mathrm{IRF}}\right)$, where $\vec{a}_{\mathrm{IRF}}$ is the 3-acceleration in the instantaneous rest frame.
+    \item Note that the magnitude of $\vec{a}_{\mathrm{IRF}}$ determines the (invariant) magnitude of the 4-acceleration:
+    $$
+    |\boldsymbol{a}|^2=-\left|\vec{a}_{\mathrm{IRF}}\right|^2
+    $$
+    which shows that the 4 -acceleration is a spacelike vector.(4-velocity is timelike)
+\end{enumerate}
+\subsection{4-momentum}
+\definition{4-momentum vector}{$\boldsymbol{p}=m \boldsymbol{u}$}{In some inertial frame, the components of $\boldsymbol{p}$ are
+$$
+p^\mu=\left(\gamma_u m c, \gamma_u m \vec{u}\right)
+$$
+or, simply
+$$p^\mu=(E / c, \vec{p})$$}
+\begin{enumerate}
+    \item At any point along the worldline of the particle, the (squared) magnitude of the 4-momentum is
+    $$
+        \boldsymbol{p}|^2=m^2 c^2
+    $$
+    compare that to the (squared) magnitude of the 4-velocity:
+    \item The time component of the 4 -momentum is the total energy $E$ of the particle (i.e., the sum of the rest-mass energy and kinetic energy):
+    $$
+    E=\gamma_u m c^2
+    $$
+    \item Forming the invariant $|\boldsymbol{p}|^2$ in an inertial frame, we find the energy-momentum invariant
+    $$
+    E^2-|\vec{p}|^2 c^2=m^2 c^4
+    $$ (squared)4-momentum in variant is equivalent to energy-(3)momentum invariant
+    \item In isolated system, (squared)4 - invariant is conserved, which is equivalent to the conservation of energy and momentum. 
+\end{enumerate}
+\subsection{4-force}
+    \definition{4-force}{$\frac{D p^\mu}{D \tau}=f^\mu$}{..}
+    \begin{enumerate}
+        \item Since $|\boldsymbol{p}|^2=m^2 c^2$ is constant, $p^\mu$ is orthogonal to $D p^\mu / D \tau$ and so the 4 -velocity and 4 -force are necessarily orthogonal:
+        $$
+        \boldsymbol{g}(\boldsymbol{f}, \boldsymbol{u})=0
+        $$
+        \item In some inertial frame,
+        $$
+        f^\mu=\gamma_u \frac{d}{d t}\left(\frac{E}{c}, \vec{p}\right)=\gamma_u\left(\frac{\vec{f} \cdot \vec{u}}{c}, \vec{f}\right)
+        $$ where we have used $d E / d t=\vec{f} \cdot \vec{u}$.
+        \item $\eta_{\mu \nu} f^\mu u^\nu=0$
+        \item Finally, note that the 4 -force can be related to the 4 acceleration via $\boldsymbol{f}=m \boldsymbol{a}$
+    \end{enumerate}
+\subsection{massless particle}
+\subsection{Lorentz transformation}
+\begin{definition}
+    {homogeneous Lorentz transformation}
+    {$\begin{aligned} \vec{u}^1 & =\frac{\left(\vec{u}^1-v\right)}{\left(1-\vec{u}^1 v / c^2\right)} \\ \vec{u}^{\prime 2} & =\frac{\vec{u}^2}{\gamma_v\left(1-\vec{u}^1 v / c^2\right)} \\ \vec{u}^3 & =\frac{\vec{u}^3}{\gamma_v\left(1-\vec{u}^1 v / c^2\right)}\end{aligned}$}
+    {...}
+\end{definition}
+\begin{definition}
+    {transformation matrix}
+    {${\Lambda^\mu}_\nu = \mqty(\dmat{\gamma & -\beta\gamma \\ -\beta\gamma & \gamma,1,1})$}
+    {This is the end }
+\end{definition}
+
+
+\section{Electromagnetism}
+\begin{definition}
+    {Electromagnetic field tensor}
+    {$F\mu\nu = \partial_\mu A_\nu - \partial_\nu A_\mu$}
+    {$F\mu\nu$ is antisymmetric by construction and contains four independents fields }
+\end{definition}
+
+\section{Spacetime Curvature}
+\definition{Riemann Curvature Tensor}
+    {$R_{abc}^d=\nabla_a\nabla_b v_c-\nabla_b\nabla_a v_c$}
+    {The reason for doing so is that covariant derivative of dual vector field is not commutative}
+    \subsection{Subsection 1}
+\section{Gravitation field equations}
+    \subsection{Energy Momentum Tensor}
+    \definition{Energy Momentum Tensor}
+        {$T^{\mu\nu}(x)=\rho_0(x) u^\mu(x) u^\nu(x)$}
+        {
+        $T^{00}$: energy density\\
+        $T^{i0}$: i-th component of 3-momentum density (times c)\\
+        $T^{ij}$: flux of i-component of 3-momentum in j-direction
+        }
+    \subsubsection{Properties of Energy-momentum tensor}
+    \begin{itemize}
+        \item Always symmetric
+    \end{itemize}
+    \subsection{Energy-momentum Tensor in Ideal Fluid}
+        Consider Ideal Fluid:\\
+        We can find a local inertial frame so that $T^{i0}=0$; and the spatial components are isotropic: $T^{ij}\propto\delta^{ij}$.\\
+        Hence, in \textbf{instantaneous rest frame}:
+        \begin{align*}
+            T^{\mu\nu}= \text{diag}(\rho c^2,p,p,p)
+        \end{align*}
+        where $\rho c^2$ is the rest frame energy density and $p$ is isotropic pressure.
+        While in general:
+        \begin{equation}\label{Energy-momentum Tensor}
+            T^{\mu\nu}= (\rho+\dfrac{p}{c^2})u^\mu u^\nu - pg^{\mu\nu}
+        \end{equation}
+        Equation \ref{Energy-momentum Tensor} is the energy momentum tensor, valid in any coordinate system.\\
+        \subsubsection{Continuity Equation}
+        The energy-momentum tensor satisfies continuity equation:
+        \begin{equation*}
+            \nabla_\mu T^{\mu\nu} = 0
+        \end{equation*}
+    \subsection{Einstein Field Equation}
+    \begin{definition}
+        {Einstein Field Equation}
+        {$G_{\mu\nu}=R_{\mu\nu}-\dfrac{1}{2}g_{\mu\nu}R=-\kappa T_{\mu\nu}$}
+        {Constant proportionality and negative sign on the right is required for consistency with the weak field limit}
+    \end{definition}
+\section{The Schwarzchild Solution}
+Adopting a passive view point: change the coordinate system without changing the functional form of the fields on our coordinates.
+\subsection{Geodesics in Schwarzchild spacetime}
+In this section we study the equation of motion for 4 coordinates, $t,r,\theta,\phi$
+    \begin{enumerate}
+        \item Equation of motion for $\theta$:
+        \begin{equation}
+            \ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta} - \sin{\theta}\cos{\theta}\dot{\psi}^2 = 0
+        \end{equation}
+        A possible solution is $\theta = \pi/2$, planar motion in the equatorial plane; given the spherical symmetry.
+        \item Equation of motion for $t$:
+        \begin{equation}
+            (1-\frac{2\mu}{r})\dot{t} = k
+        \end{equation}
+        $k = (1-2\mu/r)\dot {t}$ is related to the energy of the particle as measured by stationary observer.
+        \item Equation of motion for $\phi$:
+        \begin{equation}
+            r^2\dot{\phi} = h
+        \end{equation}
+        Here, we assume in the plane $\theta= \pi/2$. $h$ arises from the symmetry of the spacetime under ratotion about z-axis, can be interpreted as $specific \ angular\ momentum$.
+        \item Equation of motion for $r$:\\
+        \begin{equation}
+            (1-\frac{2\mu}{r})c^2\dot{t}^2 - (1-\frac{2\mu}{r})^{-1} \dot{r}^2 - r^2\dot{\phi}^2 =
+            \begin{cases}
+                c^2 & \text{massive}\\
+                0 & \text{massless}
+            \end{cases}
+        \end{equation}
+    \end{enumerate}
+    \subsection{Effective potential energy}
+        \begin{enumerate}
+            \item In spherical coordinates, the Newtonian effective potential energy is 
+            \begin{equation}
+                V_{\text{eff}}(r) = -\frac{GM}{r}+\frac{h^2}{2r^2}
+            \end{equation}
+            \begin{itemize}
+                \item It has a centrifugal barrier at small r, preventing particles reaching $r=0 $
+                \item Bound orbits have $E_N < 0$, two turning points for $r$ w.r.t $V$ at $V=E_N$
+                \item Effective potential have one turning point at $r=h^2/GM$ It is a minimum, corresponding to stable circular orbit.
+            \end{itemize}
+            \item massive  particle in general relativity:
+            \begin{equation}
+                V_{\text{eff}}(r) = -\frac{GM}{r}+\frac{h^2}{2r^2}(1-\frac{2\mu}{r})
+            \end{equation}
+            \begin{itemize}
+                \item the centrifugal term is slightly modified by a factor of $(1-2\mu/r)$
+                \item solving for the extrema of V gives:
+                \begin{equation}
+                    r_{\pm}=\frac{h}{2\mu c^2}(h\pm\sqrt{h^2-12\mu^2 c^2})
+                \end{equation}
+                \item two stationary points for $h>\sqrt{\mu c}$, $r_{-}$ is a maximum and $r_{+}$is minimum
+                \item none for smaller h i.e V is increasing with r
+                \item 
+            \end{itemize}
+
+        \end{enumerate}
+        
+
+\section{Shapes of orbits for massive and massless particles}
+\subsection{Shape of Orbit}
+    \begin{enumerate}
+        \item Massive article gives
+        \begin{equation}
+            \frac{d^2 u}{d\phi^2} + u -3 \mu u^2 = \frac{GM}{h^2}
+        \end{equation}
+        \item Massless article gives
+        \begin{equation}
+            \frac{d^2 u}{d\phi^2} + u -3 \mu u^2 = 0
+        \end{equation}
+    \end{enumerate}
+\section{Cosmology}
+Fundamental observers agrees waht thay observe at any given proper time.
+
+\subsection{Robertson-Walker Metric}
+\theorem{Robertson–Walker form}{
+    $d s^2=c^2 d t^2-a^2(t)\left[\frac{d r^2}{\left(1-K r^2\right)}+r^2 d \Omega^2\right]$
+}
+\subsection{Geometry of the 3D spaces}
+properties of the 3D maximally-symmetric spaces with line element depend on K
+\subsection{Cosmological field equations}
+The Robertson-Walker metric contains a single function of time a(t) whose evolution is determined by the Einstein field equations
+\subsection{Friedmann Equation}
+The solution for the time dependent part of R-W metric with Einstein field equations:
+
+\theorem{Friedmann Equation 1}{
+    $$
+    \frac{\ddot{a}}{a}=-\frac{4 \pi G}{3}\left(\rho+\frac{3 p}{c^2}\right)+\frac{1}{3} \Lambda c^2
+    $$
+    }
+\theorem{2}{$$
+\left(\frac{\dot{a}}{a}\right)^2+\frac{K c^2}{a^2}=\frac{8 \pi G}{3} \rho+\frac{1}{3} \Lambda c^2
+$$
+}
+\end{document}

@@ -1,0 +1,607 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{import}
+\import{../Template/}{format.tex}
+
+\newcommand{\topic}{Electromagnetism and Optics}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+
+\section{Revision}
+\subsection{Maxwell relation}
+$$
+\begin{aligned}
+& \nabla \cdot \boldsymbol{D}=\rho \\
+& \nabla \cdot \boldsymbol{B}=0 \\
+& \nabla \times \boldsymbol{E}=-\dot{B} \\
+& \nabla \times \boldsymbol{H}=\boldsymbol{J}+\dot{\boldsymbol{D}}
+\end{aligned}
+$$
+In integral form:
+\begin{center}
+Gauss (ES): $\quad \int_S \boldsymbol{D} \cdot \mathrm{d} \boldsymbol{S}=\int_V \rho \mathrm{d} V$\\
+Gauss (MS): $\quad \int_S \boldsymbol{B} \cdot \mathrm{d} S=0$\\
+Faraday, Lenz: $\oint_C \boldsymbol{E} \cdot \mathbf{d} \boldsymbol{l}=-\frac{\partial}{\partial t} \int_S \boldsymbol{B} \cdot \mathbf{d} \boldsymbol{S}$\\
+$$
+\text { Ampère: } \oint_C \boldsymbol{H} \cdot \mathbf{d} \boldsymbol{l}=\int_S\left(\boldsymbol{J}+\frac{\partial \boldsymbol{D}}{\partial t}\right) \cdot \mathrm{d} \boldsymbol{S}
+$$
+\end{center}
+\subsection{Relative permittivity and magnetic permeability}
+$$
+\boldsymbol{D}=\epsilon \epsilon_0 \boldsymbol{E}
+$$
+$$ 
+\boldsymbol{B}=\mu \mu_0 \boldsymbol{H}
+$$
+\subsection{Electromagnetic Energy}
+Energy Density:
+$$
+u=\frac{1}{2} \boldsymbol{E} \cdot \boldsymbol{D}+\frac{1}{2} \boldsymbol{B} \cdot \boldsymbol{H}
+$$
+Energy flux(Poynting vector):
+$$
+\boldsymbol{N}=\boldsymbol{E} \times \boldsymbol{H}
+$$
+\subsection{Vector Potential}
+$$
+\boldsymbol{B}=\boldsymbol{\nabla} \times \boldsymbol{A}
+$$
+$$
+\boldsymbol{E}=-\dot{\boldsymbol{A}}-\nabla \phi
+$$
+\subsection{EM waves}
+E field and B field follow the wave equation:
+$$
+\nabla^2 \boldsymbol{E}=\epsilon \epsilon_0 \mu \mu_0 \ddot{\boldsymbol{E}} \quad \text { and similarly } \quad \nabla^2 \boldsymbol{B}=\epsilon \epsilon_0 \mu \mu_0 \ddot{\boldsymbol{B}}
+$$
+Maxwell equation with no free charge or current 
+$$
+\begin{array}{rlrlrl}
+\boldsymbol{\nabla} \cdot \boldsymbol{D} & =0 & & \rightarrow & \boldsymbol{k} \cdot \boldsymbol{D} & =0 \\
+\nabla \cdot \boldsymbol{B} & =0 & & \rightarrow & \boldsymbol{k} \cdot \boldsymbol{B} & =0 \\
+\nabla \times \boldsymbol{E} & =-\dot{\boldsymbol{B}} & & \rightarrow & \boldsymbol{k} \times \boldsymbol{E} & =\omega \boldsymbol{B} \\
+\boldsymbol{\nabla} \times \boldsymbol{H} & =\dot{\boldsymbol{D}} & & \rightarrow & \boldsymbol{k} \times \boldsymbol{H} & =-\omega \boldsymbol{D}
+\end{array}
+$$
+
+From the last two equations we can get :
+$$
+\boldsymbol{B} \perp \boldsymbol{k} \text { and } \boldsymbol{E} \quad: \quad \boldsymbol{D} \perp \boldsymbol{k} \text { and } \boldsymbol{H}
+$$
+while:
+$$
+\boldsymbol{E} \text { and } \boldsymbol{H} \text { are not necessarily } \perp \text { to } \boldsymbol{k} \text {. }
+$$
+\subsection{Some Mathematics}
+$$
+\nabla \times(\nabla \times \boldsymbol{F})=\nabla(\nabla \cdot \boldsymbol{F})-\nabla^2 \boldsymbol{F}
+$$
+\subsection{Linear Polarisation and Brewster angle}
+$$
+\begin{aligned}
+r_{\mathrm{p}} & =\frac{n_2 \cos \theta_1-n_1 \cos \theta_2}{n_2 \cos \theta_1+n_1 \cos \theta_2} & t_{\mathrm{p}} & =\frac{2 n_1 \cos \theta_1}{n_2 \cos \theta_1+n_1 \cos \theta_2} \\
+r_{\mathrm{s}} & =\frac{n_1 \cos \theta_1-n_2 \cos \theta_2}{n_1 \cos \theta_1+n_2 \cos \theta_2} & t_{\mathrm{s}} & =\frac{2 n_1 \cos \theta_1}{n_1 \cos \theta_1+n_2 \cos \theta_2}
+\end{aligned}
+$$
+Here $p$ stands for $E$ in the plane of incidence and $s$ for $E$ perpendicular to the plane of incidence.
+$$
+r_{\mathrm{p}}=0 \text { at } \theta_1=\theta_{\mathrm{B}}=\tan ^{-1}\left(\frac{n_2}{n_1}\right), \text { the Brewster angle. }
+$$
+
+\section{Optics}
+\subsection{Jones's Notation}
+$$
+    \begin{array}{|c|cccccc|}
+    \hline \begin{array}{c}
+    \text { Jones } \\
+    \text { vector }
+    \end{array} & x \text {-pol } & y \text {-pol } & \theta \text {-pol } & \text { RCP } & \text { LCP } & \begin{array}{c}
+    \text { General } \\
+    \text { elliptical }
+    \end{array} \\
+    \hline & \underline{L}_x & \underline{L}_y & \underline{L}_\theta & \underline{C}_{\mathrm{R}} & \underline{C}_{\mathrm{L}} & \\
+    \left(\begin{array}{c}
+    a_1 \\
+    a_2
+    \end{array}\right) & \left(\begin{array}{l}
+    1 \\
+    0
+    \end{array}\right) & \left(\begin{array}{l}
+    0 \\
+    1
+    \end{array}\right) & \left(\begin{array}{c}
+    \cos \theta \\
+    \sin \theta
+    \end{array}\right) & \frac{1}{\sqrt{2}}\left(\begin{array}{c}
+    1 \\
+    -i
+    \end{array}\right) & \frac{1}{\sqrt{2}}\left(\begin{array}{c}
+    1 \\
+    i
+    \end{array}\right) & \left(\begin{array}{c}
+    a \\
+    b \mathrm{e}^{i \delta}
+    \end{array}\right) \\
+    \hline
+    \end{array}
+$$
+
+Linear combinations, with appropriate phases, of the various polarization states can be used to form other polarization states. e.g.
+$$
+\frac{C_{\mathrm{R}}+\underline{C}_{\mathrm{L}}}{\sqrt{2}}=\underline{L}_x
+$$
+
+A polaroid with a transmitting axis oriented at $\theta$ to $\mathrm{O} x$ is represented by the matrix (see Examples Sheet):
+$$
+\underline{\underline{J}}_\theta=\left(\begin{array}{cc}
+\cos ^2 \theta & \sin \theta \cos \theta \\
+\sin \theta \cos \theta & \sin ^2 \theta
+\end{array}\right)
+$$
+so the transmitted intensity is, Malus's Law:
+$$
+I(\theta)=I_0\left(\cos ^4 \theta+\sin ^2 \theta \cos ^2 \theta\right)=I_0 \cos ^2 \theta
+$$
+For $\theta=\pi / 2: I\left(\frac{\pi}{2}\right)=0$.
+
+\subsection{Birefringent Material}
+For isotropic medium :
+$$
+\boldsymbol{P}=\epsilon_0 \chi \boldsymbol{E} \quad \boldsymbol{D}=\epsilon \epsilon_0 \boldsymbol{E} \quad \boldsymbol{M}=\chi_{\mathrm{m}} \boldsymbol{H} \quad \boldsymbol{B}=\mu \mu_0 \boldsymbol{H}
+$$
+
+So for such a material, there is a set of orthogonal axes $\left\{\widehat{\boldsymbol{e}}_1, \widehat{\boldsymbol{e}}_2, \widehat{\boldsymbol{e}}_3\right\}$ - the principal axes - such that:
+$$
+\underline{\underline{\boldsymbol{\epsilon}}}=\left(\begin{array}{ccc}
+\epsilon_1 & 0 & 0 \\
+0 & \epsilon_2 & 0 \\
+0 & 0 & \epsilon_3
+\end{array}\right)=\left(\begin{array}{ccc}
+n_1^2 & 0 & 0 \\
+0 & n_2^2 & 0 \\
+0 & 0 & n_3^2
+\end{array}\right)
+$$
+\begin{enumerate}
+    \item If $n_1 \neq n_2 \neq n_3$, the material is biaxial.
+    \item If two of $n_1, n_2, n_3$ are equal the material is uniaxial.
+    \item For uniaxial systems like calcite it is conventional to take $n_1=n_2 \neq n_3$
+    $$
+    \underline{\underline{\boldsymbol{\epsilon}}}=\left(\begin{array}{ccc}
+    \epsilon_1 & 0 & 0 \\
+    0 & \epsilon_1 & 0 \\
+    0 & 0 & \epsilon_3
+    \end{array}\right)=\left(\begin{array}{ccc}
+    n_{\mathrm{o}}^2 & 0 & 0 \\
+    0 & n_{\mathrm{o}}^2 & 0 \\
+    0 & 0 & n_{\mathrm{e}}^2
+    \end{array}\right)
+    $$ where "o" stands for ordinary and "e" for extraordinary.
+    \item birefringence for a uniaxial material is given by $\Delta n=n_{\mathrm{e}}-n_{\mathrm{o}}$, and can be positive or negative
+\end{enumerate}
+
+\subsubsection{Discussion 1}
+    \textit{Q: How a uniaxial birefringent material can be used to make a quarter wave plate.?}\\
+    \begin{quote}
+    \textcolor{blue}{
+    Uniaxial birefringent materials have principle refractive indices $n_o$, $n_o$ and $n_e$. 
+    We can consider a plane-polarised EM wave $e^{i(kz-wt)}$ travels along $O_z$
+    at a different speeds $c/n_f$ or $c/n_s$ depending on whether $\vb{E}$ is parallel to $O_x$ or $O_y$
+    As the wave transverses the plate, the phase will shift $e^{ik(z=0)}\rightarrow e^{ik_f(z=d)}$,
+    where $k_f=\dfrac{\omega n_f}{c}$.\\}
+    So the phase shift will depend on the optical thickness,$d$ and also the refractive index:\\
+    Along a fast axis, the change is $e^{i\omega n_f d/c}$.\\
+    Along a slow axis, the change is $e^{i\omega n_s d/cs}$.\\
+    The Jones matrix for the plate can be written as\\
+    A quarter-wave plate is on with a difference in phase shift corresponding to $\lambda /4 $\\
+    \end {quote}
+
+\subsection{Waveplate/Retarders}
+\begin{enumerate}
+    \item A plane-polarized $\mathrm{EM}$ wave $\mathrm{e}^{i(k z-\omega t)}$ travels along $\mathrm{O} z$ at different speeds $c / n_{\mathrm{f}}$ or $c / n_{\mathrm{s}}$ depending on whether $\boldsymbol{E} \| \mathrm{O} x$ or $\mathrm{O} y$.
+    \item For $\underline{L}_x: \mathrm{e}^{i k(z=0)} \longrightarrow \mathrm{e}^{i k_{\mathrm{f}}(z=d)}$ as it traverses the plate, where $k_{\mathrm{f}}=\frac{w n_{\mathrm{f}}}{c}$. So the plate applies phase terms depending on the different optical thicknesses:
+    \item The Jones matrix for the plate
+    $$
+    \left(\begin{array}{cc}
+    \mathrm{e}^{i \omega n_{\mathrm{f}} d / c} & 0 \\
+    0 & \mathrm{e}^{i \omega n_{\mathrm{s}} d / c}
+    \end{array}\right) \propto\left(\begin{array}{cc}
+    \mathrm{e}^{i \omega\left(n_{\mathrm{f}}-n_{\mathrm{s}}\right) d / c} & 0 \\
+    0 & 1
+    \end{array}\right) \propto\left(\begin{array}{cc}
+    \mathrm{e}^{-i \Delta \phi / 2} & 0 \\
+    0 & \mathrm{e}^{i \Delta \phi / 2}
+    \end{array}\right)
+    $$
+    where $\Delta \phi=\omega \frac{\left(n_{\mathrm{s}}-n_{\mathrm{f}}\right) d}{c}$ is the phase difference induced by the plate for waves polarized along the fast,$f$  and slow, $s$axes.
+    \item 
+    $$
+    \left\{\begin{array}{c}
+    \Delta \phi=\pi / 2 \\
+    \Delta \phi=\pi
+    \end{array}\right\} \longrightarrow\left\{\begin{array}{c}
+    \lambda / 4 \\
+    \lambda / 2
+    \end{array}\right\} \text { in vacuum - a }\left\{\begin{array}{c}
+    \text { quarter-wave plate } \\
+    \text { half-wave plate }
+    \end{array}\right\}
+    $$
+    \item So for a $\lambda / 4$ plate with fast axis along $\mathrm{O} x$ the Jones matrix is:
+    $$
+    \underline{\underline{J}}_{\lambda / 4, x}=\left(\begin{array}{cc}
+    \mathrm{e}^{-i \pi / 4} & 0 \\
+    0 & \mathrm{e}^{i \pi / 4}
+    \end{array}\right)=\mathrm{e}^{-i \pi / 4}\left(\begin{array}{ll}
+    1 & 0 \\
+    0 & i
+    \end{array}\right)
+    $$
+    \item Application of quarter wave plate to linearly polarized light
+    $$
+    \left(\begin{array}{c}
+    \cos \theta \\
+    i \sin \theta
+    \end{array}\right)
+    $$
+    This is elliptically polarised light, note special case for $\theta=0,90$ is linearly polarised or $\theta=\pi / 2$, circularly polarised.
+    \item So $\lambda / 2$ plates:
+    $$
+    \underline{\underline{J}}_{\lambda / 2, x}=\left(\begin{array}{cc}
+    \mathrm{e}^{-i \pi / 2} & 0 \\
+    0 & \mathrm{e}^{i \pi / 2}
+    \end{array}\right)=\left(\begin{array}{cc}
+    -i & 0 \\
+    0 & i
+    \end{array}\right)=\mathrm{e}^{-i \pi / 2}\left(\begin{array}{cc}
+    1 & 0 \\
+    0 & -1
+    \end{array}\right)
+    $$
+    \item Application of half wave plate to linearly polarized light:
+    Plane polarized light with the $\boldsymbol{E}$-vector directed at $-\theta$ to $\mathrm{O} x$. The direction of plane polarization is rotated.
+    If also $\theta=45^{\circ}$, the plane of polarization becomes perpendicular to the original.
+    \item 
+    (iii) if $\theta=0$ or $\pi / 2$, the incident plane polarized wave is unaffected whatever the value of the plate thickness $d$, since the incident $\boldsymbol{E}$ is parallel to one of the principal axes of the plate. \note{???}
+\end{enumerate}
+\subsection{Faraday effect}
+Birefringence can be introduced by applying an electric field to an isotropic material
+Chirality can be introduced to a non-chiral system by an applied magnetic field which alters the response of the electrons in the system to the optical fields.
+
+...
+
+The Verdet coefficient $\boldsymbol{V}$ is defined from
+$$
+\theta=V B_0 d
+$$
+so for the plasma in a weak field $B_0$ :
+\note{??}
+$$
+V=-\frac{e \omega_{\mathrm{p}}^2}{2 m c \omega^2 \sqrt{1-\frac{\omega_{\mathrm{p}}^2}{\omega^2}}}
+$$
+\subsection{Coherence}
+\subsubsection{Coherence and Interference}
+Interference ideas provide a useful quantified description for the degree of correlation, or degree of coherence.
+
+Spatial coherence refers to the degree to which different parts of a wave remain in phase with each other as the wave propagates through space. In other words, it describes how well the wave maintains a consistent pattern of peaks and valleys across its entire spatial extent. 
+
+Temporal coherence, on the other hand, refers to the degree to which different parts of a wave remain in phase with each other over time. In other words, it describes how well the wave maintains a consistent pattern of peaks and valleys as it evolves over time.
+
+Spatial coherence is important in optics, where it is used to describe the properties of lasers and other coherent light sources. Temporal coherence is important in spectroscopy(Michelson Interferometer), where it is used to study the properties of materials based on the interactions between light waves and matter.
+
+\subsection{Lifetime broadening} Unstimulated emission from an isolated, stationary atom can be represented semi-classically as a decaying harmonic wave, beginning at $t=0$ and characterized by a decay time $\tau_{\mathrm{s}}$ or a scattering frequency $\omega_{\mathrm{s}}=1 / \tau_{\mathrm{s}}$ :
+$$
+\begin{aligned}
+F(\omega)= & \int_0^{\infty} \mathrm{e}^{i \omega_0 t} \mathrm{e}^{-\omega_{\mathrm{s}} t} \mathrm{e}^{-i \omega t} \mathrm{~d} t=\frac{1}{\omega-\omega_0-i \omega_{\mathrm{s}}} \\
+& P(\omega) \sim|F(\omega)|^2=\frac{1}{\left(\omega-\omega_0\right)^2+\omega_{\mathrm{s}}^2}
+\end{aligned}
+$$
+$P(w)$ is now a Lorentzian peak centred on $\omega_0$ and with a linewidth (FWHM) of $2 \omega_{\mathrm{s}}$, determined by the decay time $\tau_{\mathrm{s}}$.
+\subsubsection{Temporal Coherence}
+\subsubsection{Power Spectrum of Temporal Coherence}
+\theorem{Wiener Khinchine Theroem}
+    {The FT of the autocorrelation function of a function is the square modulus of the FT of the function itself}
+\subsubsection{Summary of basic results}
+$$
+\begin{array}{|rcr|}
+\hline \text { Source output } & f(t) & \\
+\text { Temporal coherence function } & \Gamma(\tau)=\left\langle f(t) f^*(t-\tau)\right\rangle & (2.65) \\
+\text { Measured intensity } & I(\tau)=2 I_0+2 \Re[\Gamma(\tau)] & (2.66) \\
+\text { Time interval } & \tau=2 d / c & (2.67) \\
+\text { Visibility } & V=\frac{|\Gamma(\tau)|}{I_0}=|\gamma(\tau)| & (2.68) \\
+\text { Power Spectrum } & P(\omega) \sim \mathrm{FT}[\gamma(\tau)] & \\
+\hline
+\end{array}
+$$
+
+\begin{definition}
+    {Coherence length}{$l_c$}{the path difference $= 2d$ at which visibility drops to $1/e$, it is also a measure of coherence time
+    $$
+    \tau_c\left(=l_c / c \sim \sigma^{-1}\right)
+    $$,$$l_c \sim \frac{\lambda^2}{2 \Delta \lambda}$$}
+\end{definition}
+
+\subsubsection{Spatial Coherence}
+Qualitatively: Each point on the source produces a set of $\cos ^2$ fringes angularly offset from each other because of the different angles the points on the source make at O. So the fringe contrast on the screen is degraded.
+If the angular width of the source measured from $\mathrm{O}$ is $\alpha$, then the fringes from the two edges will be offset by $\alpha D$. The spacing of each set of fringes is $\lambda D / d$, so serious contrast degradation sets in if:
+$$
+d>\frac{\lambda}{\alpha} \approx w_{\mathrm{c}}\\
+\text { In general, the broader the source, the narrower the coherence width. }
+$$
+
+\subsection{Polarisation formula}
+A beam that includes both polarized and unpolarized light (with intensities $I_{\mathrm{pol}}$ and $\left. I_{\mathrm{unpol}}\right)$ is partially polarized, with a degree of polarization:
+$$
+V=\frac{I_{\mathrm{pol}}}{I_{\mathrm{pol}}+I_{\mathrm{unpol}}}
+$$
+\subsection{Faraday effect}
+Faraday's effect describes that birefringence can be introduced by applying an electric field to an isotropic material.
+We consider the motion of plasma electrons in a magnetic field $\boldsymbol{B}$, with $\boldsymbol{B}$ parallel to the $z$-axis.
+\section{Electrodynamics}
+\subsection{Gauge in EM}
+$\boldsymbol{B}=\boldsymbol{\nabla} \times \boldsymbol{A}$ does not completely specify $\boldsymbol{A}$.
+$\boldsymbol{\nabla} \times(\boldsymbol{\nabla} \chi) \equiv 0$ for any scalar function $\chi$, so for $\boldsymbol{A}^{\prime} \rightarrow \boldsymbol{A}+\boldsymbol{\nabla} \chi$ :
+$$
+B^{\prime} \rightarrow \nabla \times A^{\prime}=\nabla \times A+\nabla \times(\nabla \chi)=\nabla \times A=B
+$$
+So any number of $\boldsymbol{A}$ s result in the same $\boldsymbol{B}$.
+Correspondingly, $\boldsymbol{E}=-\dot{\boldsymbol{A}}-\boldsymbol{\nabla} \phi$ is unchanged for $\boldsymbol{A}^{\prime} \rightarrow \boldsymbol{A}+\boldsymbol{\nabla} \chi$ provided also
+$$
+\phi \rightarrow \phi^{\prime}=\phi-\frac{\partial \chi}{\partial t}
+$$
+$\chi$ can therefore be chosen at will, and the mathematically most convenient choice depends on the context in which $\boldsymbol{A}$ is used.
+This choice is called a "gauge".
+\subsubsection{Steady Current in vacuum}
+For steady currents in vacuum, $\boldsymbol{\nabla} \times \boldsymbol{B}=\mu_0 \boldsymbol{J}$ and since $\boldsymbol{B}=\boldsymbol{\nabla} \times \boldsymbol{A}$ :
+$$
+\boldsymbol{\nabla} \times(\boldsymbol{\nabla} \times \boldsymbol{A})=\nabla(\boldsymbol{\nabla} \cdot \boldsymbol{A})-\nabla^2 \boldsymbol{A}=\mu_0 \boldsymbol{J}
+$$
+Choosing the Coulomb gauge $\boldsymbol{\nabla} \cdot \boldsymbol{A}=0$ :
+$$
+\nabla^2 \boldsymbol{A}=-\mu_0 \boldsymbol{J}
+$$
+The mathematic solution is:
+$$
+\boldsymbol{A}(\boldsymbol{r})=\frac{\mu_0}{4 \pi} \int_{\text {all space }} \frac{\boldsymbol{J}\left(\boldsymbol{r}^{\prime}\right)}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|} \mathrm{d}^3 \boldsymbol{r}^{\prime} \longrightarrow \frac{\mu_0}{4 \pi} \int_{\text {all space }} \frac{I}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|} \mathrm{d} \boldsymbol{l}^{\prime}
+$$
+which we get the hint from the solution of the electric potential:
+$$
+\nabla^2 \phi=-\rho / \epsilon_0
+$$
+for which the solution is:
+$$
+\phi(\boldsymbol{r})=\frac{1}{4 \pi \epsilon_0} \int_{\text {all space }} \frac{\rho\left(\boldsymbol{r}^{\prime}\right)}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|} \mathrm{d}^3 \boldsymbol{r}^{\prime}
+$$
+Note that:
+$$
+\begin{aligned}
+\boldsymbol{B}=\nabla \times \boldsymbol{A} & =\frac{\mu_0}{4 \pi} \int I \nabla \times\left(\frac{\mathbf{d} \boldsymbol{l}^{\prime}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}\right)=-\frac{\mu_0}{4 \pi} \int I \mathbf{d} \boldsymbol{l}^{\prime} \times \nabla\left(\frac{1}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}\right) \\
+& =-\frac{\mu_0}{4 \pi} \int I \mathbf{d} \boldsymbol{l}^{\prime} \times \frac{\left(-\boldsymbol{r}+\boldsymbol{r}^{\prime}\right)}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|^3} \\
+& =\frac{\mu_0}{4 \pi} \int I \frac{\mathbf{d} \boldsymbol{l}^{\prime} \times\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|^3}
+\end{aligned}
+$$
+which is the Biot-Savart Law.
+\subsection{$\vb{A}$ in simple cases}
+
+
+\subsection{$\vb{A}$ in quantum mechanics}
+\subsubsection{ Aharanov-Bohm Effect}
+$\Phi_B$ is the magnetic flux enclosed in the region:
+$$
+\Phi_B=\int_{p a t h 1} d \boldsymbol{s} \cdot \boldsymbol{A}(s)-\int_{p a t h 2} d \boldsymbol{s} \cdot \boldsymbol{A}(\boldsymbol{s})=\oint d \boldsymbol{s} \cdot \boldsymbol{A}(s)=\int d S \nabla \times \boldsymbol{A}
+$$
+$$
+\text { phase difference } \Delta=e \Phi / \hbar
+$$
+\subsection { Maxwell Equation in terms of A and $\phi$}
+$$
+\begin{array}{rlr}
+\frac{\epsilon \mu}{c^2} \ddot{\phi}-\nabla^2 \phi & =\frac{\rho}{\epsilon \epsilon_0} & \text { MA1 } \\
+\frac{\epsilon \mu}{c^2} \ddot{\boldsymbol{A}}-\nabla^2 \boldsymbol{A} & =\mu \mu_0 \boldsymbol{J} & \text { MA2 }
+\end{array}
+$$
+These two results are derived by writing ME1 and ME4 in terms of $\phi$ and $\vb{A}$, while ME2 and ME3 are already satisfied with the definition of $\vb{A}$ and $\phi$.
+\subsubsection {Lorenz condition}
+A suitable gauge that simplifies the Maxwell equation, by choosing the gauge:
+$\div \vb{A}+ \epsilon\mu \dfrac{\dot{\phi}}{c^2} = 0$\\
+Note: for the static field, the Lorenz condition is chosen to be the Coulomb gauge.
+\subsubsection {Solution for A and $\phi$}
+Consider a time-varying charge at the origin, $q(r=0, t)$. The solution for $\phi$ must be spherically symmetric $(\boldsymbol{r} \rightarrow r)$ and probably follow an inverse square law (for the fields):
+$$
+\phi(r, t) \sim \frac{1}{r} g\left(t-\frac{r}{c}\right)
+$$
+where the "-" sign corresponds to an outgoing wave. So the solution at $r$ at any time depends on the charge at a time earlier by $-r / c$, the retarded time.
+
+Denote
+$$
+\rho\left(\boldsymbol{r}^{\prime}, t-\frac{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}{c}\right) \quad \text { by } \quad\left[\rho\left(\boldsymbol{r}^{\prime}, \boldsymbol{r}, t\right)\right] \text { or }[\rho]
+$$
+Square bracket mean "evaluated at the \textit{retarded time}" $t-\frac{|\vb{r}-\vb{r'}|}{c}$
+
+with that in mind, we  have  :
+$$
+\boldsymbol{A}(\boldsymbol{r}, t)=\frac{\mu_0}{4 \pi} \int_{\text {all space }} \frac{\boldsymbol{J}\left(\boldsymbol{r}^{\prime}, t-\frac{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}{c}\right) \mathrm{d} V^{\prime}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}
+$$
+
+\section{Dipole Radiation}
+Accelerating charges are of the interest of radiating.
+In this section, we consider retarded potentials:
+$$
+\begin{aligned}
+& \phi(\boldsymbol{r}, t)=\frac{1}{4 \pi \epsilon_0} \int_{\text {all space }} \frac{\rho\left(\boldsymbol{r}^{\prime}, t-\frac{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}{c}\right) \mathrm{d} V^{\prime}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|} \\
+& \boldsymbol{A}(\boldsymbol{r}, t)=\frac{\mu_0}{4 \pi} \int_{\text {all space }} \frac{\boldsymbol{J}\left(\boldsymbol{r}^{\prime}, t-\frac{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}{c}\right) \mathrm{d} V^{\prime}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}
+\end{aligned}
+$$
+
+$$
+\frac{\partial}{\partial r}[F]=-\frac{1}{c}\left[F^{\prime}\right] \quad \text { and } \quad \frac{\partial}{\partial t}[F]=\left[F^{\prime}\right]
+$$
+\subsection{The Hertzian Dipole}
+Simple model: two charges $q$ are separated by distance $d$, there is a current $$
+I=\dot{q}=-i \omega q_0 \mathrm{e}^{-i \omega t}
+$$
+The dipole moment and current are:
+$$
+\boldsymbol{p}=\left(0,0, p_0 \mathrm{e}^{-i \omega t}\right) \quad I=\frac{\dot{p}}{d}=-i \omega \frac{p_0}{d} \mathrm{e}^{-i \omega t}
+$$
+with $p_0=q_0 d$
+\subsubsection{Vector Potential}
+The vector potential is given by:
+$$
+\boldsymbol{A}(\boldsymbol{r}, t)=\frac{\mu_0}{4 \pi} \int \frac{[\boldsymbol{J}] \mathrm{d} V^{\prime}}{\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right|}
+$$
+The dipole is at $\mathrm{O}$ and $d \ll r$, so $\left|\boldsymbol{r}-\boldsymbol{r}^{\prime}\right| \rightarrow r$ - variations in $r$ within the integral can be neglected.
+$$
+\boldsymbol{A}(r, t)=\frac{\mu_0}{4 \pi r} \int[\boldsymbol{J}] \mathrm{d} V^{\prime}
+$$
+The integrated (retarded) current density is
+$$
+\int \boldsymbol{J}\left(\boldsymbol{r}^{\prime}, t-r / c\right) \mathrm{d} V^{\prime} \equiv I d \widehat{\boldsymbol{z}}=\dot{q}(t-r / c) d \widehat{\boldsymbol{z}}=\dot{\boldsymbol{p}}(t-r / c) \widehat{\boldsymbol{z}}=[\dot{\boldsymbol{p}}]
+$$
+So
+$$
+\boldsymbol{A}(\boldsymbol{r}, t)=\frac{\mu_0}{4 \pi r}[\dot{\boldsymbol{p}}]
+$$
+
+\subsubsection{Scalar Potential}
+The potential at $\mathrm{P}$ due to a charge $q\left(t-r_{+} / c\right)$ at a distance $r_{+}$and a charge $-q\left(t-r_{-} / c\right)$ at a distance $r_{-}$is, including retardation:
+$$
+\phi(r, \theta, t)=\frac{1}{4 \pi \epsilon_0}\left\{\frac{+q\left(t-r_{+} / c\right)}{r_{+}}+\frac{-q\left(t-r_{-} / c\right)}{r_{-}}\right\}
+$$
+For a Hertzian dipole, $d \ll r$ and $r_{ \pm} \simeq r \mp(d / 2) \cos \theta$, and this difference can be calculated from the derivative:
+$$
+\begin{aligned}
+\phi(r, \theta, t)= & \frac{1}{4 \pi \epsilon_0}\left(r_{+}-r_{-}\right) \frac{\partial}{\partial r}\left\{\frac{q(t-r / c)}{r}\right\} \\
+= & \frac{1}{4 \pi \epsilon_0}(-d \cos \theta)\left\{-\frac{q(t-r / c)}{r^2}-\frac{\dot{q}(t-r / c)}{r c}\right\} \\
+= & \frac{\cos \theta}{4 \pi \epsilon_0}\left\{\frac{q(t-r / c) d}{r^2}+\frac{\dot{q}(t-r / c) d}{r c}\right\} \\
+& \phi(r, \theta, t)=\frac{\cos \theta}{4 \pi \epsilon_0}\left\{\frac{[p]}{r^2}+\frac{[\dot{p}]}{r c}\right\}
+\end{aligned}
+$$
+\subsubsection{Electric and Magnetic Fields}
+We get vector potential, followed by electric and magnetic field:
+$$
+\begin{aligned}
+& B_\phi=\frac{\mu_0 \sin \theta}{4 \pi}\left\{\frac{[\dot{p}]}{r^2}+\frac{[\ddot{p}]}{r c}\right\} \\
+& E_\theta=\frac{\sin \theta}{4 \pi \epsilon_0}\left\{\frac{[p]}{r^3}+\frac{[\dot{p}]}{r^2 c}+\frac{[\ddot{p}]}{r c^2}\right\} \\
+& E_r=\frac{2 \cos \theta}{4 \pi \epsilon_0}\left\{\frac{[p]}{r^3}+\frac{[\dot{p}]}{r^2 c}\right\}
+\end{aligned}
+$$
+
+A few items are of interest:
+\begin{enumerate}
+    \item instantaneous magnitude of Poynting flux is
+    $$
+    N(r, \theta, \phi)=\frac{1}{\mu_0} E_\theta B_\phi=\frac{\mu_0}{16 \pi^2 c} \sin ^2 \theta \frac{[\ddot{p}]^2}{r^2}
+    $$
+    This is proportional to $1/r^2$, note that the radiation term in E and B fields is proportional to $1/r$.
+    \item Angular distribution of the radiated power is proportional to $\sin^2\theta$, independent of $\psi$
+    \item Total radiated power
+    $$
+    P=\int \boldsymbol{N} \cdot \mathrm{d} \boldsymbol{S}=\frac{\mu_0}{16 \pi^2 c} \int_0^\pi \sin ^2 \theta \frac{[\ddot{p}]^2}{r^2} 2 \pi r^2 \sin \theta \mathrm{d} \theta
+    $$
+    $$
+    P=\frac{\mu_0}{6 \pi c}[\ddot{p}]^2
+    $$
+\end{enumerate}
+\subsection{Multipole Expansion}
+
+\section{Antennas}
+\begin{enumerate}
+    \item Radiation Resistance $$ 
+    R_{\mathrm{r}} \equiv \frac{\langle P\rangle}{\left\langle I^2\right\rangle}=\frac{1}{\left\langle I^2\right\rangle} \frac{\mu_0 \omega^2}{6 \pi c}\left\langle I^2\right\rangle d^2 = \frac{\mu_0 \omega^2 d^2}{6 \pi c}
+    $$
+    \item Power Gain  $$ 
+    G(\theta, \phi)=\frac{N(\theta, \phi)}{\frac{1}{4 \pi} \int N(\theta, \phi) \mathrm{d} \Omega}
+    $$
+    \item Effective Area of an antenna
+    $$ \text(its "absorption cross section")
+    A_{\text {eff }}(\theta, \phi) \equiv \frac{\text { Power delivered to a matched load }}{\text { Energy flux density of polarized radiation }}=\frac{\left\langle P_{\text {load }}\right\rangle}{\left\langle N_{\text {incident }}\right\rangle}
+    $$
+\end{enumerate}
+
+\section{Scattering}
+Radiation incident on antennas induces oscillating dipole moments which causes further outward radiation, scattered in different directions.
+
+Starts from dipole moment induced:
+$$
+\langle P\rangle=\frac{\mu_0\left\langle\ddot{p}^2\right\rangle}{6 \pi c}
+$$
+\begin{definition}
+    {Cross section}{$$
+    \sigma=\frac{\langle P\rangle}{\text { Incident electromagnetic flux }}=\frac{\langle P\rangle}{E_0^2 / 2 \mu_0 c}=\frac{\mu_0^2\left\langle\ddot{p}^2\right\rangle}{3 \pi E_0^2}
+    $$}{where $E_0$ is amplitude of incident field}
+\end{definition}
+
+\subsection{Polarisation of Scattered Waves}
+Consider two situations: B out of the scattering plane/ E out of the scattering plane.
+\subsubsection{Polarisation}
+
+\subsection{Rayleigh Scattering}
+Rayleigh scattering takes into consideration of neutral particles
+In general,  dipole moment with amplitude $p_0=\alpha E_0$ will be induced,$\alpha$ is the polarizability.
+The scattering cross-section becomes:
+$$
+\sigma=\frac{\mu_0 \omega^4 p_0^2 / 12 \pi c}{c \epsilon_0 E_0^2 / 2}=\frac{\mu_0^2 \omega^4 \alpha^2}{6 \pi}=\frac{8 \pi^3}{3} \mu_0^2 c^4 \alpha^2 \frac{1}{\lambda^4}
+$$ 
+It has a very strong dependence on wavelength, $\lambda^{-4}$.
+\subsection{Thompson Scattering}
+Thompson scattering happens to electrons in an oscillating electric field. It will behave like a dipole
+The equation of motion for the electron is
+$$
+m_e \ddot{z}=-e E_0 \mathrm{e}^{-i \omega t}
+$$
+and it behaves like a dipole with $p=-e z=p_0 \mathrm{e}^{-i \omega t}$. So:
+$$
+\ddot{p}=-e \ddot{z}=\frac{e^2}{m_{\mathrm{e}}} E_0 \mathrm{e}^{-i \omega t}=-\omega^2 p_0 \mathrm{e}^{-i \omega t}
+$$
+$$
+\sigma_{\mathrm{T}}=\frac{\mu_0^2 e^4}{6 \pi m_e^2}=6.65 \times 10^{-29} \mathrm{~m}^2
+$$
+and the cross-section is independent of $\omega$.
+
+\section{S5pecial Relativity}
+\section{Radiation and Relativistic Electrodynamics}
+This chapter covers the interaction between the EM field and moving charged particles.
+\subsection{Uniform moving charge}
+For a uniform static charge, we consider Lorentz transformation.
+
+
+\begin{enumerate}
+    \item There is now a magnetic field $B_\phi$ in the azimuthal direction (around $\mathrm{O} x$ ), arising from motion of charge.
+    \item The electric field $\boldsymbol{E}$ has the usual $1 / r^2$ dependence
+    \item Therefore the Poynting flux $N \sim 1 / r^4$: there is no far-field radiation from a uniformly moving charge (in vacuum).
+    \item $\frac{E_{\perp}}{E_{\|}}=\frac{\sin \theta}{\cos \theta}$, so $\boldsymbol{E}$ is purely radial, although its magnitude has an angular dependence that depends on the Lorentz factor $\gamma$.
+    \item A charge moving uniformly does not radiate
+\end{enumerate}
+\subsection{Cerenkov Radiation}
+This section covers the radiation from a charged particle moving in a medium.
+\begin{definition}
+    {Cerenkov condition}
+    {$v>c/n$}
+    {Velocity of the charge can in principle, exceed the speed of light in medium}
+\end{definition}
+$$
+\cos \theta_{\mathrm{C}}=\frac{(c T / n)}{v T}=\frac{c}{n v}=\frac{1}{\beta n}
+$$
+where $\cos \theta_{\mathrm{C}}$ is the Cerenkov angle for emitted radiation
+
+Cerenkov radaition in application
+\begin{enumerate}
+    \item Particles shower as cosmic rays enter the atmosphere
+    \item Bluish glow surrounding water-cooled nuclear reactors
+    \item Cerenkove particle detectors 
+\end{enumerate}
+\end{document}

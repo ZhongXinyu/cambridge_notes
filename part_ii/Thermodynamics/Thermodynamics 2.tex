@@ -1,0 +1,339 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{import}
+\import{../Template/}{format.tex}
+
+\newcommand{\topic}{Thermodynamics}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+\section{Basic of thermodynamics}
+
+\section{Thermodynamics equilibrium}
+    \subsection{Open systems}
+    Open system is a system that is linked to a reservoir.\\
+    Equilibrium condition is to maximize the total entropy of the system and the reservoir.\\
+    Hence, introducing the ideal of \textbf{availability}, which is minimized when the entropy of the universe is maximized with respect to the state of the system.
+    \subsubsection{Availability}
+    For thermally isolated system thermodynamic equilibrium is defined as the state of maximum entropy  for a given total energy, or minimum total enenrgy for a given entropy. However, for an open system, in contact with reservior, there is alternative, availability (of the system) that is minimised when the entropy of the universe is maximised. 
+    Availability A is defined as:
+    \begin{equation*}
+        dA=-T_R dS_{tot}
+    \end{equation*}
+    Note: $dA\leq 0$ and equilibrium is achieved at $dA=0$\\
+    Given that:
+    \begin{align*}
+        dS_{\text {tot }} & =d S+d S_R \geq 0 \\
+        & =d S+\frac{d U_R+p_R d V_R-\mu_R d N_R}{T_R} \\
+        & =\frac{T_R d S-d U-p_R d V+\mu_R d N}{T_R}
+    \end{align*}
+    Here we used the fact that $dU_R=-dU$ .etc 
+    Note that $-dA$ is the negative denominator.
+    \begin{equation*}
+        A = U- T_RS+p_RV-\mu_R N
+    \end{equation*}
+
+    \subsubsection{Boltzmann expression for entropy}
+    $S_{\text {Boltz }}=k_B \ln \Omega$
+    \subsubsection{Availability is equivalent to useful work}
+    \begin{theorem}
+        {Availiabily is the the maximum amount of work that can be extracted from a system by bringin the system in contact with equilibrium}{
+            Proof:
+        }
+    \end{theorem}
+    \subsection{Close systems}
+    The method we used to study closed system is to play \textbf{imaginary partition}
+    to partition it into two or more systems.\\
+    Equilibrium condition is to find the maximized S given a fixed value of U, or alternatively
+    minimized U for a given S.
+    \subsubsection{Constant temperature at equilibrium}
+    \subsubsection{Constant chemical potential at equilibrium}
+    \subsection{Overview of thermodynamics potentials}
+    Energy conservation is not sufficient to determine the equilibrium state, we need to introduce Thermodynamics potential to determine the equilibrium state.
+    $$
+    \begin{array}{lll}
+        \hline \text { internal energy } & U=T S-p V+\mu N & d U=T d S-p d V+\mu d N \\
+        \text { enthalpy } & H=U+p V & d H=T d S+V d p+\mu d N \\
+        \text { Helmholtz free energy } & F=U-T S & d F=-S d T-p d V+\mu d N \\
+        \text { Gibbs free energy } & G=U-T S+p V & d G=-S d T+V d p+\mu d N \\
+        \text { grand potential } & \Phi=F-\mu N & d \Phi=-S d T-p d V-N d \mu \\
+        \hline
+    \end{array}
+    $$
+
+    Here are some thermodynamics potential examples:\\
+    Internal energy: $dU = TdS - pdV+\mu dN$\\
+    Enthalpy: $dH = TdS + Vdp +\mu dN$\\
+    Helmholtz Free energy: $dF = -TdS -pdV + \mu dN$\\ ...see discussion in mechanical equilibrium \\
+    Gibbs Free energy: $dG = -SdT + Vdp +\mu dN$\\ ...see discussion in phase equilibrium \\
+    \textbf{Grand potential : $d\phi = -SdT -pdV - Nd\mu$}\\ ...see discussion in Fermion and Boson Gas \\
+    For given external conditions, the appropriate thermodynamic potential is a minimum in equilibrium:\\
+    the minimization of these thermodynamic potential of the system is a direct consequence of the maximization of global energy.
+    \subsubsection{Detailed discussion about each thermodynamic potential}
+    \begin{example}
+        {Energy U for equilibrium at constant $V$, $S$ and $N$}{A schematic flow process}
+    \end{example}
+    Handout page 33 - 35
+    \subsection {Phase Equilibrium}
+    In this section, we consider a one component system at constant temperature, pressure and particle number. The equilibrium is that the Gibbs free energy is minimised.
+    i.e. the total Gibbs free energy is minimized, $dS =0$ in a mixture of gas and liquid.\\
+    \begin{theorem}
+        {Condition for equilibrium is such that chemical potential is the same}{Prove:}
+    \end{theorem}
+    \subsubsection {Phase Equilibrium in Van de Waal gas}
+    Two shaded areas have equal areas.
+    
+    \subsubsection {Clausius-Clapeyron Equation}
+    \subsection {Mixture of ideal gas}
+        In ideal gas, particles do not interact with each other, the thermodynamics properties are the sum of individual contribution of each species of "component".
+        \dots
+        \subsubsection{Chemical Equilibrium}
+        \subsubsection{Equilibrium Constant}
+\section{Statistical Mechanics}
+    \begin{theorem}
+        {Sterling Approximation:}
+        {
+            \begin{align*}
+                \ln(n!)= n\ln{n} - n \\
+                \dfrac{d\ln(n!)}{dn} = ln(n).
+            \end{align*}
+            }
+    \end{theorem}
+        
+\section{Classical Ideal Gas}
+    In classical ideal gas, we have the probability density function and the associated partition function:
+    \begin{align*}
+        \rho &= \frac{e^{-\beta E({p_i,q_i})}}{Z}\\
+        Z_{classical} &= \int e^{-\beta E({p_i,q_i})} \dfrac{d^3x d^3p}{(2\pi\hbar^2)^3}
+    \end{align*}
+    Note that this is 3-dimensional case.\\
+    Trick to compute the integral, in example of a free particle:
+    \begin{align*}
+        Z_1 &= \int e^{-\beta E({p_i,r_i})} \dfrac{d^3p d^3r}{(2\pi\hbar^2)^3}\\
+            &= \int d^3r \int e^{-\beta E({p_i,r_i})} \frac{d^p_x}{2\pi\hbar^2}\\
+            &= V(\sqrt{\dfrac{k_BTm}{2\pi\hbar^2}})^3\\
+            &= V/\lambda^3
+    \end{align*}
+    where $\lambda$ is also known as the thermal de Broglie wavelength
+    \subsection{Thermodynamic properties of ideal gas}
+    We can derive thermodynamic properties of ideal gas from the partition function:
+    \begin{enumerate}
+        \item Partition function: $Z=\frac{1}{N !}\left(\frac{V}{\lambda^3}\right)^N $
+        \item Mean energy: $U=-\frac{\partial}{\partial \beta} \ln Z=\frac{3}{2} N k_B T$
+        \item Free energy: $F=-k_B T \ln Z = N k_B T \ln \left(\frac{N \lambda^3}{V e}\right)$
+        \item Pressure: $p=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{N k_B T}{V}$
+        \item Chemical potential:$p=-\left(\frac{\partial F}{\partial V}\right)_{T, N}=\frac{N k_B T}{V}$
+    \end{enumerate}
+    
+    \subsection {Equipartition Theorem}
+    \begin{theorem}
+        {Equipartition Theorem}
+        {Each squared, separable degree of freedom in the Hamiltonian has a mean energy of $k_BT/2$}
+    \end{theorem}
+    Equipartition holds only in classical limit, for example harmonic oscillator  the condition is $k_B T>>\hbar\omega$
+    \subsection{Gas of diatomic molecules}
+    Vibration of diatomic molecules is approximated by a harmonic oscillator with frequency $\omega_0$.\\
+    \subsection{Cross-over to quantum limit}
+    The classical limit is when $N \lambda^3 / V \ll 1$, we can move to quantum region by increase N, T or reduce m. In such way, their waypackets of size $\approx \lambda$ starts to interfere with each other.\\
+%Lecture 6:
+
+%lecture 7:
+\subsection{Chemical equilibrium}
+\subsection{High-T limit}
+\subsection{Chemical potential}
+
+\subsection{Cross-over to quantum limit}
+%lecture 8:
+Continues on quantum ideal gas
+\section{Fermi gas}
+%lecture 9:
+\subsection{Fermi gas in low/medium/high Temperature}
+\subsection{Fermi gas//Bose gas}
+\begin{center}
+    \begin{tabularx}{\linewidth}{c|c|c}
+        Property & Fermion & Bose gas  \\
+        \hline
+        Grand partition function & $\Xi_{\mathbf{k}}=\sum^1\left(\mathrm{e}^{-\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}\right)^n=1+\mathrm{e}^{-\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}$ & $\frac{1}{1-\mathrm{e}^{-\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}}$ \\
+        Average occupation$\left\langle n_{\mathbf{k}}\right\rangle$ & $-\left(\frac{\partial \Phi_{\mathbf{k}}}{\partial \mu}\right)_{T, V}=\frac{1}{\mathrm{e}^{\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}+1}$ & $-\left(\frac{\partial \Phi_{\mathbf{k}}}{\partial \mu}\right)_{T, V}=\frac{1}{\mathrm{e}^{\beta\left(\varepsilon_{\mathbf{k}}-\mu\right)}-1}$ \\
+        Entropy $S_{\mathbf{k}}(T, \mu)$& $ -k_B\left[\left\langle n_{\mathbf{k}}\right\rangle \ln \left\langle n_{\mathbf{k}}\right\rangle+\left(1-\left\langle n_{\mathbf{k}}\right\rangle\right) \ln \left(1-\left\langle n_{\mathbf{k}}\right\rangle\right)\right]$ & $-k_B\left[\left\langle n_{\mathbf{k}}\right\rangle \ln \left\langle n_{\mathbf{k}}\right\rangle-\left(1+\left\langle n_{\mathbf{k}}\right\rangle\right) \ln \left(1+\left\langle n_{\mathbf{k}}\right\rangle\right)\right]$ 
+    \end{tabularx}    
+\end{center}
+%Lecture 10:
+\section{Bose gas}
+    Bose gas: quantum limit, Boson particles can take up any energy state instead of two\\
+    Grand partition function:
+    \begin{align*}
+    \Xi_k   &= \sum_{n=0}^{\inf} e^{-\beta(\epsilon_k-\mu)^n}\\
+            &=\frac{1}{1-e^{-\beta(\epsilon_k-\mu)}}
+    \end{align*}
+    Here $k$ specifies the energy level.\\
+    The grand partition function for the whole system
+    The grand potential is then
+\subsectino{ Bose-Einstein Condensation}
+Why care about condensation?
+Condensed atoms do not contribute to the heat capacity, so the heat capacity drops sharply at the condensation temperature.\\
+
+Atoms are disappearing from the integral of $N$ piles up at the ground state
+Bose-Einstein distribution:
+\subsubsection{ Dimension of Bose-Einstein Gas}
+%lecture 11
+\subsection{Quasi-particle excitation}
+\subsection{Photons}
+\subsection{Spin Waves}
+\subsection{Phonon and Debye model}
+%Lecture 12
+\section{Non-ideal Gas and Liquids}
+\subsection{2 particle probability}
+\subsection{Radial distribution function}
+
+\subsection{Mean Energy}
+\subsection{Virial}
+Virial $\nu$ is defined as: 
+\begin{align*}
+    \nu = -\dfrac{1}{2} \sum_i {\vb{r_i}\cdot \vb{f_i}}
+\end{align*}
+\theorem{Virial Theorem}{Virial Theorem states that the mean virial is equal to the mean kinetic energy.}
+\paragraph*{N-particle system}
+Consider a liquid consisting of $N$ particles in a container of volume $V$. The value of $\mathbf{r}_i \cdot \mathbf{v}_i$ can only fluctuate between finite limits. Over a long period, its time derivative must therefore average to zero, which leads to
+$$
+\langle\mathcal{V}\rangle=\sum_i \frac{1}{2} m_i\left\langle v_i^2\right\rangle=\langle\text { K.E. }\rangle=\frac{3}{2} N k_B T .
+$$
+The mean virial is equal to the mean kinetic energy. This is Clausius' virial theorem.
+\subsubsection{${\nu_{ext}}$}
+\subsubsection{${\nu_{int}}$}
+\subsection{Virial Expansion}
+\paragraph*{Virial expansion}Virial Expansion: If we start off with a very dilute gas, interactions are unimportant, and the equation of state will approach the ideal gas law. As density increases, we may expect increasing corrections to the ideal gas law. This is the motivation for the virial expansion, which expresses the equation of state in terms of increasing powers of density:
+$$
+\frac{p}{k_B T}=n+B_2(T) n^2+B_3(T) n^3+\cdots
+$$
+The $m^{t h}$ virial coefficient, $B_m(T)$, reflects the $m$-body correlations in the equation of state. Mayer developed a diagrammatic recipe which (in principle) allows each coefficient to be calculated.
+\paragraph*{radial distribution}
+The radial distribution function $g(r)$ likewise depends on the density. If we expand it in powers of $n=N / V$,
+$$
+g(r)=g_0(r)+g_1(r) n+g_2(r) n^2+\cdots,
+$$
+where when N is Large, $g_0(r)=\mathrm{e}^{-\beta \phi(r)}$
+and substitute into the virial equation of state 
+$p=n k_B T-\frac{n^2}{6} \int_0^{\infty} r \frac{d \phi}{d r} g(r) 4 \pi r^2 d r$, we can link the coefficients $B_m$ in the virial expansion to coefficients $g_{m-2}$ in the expansion of the radial distribution function.
+We substitute $g_0(r)$ into the equation above, and integrate by parts:
+$$
+\begin{aligned}
+\frac{p}{k_B T} & =n-\frac{n^2}{6 k_B T} \int_0^{\infty} 4 \pi r^3 \frac{d \phi}{d r} \mathrm{e}^{-\phi / k_B T} d r \\
+& =n+\frac{n^2}{6}\left\{\left.4 \pi r^3 \mathrm{e}^{-\phi / k_B T}\right|_0 ^{\infty}-\int_0^{\infty} 12 \pi r^2 \mathrm{e}^{-\phi / k_B T} d r\right\} \\
+& =n+\frac{n^2}{6}\left\{\int_0^{\infty} 12 \pi r^2 d r-\int_0^{\infty} 12 \pi r^2 \mathrm{e}^{-\phi / k_B T} d r\right\} \\
+& =n+n^2\left\{\int_0^{\infty} 2 \pi r^2\left(1-\mathrm{e}^{-\phi / k_B T}\right) d r\right\}
+\end{aligned}
+$$
+where to get from the second to third step we have used the fact that $\mathrm{e}^{-\phi / k_B T}$ is equal to 1 at $r=\infty$. Comparing with equation of states we see that the second virial coefficient is
+$$
+B_2(T)=\int_0^{\infty} 2 \pi r^2\left(1-\mathrm{e}^{-\phi / k_B T}\right) d r
+$$
+\paragraph{Boyle's temperature}
+One significant quantity in Virial expansion is the \textbf{Boyle temperature}, defined as the temperature at which the second virial coefficient B2(T ) passes through zero.
+At this point, the gas behaves like ideal gas as te long range and short range effects cancels out with each other 
+
+\section{Phase Equilibrium and Transition}
+A phase transition is the occurrence of an abrupt change in the physical properties of a system when a thermodynamic variable, such as the temperature or pressure, is changed by a small amount.
+%lecture 13
+\subsection{Ising model}
+Consider $N$ spins, $\sigma_i$, which can either point up $(\sigma=1)$ or down $(\sigma=-1)$. The energy (Hamiltonian) for this model is
+$$
+H=-m_0 B \sum_i^N \sigma_i-J \sum_{i j, n n} \sigma_i \sigma_j,
+$$
+where $B$ is an external magnetic field, $m_0$ is the magnetic moment of the spin, $J$ is the interaction energy between nearest-neighbour spins, and $\sum_{i j, n n}$ means the sum over all pairs of spins which are nearest neighbours. $J>0$ favours parallel spins and can lead to the phenomenon of spontaneous magnetisation, that is, a non-zero magnetisation, $M$, which occurs even when $B=0$, due to the potential energy of interaction between the spins.
+%lecture 14
+\subsection{Landau Theory}
+\subsubsection{Critical behavior}
+\subsubsection{External field}
+\subsection{2nd order transition}
+%lecture 15
+\subsection{1st order transition}
+\subsubsection{Calculation of $T*$,$T_1$ and latent heat}
+%lecture 16
+\section{Fluctuation}
+\begin{align*}
+    \langle \Delta x^2\rangle = \langle x^2\rangle -\langle x\rangle ^2 
+    =\dfrac{1}{Z}\sum_i x_i^2 e^{-E_i/k_BT} - (\frac{1}{Z}\sum_i x_i e^{-E_i/k_BT})^2
+\end{align*}
+If there is a simple dependence of energy on the variable, 
+e.g. if such dependence is linear, $E_i=-fx_i$, then a general trick applies:
+\begin{align*}
+    \langle x\rangle &= \dfrac{1}{Z}\sum_i x_i e^{fx_i/k_BT} = \frac{1}{\beta Z}(\frac{\partial Z}{\partial f})\\
+    \langle x\rangle &= \dfrac{1}{Z}\sum_i x_i^2 e^{fx_i/k_BT} = \frac{1}{\beta^2 Z}(\frac{\partial^2 Z}{\partial f^2})
+\end{align*}
+We realize that:
+$\langle \Delta x^2\rangle = \langle x^2\rangle -\langle x\rangle ^2 = ... = k_BT(\frac{\partial <x>}{\partial f})$\\
+\definition{response function}{
+    $\dfrac{\partial \langle \Delta x^2\rangle}{\partial y}$
+}{as the response function.}
+\begin{example}
+    {Spring with a force f and displacment x}
+    {... see notes.}
+\end{example}
+\begin{example}
+    {The fluctuation in the magnetization of a subsystem consisting of a paramagnet in an external filed B, in and contact with a reservoir at time T.}
+    {... see handout}
+\end{example}
+\subsection{Thermodynamics}
+In a large system, the curvature of the availability function is related to the size of the fluctuations.\\
+Probability density function can be written as an exponential function of A.\\
+
+The probability distribution is a Gaussian approximation
+First expand availability function around $x_0$:
+$$
+A(x)=A\left(x_0\right)+\left(x-x_0\right)\left(\frac{\partial A}{\partial x}\right)_{x=x_0}+\frac{1}{2}\left(x-x_0\right)^2\left(\frac{\partial^2 A}{\partial x^2}\right)_{x=x_0}+\ldots
+$$
+We compare that with the Gaussian Function:
+$$
+P(x)=\frac{1}{\sqrt{2 \pi\left\langle\Delta x^2\right\rangle}} \exp \left[-\frac{\Delta x^2}{2\left\langle\Delta x^2\right\rangle}\right]
+$$
+We get the fluctuation around equilibrium value $x$, for in other cases $V$
+$$
+\left\langle\Delta x^2\right\rangle=\left\langle\left(x-x_0\right)^2\right\rangle=\frac{k_B T_R}{\left(\partial^2 A / \partial x^2\right)_{x=x_0}}
+$$
+\section{Stochastic physics}
+    \begin{theorem}
+        {White noise properties}{
+        $\expval{\xi(t)}=0$ but $\expval{\xi(t)^2}=0$ and  $\expval{\xi(t_1)\xi(t_1)}=0$ if $t_1\neq t_2$.
+        \begin{equation*}
+            \expval{\xi(t)\xi(t')}=\Gamma\delta(t-t')
+        \end{equation*}
+        }
+    \end{theorem}
+    \\
+    \begin{theorem}
+        {Fluctuation dissipation theorem}{
+        ???
+        }
+    \end{theorem}
+    \subsection{Damped Oscillator}
+        \subsubsection{Langevin equation}
+            \begin{theorem}{Langevin equation}
+                {
+                Fluctuating system obeys the damped single harmonic oscillator equation with random force $\epsilon(t)$
+                \begin{align*}
+                    m\ddot{x}+\lambda\dot{x}+kx=\epsilon(t)
+                \end{align*}
+                }
+            \end{theorem}
+    \subsection{Diffusion}
+    \subsection{Diffusion in external potentials}
+    % % \begin{example}
+    %     {Derivation of kinetic equation of $P(x,t)$, with external potential $V(x)$}
+    % %     {Random walk from bias
+    % %     From analogy with sediment problem in gravity, $V=mgh$}
+    % % \end{example}
+    \subsection{Kramers problem: escape over a potential barrier}
+\end{document}

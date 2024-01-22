@@ -1,0 +1,187 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{import}
+\import{../Template/}{format.tex}
+
+\newcommand{\topic}{Advanced Quantum Physics}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+\noindent
+Abstract of this course
+\end{abstract}
+
+\section{Revision}
+\section{Perturbation Theory}
+\subsection{Time-Independent Perturbation Theory}
+\subsection{First-order Perturbation Theory}
+$$
+\begin{aligned} & E_n \simeq E_n^{(0)}+\left\langle n^{(0)}\left|\hat{H}^{(1)}\right| n^{(0)}\right\rangle \\ & |n\rangle \simeq\left|n^{(0)}\right\rangle+\sum_{m \neq n}\left|m^{(0)}\right\rangle \frac{\left\langle m^{(0)}\left|\hat{H}^{(1)}\right| n^{(0)}\right\rangle}{E_n^{(0)}-E_m^{(0)}}\end{aligned}
+$$
+\subsection{Second-order Perturbation Theory}
+$$E_n^{(2)}=\sum_{m \neq n} \frac{\left|\left\langle m^{(0)}\left|\hat{H}^{(1)}\right| n^{(0)}\right\rangle\right|^2}{E_n^{(0)}-E_m^{(0)}}$$
+
+\begin{example}
+    {Infinite square well with central bump}
+    {...}
+\end{example}
+\begin{example}
+    {Infinite square well in an electric field}
+    {...}
+\end{example}
+\begin{example}
+    {Harmonic Oscillator + Linear perturbation}
+    {...}
+\end{example}
+\begin{example}
+    {Van der Waals Interaction}
+    {...}
+\end{example}
+\subsection{Degenerate Perturbation Theory}
+\begin{example}
+    {Perturbed 2D infinite square well}
+    {...}
+\end{example}
+\subsection{Variation Method}
+\begin{example}
+    {Hydrogen atom ground state energy}
+    {...}
+\end{example}
+\subsubsection{Rayleigh-Ritz Method}
+\begin{example}
+    {Hydrogen atom with finite proton mass}
+    {...}
+\end{example}
+\section{Wigner-Eckart theorem}
+Let $\hat{K}$ be a scalar operator with respect to an angular momentum operator $\hat{\boldsymbol{J}}$ :
+$$
+[\hat{\boldsymbol{J}}, \hat{K}]=0
+$$
+Then the Wigner-Eckart theorem states that matrix elements of $\hat{K}$ taken between total angular momentum eigenstates $\left|\alpha^{\prime \prime} j^{\prime \prime} m^{\prime \prime}\right\rangle$ and $\left|\alpha^{\prime} j^{\prime} m^{\prime}\right\rangle$ must be of the form
+$$
+\left\langle\alpha^{\prime \prime} j^{\prime \prime} m^{\prime \prime}|\hat{K}| \alpha^{\prime} j^{\prime} m^{\prime}\right\rangle=C\left(\alpha^{\prime \prime} \alpha^{\prime} ; j^{\prime}\right) \delta_{j^{\prime \prime} j^{\prime}} \delta_{m^{\prime \prime} m^{\prime}}
+$$
+where $C\left(\alpha^{\prime \prime} \alpha^{\prime} ; j^{\prime}\right)$ is a complex constant known as the reduced matrix element which is independent of the quantum numbers $m^{\prime \prime}$ and $m^{\prime}$. The quantities $\alpha^{\prime \prime}$ and $\alpha^{\prime}$ collectively label all other quantum numbers needed to uniquely identify the angular momentum eigenstates involved.
+\subsection{Consequence of Wigner-Eckart theorem (Scalar Hamiltonian)}
+Since $\hat{H}$ and $\hat{\boldsymbol{J}}$ commute, they possess a simultaneous set of eigenstates $|\alpha j m\rangle$, where " $\alpha$ " represents all other quantum numbers needed to uniquely identify a particular energy eigenstate of $\hat{H}$. From the Wigner-Eckart theorem, the matrix elements of $\hat{H}$ between these eigenstates must be of the form
+$$
+\left\langle\alpha^{\prime \prime} j^{\prime \prime} m^{\prime \prime}|\hat{H}| \alpha^{\prime} j^{\prime} m^{\prime}\right\rangle=\left\langle\alpha^{\prime \prime} j^{\prime \prime}\|\hat{H}\| \alpha^{\prime} j^{\prime}\right\rangle \delta_{j^{\prime \prime} j^{\prime}} \delta_{m^{\prime \prime} m^{\prime}}
+$$
+where the reduced matrix element $\left\langle\alpha^{\prime \prime} j^{\prime \prime}\|\hat{H}\| \alpha^{\prime} j^{\prime}\right\rangle$ is a constant, independent of the quantum number $m$. In particular, the expectation values of $\hat{H}$ are
+$$
+\langle\alpha j m|\hat{H}| \alpha j m\rangle=\langle\alpha j\|\hat{H}\| \alpha j\rangle
+$$
+The Wigner-Eckart theorem for scalar operators, Equation, to be written in the form
+$$
+\left\langle\alpha^{\prime \prime} j^{\prime \prime} m^{\prime \prime}|\hat{K}| \alpha^{\prime} j^{\prime} m^{\prime}\right\rangle=\left\langle\alpha^{\prime \prime} j^{\prime \prime}|| \hat{K} \| \alpha^{\prime} j^{\prime}\right\rangle\left\langle 00 ; j^{\prime} m^{\prime} \mid j^{\prime \prime} m^{\prime \prime}\right\rangle .
+$$
+The reason for writing the Wigner-Eckart theorem in this way will become clear once we have also considered the equivalent result for vector operators.
+\subsection{consequence of Wigner-Eckart theorem (Vector Operators)}
+Then the Wigner-Eckart theorem states that the matrix elements of $\hat{\boldsymbol{V}}$ between eigenstates $\left|\alpha^{\prime} j^{\prime} m^{\prime}\right\rangle$ and $\left|\alpha^{\prime \prime} j^{\prime \prime} m^{\prime \prime}\right\rangle$ of $\hat{\boldsymbol{J}}$ must be of the form
+$$
+\left\langle\alpha^{\prime \prime} j^{\prime \prime} m^{\prime \prime}\left|\hat{V}_m\right| \alpha^{\prime} j^{\prime} m^{\prime}\right\rangle=\left\langle\alpha^{\prime \prime} j^{\prime \prime}|| \hat{\boldsymbol{V}} \| \alpha^{\prime} j^{\prime}\right\rangle\left\langle 1 m ; j^{\prime} m^{\prime} \mid j^{\prime \prime} m^{\prime \prime}\right\rangle,
+$$
+where the final factor, $\left\langle 1 m ; j^{\prime} m^{\prime} \mid j^{\prime \prime} m^{\prime \prime}\right\rangle$, is a Clebsch-Gordan coefficient which can be obtained by considering the angular momentum combination $j^{\prime \prime}=1 \otimes j^{\prime}=j^{\prime}, j^{\prime} \pm 1$
+\section{Electromagnetism}
+\begin{definition}
+    {cyclotron frequency}
+    {$\omega_c= \dfrac{qB}{m}$}
+    {
+    This is the frequency with which particles moving transverse to a magnetic filed $B$ undergo circular orbit.\\
+    $\omega_c$ should be really close to the spin precesssion frequency $\omega_s$.
+    }
+\end{definition}
+\subsection{Aharanov-Bohm Effect}
+\subsection{Gauge Invariance}
+\subsubsection{Couloumb Gauge}
+\subsubsection{Symmetric Gauge}
+\subsection{Orbital Magnetic moment}
+In Hamiltonian, the $L\cdot B$ term can be written as:
+$\hat{H} = - \hat{\mu}_L\cdot B$
+\begin{definition}
+    {Orbital magnetic moment operator}
+    {$- \hat{\mu}_L = \dfrac{q}{2m}\hat{L} \gamma_L$}
+    {...}
+\end{definition}
+\begin{definition}
+    {Gyromagnetic ratio, $\gamma_L$}
+    {$\gamma_L = \dfrac{q}{2m}$}
+    {...}
+\end{definition}
+For an electron (q=-e), the orbital magnetic moment operator is 
+\subsection{Magnetic Moments}
+\subsubsection{Electron}
+\subsubsection{Muon}
+\subsubsection{p, n, nuclei}
+\subsection{Spin}
+\subsubsection{Particle magnetic moment: spin-half}
+\subsubsection{Spin Precession}
+\subsubsection{Spin-half}
+\subsubsection{Energy Eigenstates}
+
+
+\subsubsection{Wave-function Evolution}
+\subsection{Stern-Gerlach}
+\subsection{Landau Levels}
+\subsubsection{Landau Gauge}
+\begin{example}
+    {2D Electron Gas}
+    {}
+\end{example}
+\section{Real Hydrogen Atom}
+\subsection{Relativistic Corrections}
+\subsection{Fine Structure}
+\subsection{Hyperfine Structure}
+\section{Symmetries}
+
+\subsection{Symmetry Transformation}
+\subsubsection{Time translation}
+Take way: The time-dependent Shrodinger equation is a consequence of the invariance under time transformation
+\subsection{The Wigner-Eckart Theorem(selection rule)}
+\begin{theorem}
+    {Wigner-Eckart Theorem}
+    {$ \bra {\alpha'' j''m''}\hat{K}\ket{\alpha' j'm'} = \bra{\alpha''j''}|\hat{K}|\ket{\alpha'j'}$}
+\end{theorem}
+A particular case is that $ \bra {\alpha jm}\hat{K}\ket{\alpha jm} = \bra{\alpha j}|\hat{K}|\ket{\alpha j}$\\
+i.e. the expectation values of a scalr opertator are independent of m and are given by the appropriate reduced matrix element of K
+\subsection{Combining magnetic moment}
+\section{Identical Particles}
+Identical particles are indistinguishable.
+\begin{enumerate}
+    \item The normalized two-particle wavefunction $\psi\left(x_1, x_2\right)$, which gives the probability $\left|\psi\left(x_1, x_2\right)\right|^2 d x_1 d x_2$ of finding simultaneously one particle in the interval $x_1$ to $x_1+d x_1$ and another between $x_2$ to $x_2+d x_2$,
+    \item only makes sense if $\left|\psi\left(x_1, x_2\right)\right|^2=\left|\psi\left(x_2, x_1\right)\right|^2$, since we can't know which of the two indistinguishable particles we are finding where.
+    \item It follows from this that the wavefunction can exhibit two (and, generically, only two) possible symmetries under exchange: $\psi\left(x_1, x_2\right)=\psi\left(x_2, x_1\right)$ or $\psi\left(x_1, x_2\right)=-\psi\left(x_2, x_1\right) .^2$ 
+    \item f two identical particles have a symmetric wavefunction in some state, particles of that type always have symmetric wavefunctions, and are called bosons.Similarly, particles having antisymmetric wavefunctions are called fermions. 
+    \item We could achieve the necessary antisymmetrization for particles 1 and 2 by subtracting the same product wavefunction with the particles 1 and 2 interchanged, i.e. $\psi_a(1) \psi_b(2) \psi_c(3) \mapsto\left(\psi_a(1) \psi_b(2)-\psi_a(2) \psi_b(1)\right) \psi_c(3)$, ignoring the overall normalization for now. Such a sum over permutations is precisely the definition of the determinant. So, with the appropriate normalization factor:
+    $$
+    \psi_{a b c}(1,2,3)=\frac{1}{\sqrt{3 !}}\left|\begin{array}{lll}
+    \psi_a(1) & \psi_b(1) & \psi_c(1) \\
+    \psi_a(2) & \psi_b(2) & \psi_c(2) \\
+    \psi_a(3) & \psi_b(3) & \psi_c(3)
+    \end{array}\right|
+    $$
+\end{enumerate}
+\subsection{Space and spin}
+\subsection{Spin and statistics(fermions and bosons)}
+\subsection{Exchange forces}
+\subsection{The Helium atom}
+\section{Multi-electron atoms}
+\subsection{Periodic table}
+\subsection{LS coupling(Hund's rule)}
+\subsection{jj coupling}
+\section{Zeeman effect/Stark effect/Molecules: $H^+_2$ and $H_2$}
+\section{Time-dependent perturbation}
+\section{Fermi Golden Rule}
+
+\end{document}
+
+
