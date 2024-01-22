@@ -1,2 +1,0 @@
-{"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QStandardisation is necessary as we need to make sure distance are equally weighted.\\E$"}
-{"rule":"OXFORD_SPELLING_Z_NOT_S","sentence":"^\\QThe complexity parameter prevents the tree from having too many branches, which is prone to overfitting Regularisation.\\E$"}
