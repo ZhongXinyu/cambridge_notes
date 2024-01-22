@@ -17,3 +17,6 @@
 [submodule "Mphil/mApplied_Data_Science/m1_applied_data_science"]
 	path = Mphil/mApplied_Data_Science/m1_applied_data_science
 	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/m1_applied_data_science.git
+[submodule "Mphil/m2_application_of_machine_learning"]
+	path = Mphil/m2_application_of_machine_learning
+	url = git@gitlab.developers.cam.ac.uk:phy/data-intensive-science-mphil/m2_application_of_machine_learning.git
